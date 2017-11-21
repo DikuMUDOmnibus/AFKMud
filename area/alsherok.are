@@ -1,0 +1,202 @@
+#AREA   The Continent of Alsherok~
+
+#VERSION 20
+
+#AUTHOR Samson~
+
+#VNUMS 50000 50499
+
+#RANGES
+0 115 0 115
+$
+
+#RESETMSG A light breeze stirs up the air around you.~
+
+#RESETFREQUENCY 999
+
+#FLAGS
+nobeacon~
+
+#CONTINENT alsherok~
+
+#COORDS 0 0
+
+#CLIMATE 2 2 2
+
+#TREASURE
+20 74 85 93
+20 50 60 75
+
+#MOBILES
+#50000
+top placeholder~
+a newly created top placeholder~
+Some god abandoned a newly created top placeholder here.
+~
+~
+npc proto~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#50499
+alsherok portal guardian~
+The guardian~
+The guardian of the Alsherok portal stands watch over the continent below.
+~
+~
+npc sentinel immortal~
+~
+0 0 0 0 0 150 100 0.000000
+100 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+male~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#0
+
+
+#OBJECTS
+#50000
+top placeholder~
+a newly created top placeholder~
+Some god dropped a newly created top placeholder here.~
+~
+trash~
+proto~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#50499
+Last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+trash~
+proto~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#0
+
+
+#ROOMS
+#50000
+Somewhere on the Continent of Alsherok~
+If you can read this description online, then something REALLY
+bad has happened, contact the immortals at once.
+You should be seeing the ASCII color map of the continent instead
+of this lousy description :)
+~
+~
+indoors~
+indoors map~
+0
+D
+north~
+~
+~
+~
+-1 50000 0 0
+D
+east~
+~
+~
+~
+-1 50000 0 0
+D
+south~
+~
+~
+~
+-1 50000 0 0
+D
+west~
+~
+~
+~
+-1 50000 0 0
+D
+northeast~
+~
+~
+~
+-1 50000 0 0
+D
+northwest~
+~
+~
+~
+-1 50000 0 0
+D
+southeast~
+~
+~
+~
+-1 50000 0 0
+D
+southwest~
+~
+~
+~
+-1 50000 0 0
+S
+#50499
+The Alsherok Portal~
+The shimmering green light of the portal is almost blinding, yet below
+you the view of Alsherok is completely unobstructed and breathtaking to
+behold.
+~
+~
+indoors~
+indoors nocamp nosummon norecall noportal noastral noteleport noscry~
+0
+D
+down~
+~
+~
+overland nomob~
+-1 50000 500 500
+R M 0 50499 1 50499 -1 -1 -1
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

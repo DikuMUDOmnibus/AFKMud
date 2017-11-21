@@ -1,0 +1,504 @@
+=== The #MOBILES section
+
+Last modified by Dwip, 6/19/03
+
+Note: The values from <level> to <dmgrollbonus> all belong on the same
+line.
+
+The syntax of this section is:
+
+      #MOBILES
+    	#<vnum>
+	<keywords>~
+	<short-description>~
+	<long-description>
+      ~
+	<mob description>
+      ~
+	<act-flags>~ 
+	<affected-flags>~
+	<alignment> <gold> <exp> <height> <weight> <maxmove> <maxmana> <numattacks>
+	<level> <thac0> <AC> <HPbonus> <dmg#dice>d<dmgsizedice>+<dmgrollbonus>
+      <speaks>~
+      <speaking>~
+	<position>~
+	<default position>~
+	<sex>~
+	<race>~
+	<class>~
+	<xflags>~
+	<res>~
+	<imm>~
+	<sus>~
+	<abs>~
+	<attacks>~
+	<defenses>~
+      #<vnum of next mob.....>
+      .
+      .
+      .
+      #0
+
+What each part of the syntax means:
+
+<vnum>
+
+The vnum is the virtual number of the mobile.
+
+<keywords>
+
+The words used by commands such as 'look' to identify the mob.
+
+<short-description>
+
+The description used to identify the mob during combat or other actions.
+Should be very short.
+
+<long-description>
+
+The long-description is the description used when a character walks in 
+the room and the mobile is visible.
+
+<mob-description>
+
+The mob description is the longest description. It is used when a 
+character explicitly looks at the mobile.
+
+<act-flags>
+
+The act-flags define how the mobile acts, defined by the following table.
+Separate each flag name with a space or the code cannot recognize them.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+npc           | MUST be included for all mobs ( autoset on bootup ).
+sentinel      | Mob never moves from its room.
+scavenger     | Mob picks up items.
+innkeeper     | Mob is an Innkeeper, where PC's can rent.
+banker        | Mob is a Banker, where PC's do their banking.
+auction       | Mob is an auctioneer, where PC's conduct auctions. **
+aggressive    | Mob attacks players on site.
+stayarea      | Mob wanders, but won't leave its area.
+wimpy	        | Mob will flee when wounded.
+pet           | Autoset for all pets, Do not use.
+practice      | Mob trains player class skills.
+teacher       | Mob trains player race abilities.
+immortal      | Mob cannot be harmed. Useful for shopkeepers :P
+deadly        | Mob Has a deadly poison.
+polyself      | Used for polymorphs? DONT USE.
+meta_aggr     | Mob is extremely aggressive, will attack anything it sees.
+guardian      | Mob protects its master.
+running       | Mob hunts quickly.
+nowander      | Mob doesn't wander unless attacked.
+mountable     | Mob can be mounted.
+mounted	  | Mob is mounted.
+scholar       | Mob can teach languages.
+secretive     | Mob's actions aren't seen.
+mobinvis      | Mob has wizinvis, equal to its level.
+noassist      | Mob won't assist other mobs.
+illusion      | ***UNUSED***
+pacifist      | Mob will never fight.
+noattack      | Mob has no physical attacks.
+annoying      | Other mobs will attack this mob.
+smith		  | Mob can forge items for players.
+guildauc      | Mob is an auctioneer for a guild or clan. **
+guildbank	  | Mob is a banker for a guild or clan.
+guildvendor	  | Mob is a shopkeeper for a guild or clan.
+guildrepair	  | Mob is a repairsmith for a guild or clan.
+guildforge    | Mob can forge items for a guild or clan.
+guildidmob    | Mob can identify items for a guild or clan.
+proto         | Mob is a prototype. Used only by OLC system.
+
+** See the room flags section of rooms.txt for information on auction houses.  The GUILDAUC flag is used in place of the AUCTION flag for guild and clan auctioneers.
+
+<affected-flags>
+
+The affected-flags define more attributes of the mobile, defined in the 
+following table. Separate each flag name with a space or the code cannot 
+recognize them.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+blind         | Mob is blinded. (Kinda pointless :P)
+invisible     | Mob is invisible.
+detect_evil   | Mob can detect evil.
+detect_invis  | Mob can see invisible.
+detect_magic  | Mob can detect magic.
+detect_hidden | Mob can detect hidden players.
+hold          | Mob is paralyzed. (Kinda pointless :P)
+sanctuary     | Mob has a sanctuary spell.
+faerie_fire   | Mob is affected by a faerie fire spell.
+infrared      | Mob has infravision.
+curse         | Mob is cursed.
+_flaming	  | Not sure what this means. Don't Use.
+poison	  | Mob is poisoned. (Not much point :P)
+protect       | Mob is protected from evil.
+paralysis     | Mob is paralyzed. (Again, pointless :P)
+sneak         | Mob is sneaking.
+hide          | Mob is hiding.
+sleep         | Mob is sleeping.
+charm         | Mob is charmed.
+flying        | Mob is flying.
+pass_door     | Mob can pass through doors.
+floating      | Mob is floating.
+truesight     | Mob has True Sight (see spell).
+detect_traps  | Mob can detect traps.
+scrying       | Mob can scry.
+fireshield    | Mob is affected by a Fireshield spell.
+shockshield   | Mob is affected by a Shockshield spell.
+venomshield   | Mob is affected by a Venomshield spell.
+acidmist	  | Mob is affected by an Acidmist spell.
+iceshield     | Mob is affected by an Iceshield spell.
+possess       | Unused affect, setting it won't do anything.
+berserk	  | Mob is berserk, will fight until dead.
+aqua_breath   | Mob can breathe underwater.
+recurringspell| Mob has a recurring spell on it. ( Not sure )
+contagious    | Mob carries a contagious disease.
+bladebarrier  | Mob is affected by a Bladebarrier spell.
+silence       | Mob cannot speak or cast spells.
+
+<alignment>
+
+The alignment of the mobile ranges from -1000 to +1000.
+Alignment within the range -1000 to -350 is considered evil.
+Alignment within the range -349 to +349 is considered neutral.
+Alignment within the range +350 to +1000 is considered good.
+
+S or C
+
+The literal letter 'S', or the literal letter 'C' must be present after the
+alignment. In the original Diku mob format, 'S' stands for simple. SMAUG 
+supports simple mobs, as well special complex mobs ('C').
+
+<level>
+
+The level is typically a number from 1 to 100, although there is no upper
+limit. Don't set your mobs above level 105 however, or you won't be able
+to purge them if needed.
+
+<thac0>
+
+Thac0 determines the mobs chances of landing a blow. If you're familiar
+with the D&D THAC0 stat, then you know what this value does. Basically, 
+the lower this number is, the better the chance the mob will hit someone. 
+Max value is 20. Setting this value to anything above 20 will cause the
+code to calculate the value automatically according to preset formulas.
+
+<AC>
+
+This determines the mob's armor class. Accepted range is -100 to +100.
+The lower this value, the more difficult it becomes for players to hit
+the mob.
+
+<HPbonus>
+
+The number of hit points to add to the mob's internally generated
+total. The formula used to calculate mob HP is: leveld8 + HPbonus.
+
+Example: A level 10 mob would have 10d8 hit points calculated for it.
+This would result in a range of 10 to 80 hit points. If you want the
+mob to have more, specify a value for HPbonus.
+
+<dmg#dice>
+
+The number of dice to roll to determine how much damage the mob does.
+
+<dmgsizedice>
+
+The size of the dice, or more commonly known, how many sides the dice have.
+Also determines the amount of damage a mob does.
+
+Example: 6d7
+   The mob has 6 dice, each with 7 sides. This produces a range of
+   6 to 42 damage to roll for this mob.
+
+<dmgrollbonus>
+
+Added to the random amount generated in the dice roll to give the mob some
+extra damage power.
+
+<gold>
+
+The amount of gold this mobile carries.
+
+<maxmana>
+
+Maximum amount of mana this mob should get. Set this value to 100 if you don't
+care how much mana the mob has.
+
+<maxmove>
+
+Maximum amount of movement this mob should get. Set this to 150 if you don't
+care how much movement the mob gets. Usually only relevant with mountable mobs
+anyway.
+
+<exp>
+
+The amount of experience this mob gives to the player when killed.
+
+Set it to -1 to have the code calculate it automatically accordng to
+the abilities the mob is flagged with.
+
+If you want the mob to have a fixed exp value, just specify anything
+above 0.
+
+<position>
+
+Indicates what position the mob is in.
+
+<default position>
+
+Indicates the mob's normal position.
+
+The following table is used for both position settings:
+
+"dead", "mortal", "incapacitated", "stunned", "sleeping", "berserk",
+"resting", "aggressive", "sitting", "fighting", "defensive", 
+"evasive", "standing", "mounted", "shove", "drag"
+
+<sex>
+
+Determines the sex of the mobile.
+Sex being one of the following:
+
+neuter, male, female, hermaphrodyte
+
+<race>
+
+Defines the mobile's race from the following list:
+
+"human", "high-elf", "dwarf", "halfling", "pixie", "half-ogre", "half-orc",
+"half-troll", "half-elf", "gith", "minotaur", "duergar", "centaur",
+"lizardman", "gnome", "drow", "wild-elf",
+"halfbreed", "reptile", "Mysterion", "lycanthrope", "dragon", "undead",
+"orc", "insect", "spider", "dinosaur", "fish", "avis", "Giant",
+"Carnivorous", "Parasitic", "slime", "Demonic", "snake", "Herbivorous", "Tree",
+"Vegan", "Elemental", "Planar", "Diabolic", "ghost", "goblin", "troll",
+"Vegman", "Mindflayer", "Primate", "Enfan", "golem", "Aarakocra", "troglodyte",
+"Patryn", "Labrynthian", "Sartan", "Titan", "Smurf", "Kangaroo", "horse",
+"Ratperson", "Astralion", "god", "Hill Giant", "Frost Giant", "Fire Giant",
+"Cloud Giant", "Storm Giant", "Stone Giant", "Red Dragon", "Black Dragon",
+"Green Dragon", "White Dragon", "Blue Dragon", "Silver Dragon", "Gold Dragon",
+"Bronze Dragon", "Copper Dragon", "Brass Dragon", "Vampire", "Lich", "wight",
+"Ghast", "Spectre", "zombie", "skeleton", "ghoul", "Half Giant", "Deep Gnome",
+"gnoll", "Sylvan Elf", "Sea Elf", "Tiefling", "Aasimar", "Solar", "Planitar", 
+"shadow", "Giant Skeleton", "Nilbog", "Houser", "Baku", "Beast Lord", "Deva", 
+"Polaris", "Demodand", "Tarasque", "Diety", "Daemon", "Vagabond",
+"gargoyle", "bear", "bat", "cat", "dog", "ant", "ape", "baboon",
+"bee", "beetle", "boar", "bugbear", "ferret", "fly", "gelatin", "gorgon",
+"harpy", "hobgoblin", "kobold", "locust", "mold", "mule",
+"neanderthal", "ooze", "rat", "rustmonster", "shapeshifter", "shrew",
+"shrieker", "stirge", "thoul", "wolf", "worm", "bovine", "canine",
+"feline", "porcine", "mammal", "rodent", "amphibian", "crustacean",
+"spirit", "magical", "animal", "humanoid", "monster"
+
+<class>
+
+Defines the mobiles class from the following list:
+
+"mage", "cleric", "rogue", "warrior", "necromancer", "druid", "ranger",
+"monk", "antipaladin", "paladin", "bard",
+"baker", "butcher", "blacksmith", "mayor", "king", "queen"
+
+<height weight>
+
+Defines the mobile's height and weight.
+
+<speaks>
+
+The languages the mob is capable of speaking as defined in the following table,
+Combining these values enables the mob to speak multiple languages:
+
+"common", "elvish", "dwarven", "pixie", "ogre",
+"orcish", "trollese", "rodent", "insectoid",
+"mammal", "reptile", "dragon", "spiritual",
+"magical", "goblin", "god", "ancient",
+"halfling", "clan", "gith", "minotaur", "centaur", "gnomish"
+
+Note: All mobs are capable of speaking clan as well as any combination of the above.
+
+<speaking>
+
+Sets the language the mob is actualy speaking, using the above values. These can
+also be combined, so the mob can be understood by multiple races. (I think)
+
+<numattacks>
+
+Number of attacks the mob gets.
+
+<xflags>
+
+Defines the mobs body parts according to the following table. Note, these
+are the parts seen cut off the mob after it dies, only the ones listed 
+for combat affect how the mob will fight. Separate each flag name with
+a space or the code will not recognize them.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+head          | Mob has a head.
+arms          | Mob has arms.
+legs          | Mob has legs.
+heart         | Mob has a heart.
+brains        | Mob has brains.
+guts          | Mob has guts.
+hands         | Mob has hands.
+feet          | Mob has feet.
+fingers       | Mob has fingers.
+ear           | Mob has ears.
+eye           | Mob has eyes.
+long_tongue   | Mob has a long tongue.
+eyestalks     | Mob has eyestalks.
+tentacles     | Mob has tentacles.
+fins          | Mob has fins.
+wings         | Mob has wings.
+tail          | Mob has a tail.
+scales        | Mob has scales.
+haunches      | Mob has haunches.
+hooves        | Mob has hooves.
+paws          | Mob has paws.
+forelegs      | Mob has forelegs.
+feathers      | Mob has feathers.
+
+***Combat parts***
+
+claws         | Mob has claws.
+fangs         | Mob has fangs.
+horns         | Mob has horns.
+tusks         | Mob has tusks.
+tailattack    | Mob uses its tail for a weapon.
+sharpscales   | Mob has sharp scales.
+beak          | Mob has a beak.
+
+<res imm sus abs>
+
+Defines the mob's resistances, immunities, susceptabilities, and absorbs.
+For values, see the table in Values.txt. Separate each flag name with a space 
+or the code will not recognize them.
+
+<attacks>
+
+Defines what special attacks the mob is able to use in combat. Usually
+combined with the body parts to make them seem more real. See online
+help for the various skills and how they work. Separate each flag name 
+with a space or the code will not recognize them.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+bite          | Mob can bite.
+claws         | Mob can use its claws.
+tail          | Mob can use its tail.
+sting         | Mob can sting.
+punch         | Mob can use the punch skill.
+kick          | Mob can use the kick skill.
+trip          | Mob can use the trip skill.
+bash          | Mob can use the bash skill.
+stun          | Mob can use the stun skill.
+gouge         | Mob can use the gouge skill.
+backstab      | Mob can use the backstab skill.
+drain         | Mob can cast energy drain.
+firebreath    | Mob can breathe fire.
+frostbreath   | Mob can breathe frost.
+acidbreath    | Mob can breathe acid.
+lightnbreath  | Mob can breathe lightning.
+gasbreath     | Mob can breathe poison gas.
+poison        | Mob can cast poison.
+nastypoison   | Mob has a deadly poison. (Not operational)
+gaze          | Mob has a gaze attack. (Not operational)
+blindness     | Mob can cast blindness.
+causeserious  | Mob can cast cause serious.
+earthquake    | Mob can cast earthquake.
+causecritical | Mob can cast cause critical.
+curse         | Mob can cast curse.
+flamestrike   | Mob can cast flamestrike.
+harm          | Mob can cast harm.
+fireball      | Mob can cast fireball.
+colorspray    | Mob can cast color spray.
+weaken        | Mob can cast weakness.
+spiralblast   | Mob can cast spiral blast.
+
+
+<defenses>
+
+Defines the skills available to the mob to use in its own defense.
+See online help for the various skills and how they work. Separate each 
+flag name with a space or the code will not recognize them.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+parry         | Mob can use the parry skill.
+dodge         | Mob can use the dodge skill.
+heal          | Mob can cast heal.
+curelight     | Mob can cast cure light.
+cureserious   | Mob can cast cure serious.
+curecritical  | Mob can cast cure critical.
+dispelmagic   | Mob can cast dispel magic.
+dispelevil	  | Mob can cast dispel evil.
+sanctuary	  | Mob can cast sanctuary.
+shield        | Mob can cast shield.
+bless         | Mob can cast bless.
+stoneskin     | Mob can cast stoneskin.
+teleport      | Mob teleports when wounded.
+disarm        | Mob can use the disarm skill.
+grip          | Mob has the grip skill.
+truesight     | Mob can cast truesight.
+
+#0
+
+The #0 is to be placed on a new line at the end of your LAST mob in the area.
+
+An example of a finished mobile, with an attatched mobprogram:
+(Mobprograms are covered in a seperate file)
+
+#1203
+krusty iguana~
+Krusty~
+A spectral iguana roams the immortal halls.
+~
+Wavering in and out of this diemsion and the afterlife, this spectral
+iguana is all that remains of Samson's once lively pet iguana.
+Considerably larger and meaner looking in undeath, the iguana is
+nearly 50 feet in length, and instead of the normal green color
+she is now an evil shade of black. The long claws once only used for
+climbing have now become hideous slashing weapons that could shred
+a grown man in an instant. The remains of an adamantite collar still
+cling to the iguanas neck fold, the magical energy still pulsating
+through it. A shiny gold medallion identifies the spectre as Krusty.
+Only the magical forces of the immortal halls keep this beast of
+undeath from ravaging the world below.......
+~
+npc stayarea immortal~
+detect_invis detect_hidden infrared flying truesight passdoor~
+0 0 -1 0 0 150 100 0.000000
+100 21 0 0 0d0+0
+common reptile~
+reptile~
+standing~
+standing~
+female~
+reptile~
+warrior~
+head legs guts feet eye tail scales claws~
+~
+poison drain sleep charm hold paralysis~
+~
+~
+~
+~
+> act_prog p has sent a swirling vortex to transport you.~
+if ispc($n)
+yell Why can't you people leave me alone dammit!
+mpgoto 1401
+endif
+~
+> death_prog 100~
+mpat 1401 mpmload 1203
+yell God dammit! STOP PICKING ON ME!
+~
+> act_prog p flings you to the astral winds.~
+mpgoto 1401
+yell Nice try, but I found my way home!
+~
+|
+
+This concludes the #MOBILES section. Refer to Objects.txt to continue
+building your area file.

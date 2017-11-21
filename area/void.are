@@ -1,0 +1,3703 @@
+#AREA   The Great Void~
+
+#VERSION 20
+
+#AUTHOR Alsherok~
+
+#VNUMS 11000 11999
+
+#RANGES
+100 115 0 115
+$
+
+#RESETMSG A loud voice booms: Cycle complete. Restarting sequence.~
+
+#RESETFREQUENCY 180
+
+#FLAGS
+nocamp noastral noportal norecall nosummon noscry noteleport nobeacon~
+
+#CONTINENT immortal~
+
+#COORDS 0 0
+
+#CLIMATE 2 2 2
+
+#TREASURE
+100 0 0 0
+20 50 60 75
+
+#MOBILES
+#11000
+namegen~
+namegen~
+namegen is here before you, proud of his randomness.
+~
+namegen is a mob which was given its name via the name generator code.
+It should have a completely random name in the keywords, short description,
+long description, and in this description here that you're looking at. If
+not, it's broken. Report the bug to your administrators, or to the AFKMud
+development team.
+~
+npc proto~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+sitting~
+sitting~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#11001
+wild stag~
+A wild stag~
+A wild stag waits patiently for its master here.
+~
+This is a giant wild stag that is often used as a mount by wild elves.
+It has a shiny coat of light brown fur mottled with darker spots of a
+darker brown. Upon its head is a majestic pair of branched horns.
+~
+npc sentinel guardian mountable~
+~
+0 0 0 0 0 375 100 0.000000
+20 21 0 100 0d0+2
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+mammal~
+warrior~
+head legs heart brains guts ear eye horns hooves~
+~
+~
+~
+~
+kick~
+~
+#11002
+cooshee elven dog~
+A cooshee~
+A cooshee waits faithfully for its master here.
+~
+This canine beast is of the size of the largest common dog. It has a
+greenish coat with brown spots. This coloration, coupled with its
+ability to move silently, enables it to conceal itself easily in
+brush or woolands where it makes it home.
+~
+npc sentinel guardian~
+sneak hide~
+0 0 0 0 0 150 100 0.000000
+20 21 0 100 0d0+0
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+dog~
+warrior~
+head legs heart brains guts ear eye tail~
+~
+~
+~
+~
+bite~
+~
+#11003
+wild raccoon~
+A wild raccoon~
+A wild raccoon paces up and down here.
+~
+This rodent-like creature has a long tail and its body is covered with
+a thick black fur with silvery highlights. Its eyes shine brightly with
+intelligence as it regards you with almost cool curiosity.
+~
+npc sentinel scavenger guardian~
+~
+0 0 0 0 0 150 100 0.000000
+20 21 0 80 0d0+2
+common rodent~
+rodent~
+standing~
+standing~
+neuter~
+rodent~
+warrior~
+head guts feet ear eye claws~
+~
+~
+~
+~
+bite claws~
+parry~
+#11004
+brown bear~
+A brown bear~
+A brown bear is standing here, waiting for its master.
+~
+A large and powerful animal with dense fur, this bear looks like it
+will make a formidable foe when angered. Its fur is brownish in colour
+and its paws end in powerful claws. Despite its fierce disposition, it
+looks pretty tame next to its elven master.
+~
+npc sentinel guardian mountable~
+detect_hidden~
+0 0 0 0 0 400 100 0.000000
+20 21 0 120 0d0+4
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+bear~
+warrior~
+head legs heart brains guts ear eye claws~
+~
+~
+~
+~
+bite claws bash~
+~
+#11005
+giant lynx~
+A giant lynx~
+A giant lynx waits patiently for its master here.
+~
+This large cat has tufted ears and cheeks, a short bobbed tail and a
+dappled colouring. It has a compact muscular body, with heavy legs
+and unusually large paws. It looks highly intelligent.
+~
+npc sentinel guardian~
+sneak hide~
+0 0 0 0 0 150 100 0.000000
+20 21 0 100 0d0+0
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+cat~
+warrior~
+head legs heart brains guts ear eye tail claws~
+~
+~
+~
+~
+claws~
+~
+#11006
+giant owl~
+A giant owl~
+A giant owl waits faithfully for its master here.
+~
+This bird is about 2 feet long and has a 5-foot wingspread. It has a
+heart-shaped face and huge eyes. Its ears are swept back giving them
+the appearance of horns. It lets out a gentle hoot once in a while.
+~
+npc sentinel guardian~
+detect_hidden infrared sneak flying~
+0 0 0 0 0 150 100 0.000000
+20 21 0 80 0d0+0
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+avis~
+warrior~
+head guts feet ear eye claws~
+~
+~
+~
+~
+bite claws~
+~
+#11007
+skeleton horse antipaladin~
+A skeleton horse~
+A skeleton horse stands in a state of undeath here.
+~
+A morbid creation of undeath, this skeleton horse has been called forth from
+the realms of chaos to serve the antipaladin who has summoned it. It is loyal
+to its master and will defend its master with complete abandonment. Its eyes
+glow red with the evil force that is keeping it 'alive'.
+~
+npc sentinel guardian mountable~
+~
+-1000 0 0 0 0 500 100 0.000000
+15 -14 -80 60 1d6+8
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+undead~
+warrior~
+head legs heart brains guts ear eye hooves~
+pierce slash~
+drain sleep~
+~
+~
+~
+~
+#11008
+pegasus horse paladin~
+A pegasus~
+A magnificent pegasus is standing here, waiting for its master's orders.
+~
+A magnifcent horse with wings, this pegasus has been summoned from its habitat
+to faithfully serve the paladin who has summoned it. It is undyingly loyal and
+fiercely protective in battle. It abhors all evil creatures and will fight
+alongside its master, bearing him into battle.
+~
+npc sentinel guardian mountable~
+sanctuary flying~
+1000 0 0 0 0 650 100 0.000000
+30 21 -80 200 2d8+4
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+horse~
+warrior~
+head legs heart brains guts ear eye wings hooves~
+drain sleep~
+~
+~
+~
+kick~
+dodge~
+#11009
+nightmare horse antipaladin~
+A nightmare~
+A demonic nightmare is standing here, waiting for its master's orders.
+~
+A demonic steed with a huge head, glowing red eyes, flaming orange nostrils,
+and hooves which burn like embers, this nightmare has been summoned from the
+realms of chaos to serve the antipaladin who has summoned it. Its coat is dead
+black in colour, and its mane and tail are wild and rugged. It will fiercely
+protect its master in combat.
+~
+npc sentinel guardian mountable~
+sanctuary flying~
+-1000 0 0 0 0 650 100 0.000000
+30 21 -80 200 2d8+4
+common mammal~
+mammal~
+standing~
+standing~
+neuter~
+horse~
+warrior~
+head legs heart brains guts ear eye hooves~
+drain sleep~
+~
+~
+~
+bite kick~
+~
+#11010
+gnomish flying machine~
+A gnomish flying machine~
+A winged gnomish machine designed for flying, rests noisily here.
+~
+An amazing gnomish contraption. It appears to be little more than a one
+person seat joined to a set of wings. Above the seat, there is a three
+bladed rotor which is spun on its axis by a steam and gear engine
+located behind the seat. The whole machine looks rather dangerous
+to fly in.
+~
+npc sentinel immortal mountable noassist pacifist noattack~
+flying~
+0 0 0 0 0 600 100 0.000000
+10 21 0 10 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+magical~
+mage~
+wings~
+~
+cold poison drain sleep charm hold~
+electricity acid~
+~
+~
+~
+> act_prog mounts~
+if rand(10)
+mpecho The machine makes strange and loud noises...
+mpecho Black smoke can been coming out from the parts of it!
+mpecho Before you know it, there is a loud explosion!
+mpdamage 0.$n 40
+mea 0.$n &RYou are caught in the blast and take damage!&z
+mpforce 0.$n dismount
+mpecho The machine is destroyed and no trace of it is left behind!
+mpgoto 11001
+endif
+~
+> act_prog dismounts~
+if rand(10)
+mpecho The machine makes strange and loud noises...
+mpecho Black smoke can been coming out from the parts of it!
+mpecho Before you know it, there is a loud explosion!
+mpdamage 0.$n 40
+mea 0.$n &RYou are caught in the blast and take damage!&z
+mpecho The machine is destroyed and no trace of it is left behind!
+mpgoto 11001
+endif
+~
+|
+#11029
+servitor daemon~
+A servitor daemon~
+A servitor daemon has been bound to this plane.
+~
+A big, red, grotesque figure with claws for hands. He has a lost look
+on his face, then turns to notice you......
+~
+npc~
+truesight~
+-1000 0 0 0 0 150 100 0.000000
+50 10 30 200 2d4+7
+common spiritual~
+common~
+standing~
+standing~
+male~
+spirit~
+necromancer~
+head heart guts eye wings claws horns~
+drain~
+fire nonmagic~
+cold~
+~
+bite claws tail firebreath~
+parry dodge~
+#11030
+traveller city overland~
+a traveller~
+A traveller wanders by on some long journey.
+~
+A dusty looking traveller who looks like he's seen more than his
+fair share of wilderness travel. He travels lightly with only a single
+backpack full of camping equipment and provisions.
+~
+npc scavenger~
+~
+0 -1 0 0 0 150 100 0.000000
+15 21 0 70 2d4+8
+common~
+common~
+standing~
+standing~
+male~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+punch~
+~
+#11031
+merchant city overland~
+a merchant~
+A merchant passes by, leading a pair of pack mules.
+~
+He looks tired and weary. and probably wishes he were at some comfortable
+inn rather than ferrying his trade goods across the wilderness. This
+particular merchant must be on the poorer end of the profession as he
+is not accompanied by any of the guards so commonly found around other 
+merchants.
+~
+npc scavenger~
+infrared~
+700 -1 0 0 0 150 100 0.000000
+15 21 0 50 2d4+8
+common~
+common~
+standing~
+standing~
+male~
+half-elf~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+punch~
+dodge~
+#11032
+gypsy city overland~
+a gypsy~
+A mysterious gypsy gives you a shy smile.
+~
+Dark skinned and of lithe build, this southlander gypsy is not commonly
+seen within populated cities. Strangely, their people have always
+been wanderers and are considered the most travelled among all the
+land. Yet, much of their customs and beliefs are still a mystery to
+outsiders.
+~
+npc scavenger~
+~
+700 -1 0 0 0 150 100 0.000000
+15 21 0 50 2d4+8
+common~
+common~
+standing~
+standing~
+female~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+punch curse~
+dodge~
+#11033
+bandit aggressive city overland~
+a bandit~
+A ruthless bandit tries to hide behind a bush.
+~
+The bandit is equipped in worn leathers and wields short sword. While
+he doesn't look very dangerous, the cunning glint of greed in his eyes
+tells you to beware trickery from this scoundrel. Bandits like him
+are a dime a dozen, making it a certainty that his fellow gangmates
+are probably prowling nearby.
+~
+npc scavenger aggressive~
+infrared~
+-700 -1 0 0 0 150 100 0.000000
+7 21 0 40 2d5+2
+common~
+common~
+standing~
+standing~
+male~
+half-elf~
+rogue~
+head arms legs heart brains guts hands feet fingers ear eye~
+sleep charm~
+~
+~
+~
+bash~
+parry dodge~
+#11034
+farmer field overland~
+a farmer~
+A weathered farmer plants some seeds in the soil nearby.
+~
+His skin is tanned and baked from working under the midday sun and it
+looks like his hands are quite heavily calloused. These farmers dedicate
+their lives to their land and their crops almost as ferverently as
+Druids do.
+~
+npc scavenger~
+~
+0 -1 0 0 0 150 100 0.000000
+15 21 0 70 2d4+5
+common~
+common~
+standing~
+standing~
+male~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+punch~
+dodge~
+#11035
+cow field overland~
+a cow~
+A cow looks at impassively at you as it chews on some grass.
+~
+A strong-smelling cow from the farmed fields. It doesn't look too bright
+but it is however a rather heavy beast, one that you wouldn't want
+trampling on you. Best that you leave this dull animal alone.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+15 21 0 70 2d4+8
+common~
+common~
+standing~
+standing~
+female~
+bovine~
+warrior~
+head legs heart brains guts ear eye tail horns haunches hooves forelegs~
+~
+~
+~
+~
+bite kick~
+dodge~
+#11036
+rabbit bunny field overland~
+a bunny rabbit~
+A fluffy bunny hops away as you approach.
+~
+Its not as if you have never seen a bunny rabbit before. This particular
+one looks quite plump and healthy. Its floppy ears twitch at your
+approach and it is always ready to bound away.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+15 21 0 30 2d4+4
+common~
+common~
+standing~
+standing~
+female~
+animal~
+warrior~
+head legs heart brains guts ear eye tail haunches forelegs~
+~
+~
+~
+~
+bite kick~
+dodge~
+#11037
+bull aggressive field overland~
+a raging bull~
+A dangerous raging bull lowers its horns and charges at you.
+~
+This creature of pure muscle and fury doesn't seem too happy that you're 
+here. Spittle flies from its mouth as it lowers its horns and prepares
+to gore you to death. Be assured, death like that would not be pleasant.
+~
+npc aggressive~
+~
+0 0 0 0 0 150 100 0.000000
+20 21 0 70 2d4+8
+common~
+common~
+standing~
+standing~
+male~
+bovine~
+warrior~
+head legs heart brains guts ear eye tail horns haunches hooves forelegs~
+~
+~
+~
+~
+bite kick~
+dodge~
+#11038
+deer forest overland~
+a deer~
+A deer freezes at the sight of you, looking like it would bolt any moment.
+~
+A healthy brown deer. It looks skittish and nervous at the sight of
+you. This is probably due to the fact that hunters regularly kill
+these magnificent creatures for venison and skins.
+~
+npc wimpy~
+silence~
+0 0 0 0 0 150 100 0.000000
+15 21 0 70 2d4+8
+common~
+common~
+standing~
+standing~
+female~
+animal~
+warrior~
+head legs heart brains guts ear eye tail haunches hooves forelegs~
+~
+~
+~
+~
+bite kick~
+dodge~
+#11039
+dryad forest overland~
+a forest dryad~
+A delicate-looking dryad frolics through the forest. 
+~
+Her skin is the color of smooth wood and probably of the same consistency.
+A wreath of flowers binds her wild green hair, which appears to be
+nothing more than leaves and vines. It is commonly believed that it
+is unlucky to attack a child of nature such as this dryad.
+~
+npc scavenger~
+~
+1000 0 0 0 0 150 100 0.000000
+15 21 0 50 2d4+8
+common~
+common~
+standing~
+standing~
+female~
+magical~
+druid~
+head arms legs heart brains guts hands feet fingers ear eye~
+energy drain~
+sleep charm paralysis~
+fire acid~
+~
+punch weaken~
+dodge~
+#11040
+treant forest overland~
+a treant~
+A treant passes by, rustling its leaves and branches loudly.
+~
+A rather large walking tree passes by you. It seems to be busy getting
+somewhere and is so focused on its journey that it ignores you standing
+and gaping at it.
+~
+npc scavenger~
+detect_invis~
+0 -1 0 0 0 150 100 0.000000
+15 21 1 275 2d3+4
+common~
+common~
+standing~
+standing~
+neuter~
+magical~
+warrior~
+guts~
+blunt~
+~
+fire plus4~
+~
+bash~
+parry~
+#11041
+wurm serpent aggressive forest overland~
+a forest wurm~
+A huge serpent thunders through the forest, hissing and snarling.
+~
+You stand face-to-face with a wurm of incredible size. It most resembles
+a huge serpentine snake with the head of a spined toad. The creature
+glares at you, hissing and spiting out poisonous venom.
+~
+npc aggressive~
+detect_hidden infrared~
+-1000 -1 0 0 0 150 100 0.000000
+20 21 0 200 2d4+8
+common~
+common~
+standing~
+standing~
+male~
+dragon~
+warrior~
+head legs heart brains guts ear eye tail claws horns~
+fire energy~
+poison drain sleep charm paralysis~
+~
+~
+bite claws tail poison~
+dodge~
+#11042
+dwarf hill overland~
+a hill dwarf~
+A hill dwarf stands nearby, eyeing you with suspicion.
+~
+A simple dwarf from one of the nearby hill-clans. As with most other
+hill dwarves, he is extremely suspicious of others outside of his
+clan. He is dressed in tough leather armor and sports a notched axe.
+~
+npc scavenger~
+infrared~
+0 -1 0 0 0 150 100 0.000000
+15 21 0 90 3d3+8
+common~
+common~
+standing~
+standing~
+male~
+dwarf~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+poison charm paralysis~
+~
+~
+~
+punch bash~
+parry~
+#11043
+rock badger hill overland~
+a rock badger~
+A curious badger with rocky skin pokes its head out of the hillside.
+~
+A very curious rodent-like animal who seems to be more interested in you
+than you are of it. From what you can see, it has two powerful foreclaws
+which it uses to burrow through the hillside and dig through the rocky
+soil.
+~
+npc~
+infrared~
+0 0 0 0 0 150 100 0.000000
+15 21 0 70 2d4+8
+common~
+common~
+standing~
+standing~
+male~
+animal~
+warrior~
+head legs heart brains guts ear eye tail~
+blunt pierce sleep charm paralysis~
+cold lash~
+~
+~
+bite claws~
+dodge~
+#11044
+crow hill overland~
+a crow~
+A black crow circles in the sky overhead.
+~
+The crow looks right back at you with its menacing beady eyes. It appears
+to be waiting for scraps of meat and food so it can swoop by and steal it
+from you.
+~
+npc wimpy~
+flying silence~
+0 0 0 0 0 150 100 0.000000
+15 21 0 70 2d4+4
+common~
+common~
+standing~
+standing~
+neuter~
+animal~
+warrior~
+head legs heart brains guts ear eye wings~
+~
+~
+~
+~
+bite claws~
+dodge~
+#11045
+dragon aggressive hill overland~
+a hill dragon~
+A huge hill dragon rears up and prepares to attack!
+~
+A terrifying dragon that prowls the hills and preys on adventurers
+such as yourself for food and amusement. It could crush you with a
+single blow if it wanted to but it prefers to toy with you before making
+you its meal. This is an extremely evil and hostile creature.
+~
+npc aggressive~
+detect_invis infrared~
+-1000 -1 0 0 0 150 100 0.000000
+20 21 -60 400 2d4+8
+common~
+common~
+standing~
+standing~
+neuter~
+dragon~
+warrior~
+head legs heart brains guts ear eye tail claws horns~
+cold energy blunt pierce slash~
+poison drain sleep charm paralysis lash~
+~
+~
+bite claws tail~
+parry dodge~
+#11046
+goat mountain overland~
+a mountain goat~
+A sure-footed mountain goat hops on a nearby rock.
+~
+Too bad you aren't as sure footed as this goat. It would surely make your
+journey through these lands much easier.
+~
+npc wimpy~
+silence~
+0 0 0 0 0 150 100 0.000000
+15 21 0 70 2d4+8
+common~
+common~
+standing~
+standing~
+male~
+animal~
+warrior~
+head legs heart brains guts ear eye tail haunches hooves forelegs~
+~
+~
+~
+~
+bite kick~
+dodge~
+#11047
+wild hound mountain overland~
+a wild hound~
+A wild hound runs freely on this rocky terrain.
+~
+One of the common wild dogs that roam these mountains and make sport out
+of killing goats and other herd animals. Though they are somewhat of
+a nuisance to the local shepards, these creatures are no threat to you.
+~
+npc~
+detect_hidden infrared~
+0 0 0 0 0 150 100 0.000000
+15 21 -20 80 2d4+6
+common~
+common~
+standing~
+standing~
+male~
+canine~
+warrior~
+head legs heart brains guts ear eye tail~
+~
+~
+~
+~
+bite~
+dodge~
+#11048
+firbolg aggressive mountain overland~
+a firbolg~
+A dangerous firbolg lurks nearby, ready to hurl stones at you.
+~
+This is one mean looking giant-kin. Though smaller than true-blooded
+giants, this nasty creature is no less vicious. It lives on these
+mountains and attacks almost anything not bigger than it much like
+a large bully. Its favored method of killing includes smashing skulls
+with large rocks.
+~
+npc scavenger aggressive~
+infrared~
+-1000 -1 0 0 0 150 100 0.000000
+20 21 0 140 2d6+8
+common~
+common~
+standing~
+standing~
+male~
+Giant~
+warrior~
+head arms legs heart brains guts ear eye tail~
+blunt lash~
+sleep charm~
+poison~
+~
+punch bash~
+parry dodge~
+#11049
+scarab beetle desert overland~
+a scarab beetle~
+A strange beetle with intricate patterns on its shell lies in the sand.
+~
+A beautiful large desert beetle. Its shiny shell carapace has a pretty
+and unique pattern upon it. Some cultures even revere these insects. 
+~
+npc~
+infrared~
+0 0 0 0 0 150 100 0.000000
+15 21 0 60 2d4+4
+common~
+common~
+standing~
+standing~
+neuter~
+beetle~
+warrior~
+head legs heart brains guts ear eye~
+blunt pierce lash~
+acid poison paralysis~
+cold~
+~
+kick~
+dodge~
+#11050
+nomad desert overland~
+a desert nomad~
+A desert nomad wanders by, eyes intently scouting the desert sands.
+~
+She is wrapped so carefully in desert cloth to protect from dehydration
+that all you can see of her are her eyes. However you have no doubt
+that she is a couragous and able warrior who has live all her life under
+the desert skies.
+~
+npc scavenger~
+~
+0 -1 0 0 0 150 100 0.000000
+15 21 -20 85 2d4+8
+common~
+common~
+standing~
+standing~
+female~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+fire~
+charm~
+~
+~
+punch kick~
+dodge~
+#11051
+sand elemental aggressive desert overland~
+a sand elemental~
+A fearsome whirlwind of sand rises before you.
+~
+A swirling whirlwind of blinding sand. This appears to be an extra-planar
+entity which seems intent on blasting you from the face of the desert.
+~
+npc aggressive~
+detect_invis detect_hidden infrared flying~
+0 -1 0 0 0 150 100 0.000000
+20 21 -56 300 2d6+8
+common~
+common~
+standing~
+standing~
+neuter~
+magical~
+warrior~
+guts~
+slash hack~
+blunt pierce poison drain sleep charm paralysis lash~
+energy~
+fire~
+bash blindness~
+parry dodge~
+#11052
+stirge aggressive swamp overland~
+a stirge~
+A large mosquito-like stirge swoops at you, hungry for fresh blood.
+~
+Its a huge hungry stirge that seeks out warm blood to feast on and lay
+its eggs in. Horrible creatures.
+~
+npc aggressive~
+infrared flying~
+-1000 0 0 0 0 150 100 0.000000
+20 21 0 70 2d4+4
+common~
+common~
+standing~
+standing~
+neuter~
+stirge~
+warrior~
+head legs heart brains guts ear eye wings~
+lash~
+poison drain charm~
+electricity~
+~
+bite~
+dodge~
+#11053
+goblin aggressive swamp overland~
+a swamp goblin~
+A ruthless goblin leaps out of the fetid swamp water.
+~
+A ruthless muck encrusted goblin. This cowardly creature would not
+hesitate to slit your throat and paint itself with your blood.
+You would do the world a great favor by killing this wretched creature.
+~
+npc aggressive~
+infrared~
+-1000 -1 0 0 0 150 100 0.000000
+20 21 0 60 2d4+6
+common~
+common~
+standing~
+standing~
+male~
+goblin~
+warrior~
+head arms legs heart brains guts ear eye~
+poison drain charm~
+~
+~
+~
+claws kick~
+dodge~
+#11054
+orangutan jungle overland~
+an orangutan~
+An orangutan hangs on a nearby tree, eating ticks.
+~
+An intelligent orangutan looks around for food. It doesn't seem to
+alarmed by your presence though. It would do no good to harm this
+peaceful creature.
+~
+npc scavenger~
+infrared~
+1000 0 0 0 0 150 100 0.000000
+15 21 1 90 2d3+4
+common~
+common~
+standing~
+standing~
+female~
+ape~
+warrior~
+arms legs heart guts feet fingers ear eye~
+blunt~
+~
+~
+~
+bash~
+dodge~
+#11055
+python snake jungle overland~
+a python~
+A large snake slithers on a nearby branch.
+~
+This scaly python seems more interested in slithering by than in attacking
+you. It does however appear quite dangerous should you decide to provoke
+it into a fight.
+~
+npc~
+detect_invis~
+0 0 0 0 0 150 100 0.000000
+15 21 1 70 2d3+4
+common~
+common~
+standing~
+standing~
+neuter~
+snake~
+warrior~
+guts eye tail~
+blunt~
+poison charm~
+~
+~
+bite~
+dodge~
+#11056
+monitor lizard jungle overland~
+a monitor lizard~
+A monitor lizard lounges contentedly in a nearby clump of undergrowth.
+~
+This large lizard stands almost motionless save for the flicking of
+its tongue. It is a denizen of the jungle and one of its less dangerous
+creatures.
+~
+npc~
+detect_invis infrared~
+0 0 0 0 0 150 100 0.000000
+15 21 1 70 2d4+4
+common~
+common~
+standing~
+standing~
+neuter~
+reptile~
+warrior~
+legs heart brains guts eye tail~
+blunt~
+cold~
+~
+~
+claws~
+parry~
+#11057
+panther aggressive jungle overland~
+a jungle panther~
+A sleek black panther crouches on a branch, its eyes glinting in the light.
+~
+The natural predator of the jungle. This panther is in a mood for carnage
+and blood and it appears that YOU are its next prey. With a snarl, it
+leaps fully towards you. 
+~
+npc aggressive~
+infrared~
+0 0 0 0 0 150 100 0.000000
+20 21 0 150 3d4+6
+common~
+common~
+standing~
+standing~
+female~
+feline~
+warrior~
+head legs heart brains guts ear eye paws~
+poison drain charm~
+~
+~
+~
+bite claws~
+dodge~
+#11058
+crab shore overland~
+a crab~
+A nearby crab scuttles out of your way.
+~
+Oddly enough, this common shoreside crab can scuttle away quite speedily
+whenever it perceives a threat. When accosted, it raises its powerful
+claws and slowly backs away to the nearest hole or towards the water.
+~
+npc scavenger~
+infrared aqua_breath~
+0 0 0 0 0 150 100 0.000000
+15 21 -50 90 2d3+4
+common~
+common~
+standing~
+standing~
+neuter~
+crustacean~
+warrior~
+legs guts eye claws~
+pierce slash~
+poison paralysis~
+~
+~
+claws~
+parry dodge~
+#11059
+seagull shore overland~
+a seagull~
+A white seagull glides elegantly on the shore winds.
+~
+A noble scavenging seabird regarded by most sailors as a sign of good
+fortune. As such, harming such a bird would undoubtably bring terrible
+luck upon its attacker.
+~
+npc~
+flying~
+0 0 0 0 0 150 100 0.000000
+15 21 -20 70 2d4+4
+common~
+common~
+standing~
+standing~
+neuter~
+animal~
+warrior~
+head legs heart brains guts ear eye wings~
+~
+~
+~
+~
+bite claws~
+dodge~
+#11060
+hyena scrub grass overland~
+a hyena~
+A cackling hyena eyes you as you pass by.
+~
+The hyena makes a distinctive sound that closely resembles laughter.
+It is as if all hyenas laugh at some eternal cosmic joke. All in all,
+this is a rather interesting creature.
+~
+npc~
+detect_hidden infrared~
+0 0 0 0 0 150 100 0.000000
+15 21 -20 80 2d4+6
+common~
+common~
+standing~
+standing~
+male~
+canine~
+warrior~
+head legs heart brains guts ear eye tail~
+~
+~
+~
+~
+bite~
+dodge~
+#11061
+meerkat scrub grass overland~
+a meerkat~
+A meerkat stands up on its hind legs and regards you curiously.
+~
+This creature closely resembles a ferret. However, it has the tendency to
+stand upright on its hind legs when not scampering around. No doubt
+this is quite an intelligent and resourceful rodent.
+~
+npc~
+detect_hidden infrared~
+500 0 0 0 0 150 100 0.000000
+15 21 -40 60 2d4+6
+common~
+common~
+standing~
+standing~
+male~
+animal~
+warrior~
+head legs heart brains guts ear eye tail~
+paralysis~
+~
+~
+~
+bite claws~
+dodge~
+#11062
+armadillo scrub grass overland~
+an armadillo~
+An armored armadillo wanders peacefully by, ignoring your presence.
+~
+A walking piece of armor. This creature has a skin of overlapping
+armor that keeps at bay all except the most dangerous of predators.
+When cornered, the armadillo curls up into an impenatrable ball.
+~
+npc~
+detect_hidden infrared~
+0 0 0 0 0 150 100 0.000000
+15 21 -100 100 2d4+2
+common~
+common~
+standing~
+standing~
+neuter~
+animal~
+warrior~
+head legs heart brains guts ear eye tail claws~
+slash poison charm hack lash~
+pierce~
+acid sleep~
+~
+bite claws~
+dodge~
+#11063
+manticore aggressive scrub grass overland~
+a manticore~
+A manticore swoops dangerously towards you, shooting barbed spikes.
+~
+A creature with the head and body of a lion, large wings of a falcon
+and a barbed tail of a scorpion that shoots poisonous spikes. It is
+fury incarnate and it next victim is going to be you!
+~
+npc scavenger aggressive~
+detect_invis detect_hidden infrared flying~
+-1000 -1 0 0 0 150 100 0.000000
+25 -15 -140 300 3d5+6
+common~
+common~
+standing~
+standing~
+female~
+magical~
+warrior~
+head legs heart brains guts ear eye wings claws paws~
+pierce slash poison drain~
+fire energy charm paralysis~
+~
+~
+bite claws blindness curse~
+parry dodge~
+#11072
+skyship overland~
+A magical skyship~
+A magical skyship with large glowing sails rests here awaiting passengers.
+~
+The skyship is a truly marvelous invention. First created by the mages
+of Palainth and initially used only for their purposes, the skyship
+has since been made safe for travel by the masses.
+~
+npc sentinel immortal~
+detect_hidden flying truesight~
+0 -1 0 0 0 150 100 0.000000
+105 -23 -100 800 0d0+10
+common~
+common~
+standing~
+standing~
+neuter~
+magical~
+warrior~
+head~
+~
+fire cold electricity energy blunt pierce slash acid poison drain sleep charm hold nonmagic plus1 plus2 plus3 plus4 plus5 plus6 magic paralysis good evil hack lash~
+~
+~
+~
+~
+#11400
+Puff~
+Puff~
+Puff the Fractal Dragon is here, contemplating a higher reality.
+~
+~
+npc sentinel~
+detect_invis detect_hidden infrared truesight~
+1000 -1 0 0 0 150 100 0.000000
+100 20 -30 30550 4d10+200
+common elvish orcish trollese insectoid spiritual magical clan minotaur centaur~
+common elvish orcish trollese insectoid spiritual magical clan minotaur centaur~
+standing~
+standing~
+female~
+dragon~
+mage~
+guts wings tail scales claws tailattack forelegs~
+~
+sleep charm nonmagic magic paralysis~
+~
+~
+claws~
+parry dodge~
+> speech_prog test~
+say triggered by (name):	$n
+say triggered by (name&title): 	$N
+say triggerer is (he,she,it):	$e
+say triggerer is (him,her,it):	$m
+say triggerer is (his,hers,its):$s
+say random char (name):		$r
+say random char (name&title or short): 	$R
+say random char  (he,she,it):	$J
+say random char (him,her,it):	$L
+say random char (his,hers,its):	$K
+~
+> speech_prog test2~
+say firstname of obj:	 	$i
+say short_desc/title of obj: 	$I
+say he/she/it of obj:	 	$j
+say him/her/it of obj:	 	$k
+say his/hers/its of obj:	$l
+say firstname of victim: 	$t
+say short_desc/title of victim:	$T
+say he/she/it of victim: 	$E
+say him/her/it of victim: 	$M
+say his/hers/its of victim:	$S
+~
+|
+#11401
+demon imp~
+A demon imp~
+A demon imp hovers nearby...drooling constantly with a fiendish grin.
+~
+This demon is clearly something that you don't want to mess with...
+It appears to be very agile, and very strong.  
+~
+npc sentinel immortal~
+detect_invis detect_hidden truesight~
+-1000 -1 0 0 0 150 100 0.000000
+100 1 -300 31550 1d2+2
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+> act_prog p is dying~
+mpforce $n drink
+c heal $n
+~
+> act_prog p is starved~
+mpoload 11413
+give mushroom $n
+mpforce $n eat mushroom
+cast heal $n
+~
+> act_prog p bashes against~
+cast heal $n
+cast heal $n
+~
+> act_prog p shivers and~
+cast 'cure poison' $n
+cast heal $n
+~
+> act_prog p wears~
+c heal $n
+c heal $n
+~
+> act_prog p wields~
+c heal $n
+c heal $n
+~
+> act_prog p is DEAD.~
+mptrans 0.$n 11405
+~
+> act_prog p A swirling vortex arrives, carrying Krusty!~
+mpat 1450 yell Damn lizard! Get out of here!
+mptrans krusty 1401
+~
+> rand_prog 10~
+if mobinroom(1203) > 0
+mpat 1450 yell Damnit Krusty! Get out of here and STAY out!
+mptrans krusty 1401
+endif
+~
+|
+#11402
+supermob~
+the supermob~
+The supermob is here. He's running himself ragged.
+~
+The supermob is by far the most powerful and wise
+mobs in all the multiverse. He is a true marvel of the gods.
+~
+npc polyself secretive~
+invisible detect_invis detect_hidden hide truesight~
+-1000 -1 0 0 0 150 100 0.000000
+105 1 -300 31550 1d2+2
+common~
+common~
+standing~
+standing~
+male~
+god~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+> rand_prog 25~
+mpinvis 101
+~
+|
+#11403
+undead animated corpse~
+an animated corpse~
+An animated corpse struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+~
+~
+~
+~
+~
+~
+#11404
+undead animated skeleton~
+an animated skeleton~
+An animated skeleton struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+10 21 -10 25 1d8+2
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+pierce slash~
+cold poison drain sleep charm hold~
+~
+~
+~
+~
+#11405
+undead animated zombie~
+an animated zombie~
+An animated zombie struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+20 21 -20 50 1d8+4
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+~
+cold poison drain sleep charm hold~
+~
+~
+~
+~
+#11406
+undead animated ghoul~
+an animated ghoul~
+An animated ghoul struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+30 21 -30 75 1d8+6
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+~
+poison drain sleep charm hold~
+~
+~
+weaken~
+~
+#11407
+undead animated crypt thing~
+an animated crypt thing~
+An animated crypt thing struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+40 21 -40 100 2d6+8
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+~
+poison drain sleep charm hold nonmagic~
+~
+~
+~
+~
+#11408
+undead animated mummy~
+an animated mummy~
+An animated mummy struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+50 21 -50 125 2d8+10
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+magic~
+cold poison drain sleep charm hold nonmagic~
+fire~
+~
+~
+~
+#11409
+undead animated ghost~
+an animated ghost~
+An animated ghost struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+60 21 -60 150 2d8+12
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+blunt pierce slash~
+fire cold electricity energy acid poison drain sleep charm hold nonmagic~
+~
+~
+~
+~
+#11410
+undead animated death knight~
+an animated death knight~
+An animated death knight struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+24 0 0 0 0 150 100 0.000000
+70 21 -70 200 2d8+14
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+~
+cold poison drain sleep charm hold nonmagic~
+~
+~
+fireball~
+dispelmagic~
+#11411
+undead animated dracolich~
+an animated dracolich~
+An animated dracolich struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+80 21 -80 250 2d8+16
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs~
+~
+cold electricity poison drain sleep charm hold nonmagic~
+~
+~
+fireball~
+dispelmagic~
+#11412
+creeping doom~
+The creeping doom~
+A vile swarm of insects buzzes about the room.
+~
+A seething morass of biting and stinging insects. It destroys everything
+in its path, leaving not even the corpses of its enemies behind. It
+is the product of a truly powerful Druidic spell.
+~
+npc sentinel noassist~
+detect_invis detect_hidden infrared flying truesight~
+0 0 0 0 0 150 100 0.000000
+90 -30 0 7000 100d5+45
+common elvish ogre orcish trollese~
+elvish ogre orcish trollese~
+standing~
+standing~
+neuter~
+insect~
+warrior~
+guts wings~
+fire cold electricity blunt slash plus4 magic~
+pierce poison drain sleep charm hold nonmagic plus1 plus2 plus3 paralysis~
+~
+~
+bite sting~
+~
+> all_greet_prog 100~
+if isnpc($n)
+   mpechoaround creeping &gThe creeping insects swarm over $N in a frenzy!&z
+   kill $n
+endif
+~
+> entry_prog 100~
+if isnpc($n)
+   mpechoaround creeping &gThe creeping insects swarm over $N in a frenzy!&z
+   kill $n
+endif
+~
+> rand_prog 100~
+if isnpc($r)
+   mpechoaround creeping &gThe creeping insects swarm over $R in a frenzy!&z
+   kill $r
+endif
+~
+> script_prog 6 100~
+mpechoaround creeping &gThe creeping doom slowly dissipates....&z
+mpgoto 11403
+~
+|
+#11413
+doppleganger~
+a newly created doppleganger~
+Some god abandoned a newly created doppleganger here.
+~
+~
+npc sentinel aggressive~
+detect_invis detect_hidden infrared truesight~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#11414
+paladin warhorse horse~
+A paladin war horse~
+A paladin war horse waits faithfully for its master here.
+~
+A fine steed of magnificent stature, this horse is the mount of a paladin. It
+is loyal to its master and will fight alongside its master with undying
+loyalty. Its intelligent eyes regard you with an almost haughty look.
+~
+npc sentinel guardian mountable~
+detect_evil protect~
+1000 0 0 0 0 500 100 0.000000
+15 -15 -80 100 1d8+8
+mammal~
+mammal~
+standing~
+standing~
+neuter~
+horse~
+warrior~
+head legs heart brains guts ear eye hooves~
+drain sleep~
+~
+~
+~
+kick~
+~
+> speech_prog FOLLOW~
+if class ($n) == paladin
+follow $n
+mpecho The paladin war horse neighs gently...
+else
+mpecho The paladin horse snorts...
+endif
+~
+|
+#11999
+Last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#0
+
+
+#OBJECTS
+#11000
+Placeholder~
+Placeholder~
+Placeholder~
+~
+trash~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+250 0 0 9999 0 None None None
+#11001
+ash pile~
+A pile of ashes~
+A small pile of ashes sits here smoldering.~
+~
+trash~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11002
+campfire camp fire~
+A campfire~
+A blazing campfire burns brightly here.~
+~
+fire~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11003
+bedroll~
+A soft bedroll~
+A soft bedroll suitable for camping is rolled up here.~
+~
+campgear~
+~
+take~
+~
+1 0 0 0 0 0 0 0 0 0 0
+5 500 50 9999 0 None None None
+#11004
+firewood~
+Some firewood~
+A bundle of firewood sits here on the ground.~
+~
+campgear~
+~
+take~
+~
+3 0 0 0 0 0 0 0 0 0 0
+8 8000 800 9999 0 None None None
+#11005
+overland fire~
+a roaring fire~
+A roaring fire crackles loudly here!~
+~
+fire~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11006
+gear~
+Camping gear~
+A set of camping supplies lies here.~
+~
+campgear~
+~
+take~
+~
+2 0 0 0 0 0 0 0 0 0 0
+8 1000 100 9999 0 None None None
+#11007
+fireseed seed~
+A fireseed~
+A small seed, glowing like an ember sits here.~
+~
+projectile~
+glow magic~
+take hold~
+~
+1 2 6 4 3 0 0 0 0 0 0
+1 0 -1 9999 0 None None None
+#11026
+scroll succor~
+A scroll of succor~
+A piece of parchment with runic writings on it lies here.~
+~
+scroll~
+magic~
+take~
+~
+20 -1 -1 -1 0 0 0 0 0 0 0
+1 0 -1 9999 0 None None None
+'recall' 'NONE' 'NONE'
+#11027
+flint rock~
+A piece of flint~
+A small piece of flint lies here on the ground.~
+~
+campgear~
+~
+take~
+~
+3 0 0 0 0 0 0 0 0 0 0
+1 3000 500 9999 0 None None None
+#11028
+firewood pile twigs~
+Some dry twigs and firewood~
+A pile of dry twigs lies in a heap.~
+~
+tinder~
+~
+take~
+~
+3 0 0 0 0 0 0 0 0 0 0
+2 0 50 9999 0 None None None
+E
+firewood pile twigs~
+A rather unimpressive heap of dry twigs and leaves. It appears to be
+useful if you wanted to start a fire going.
+ 
+To build a fire, follow the steps below:
+1) Drop the firewood onto the ground where you want to build the fire.
+2) Say "strike flint" to strike the tinder with some small flint stone.
+3) Enjoy the warmth and light of your newly built fire.
+~
+> speech_prog p strike flint~
+mpechoat 0.$n You strike the tinder with the flint and sparks fly...
+mpechoat 0.$n The twigs catch fire and soon, you have a fire cackling.
+mpechoat 0.$n The tinder and flint is consumed in building the fire.
+mpoload 11002
+mposet fire timer 15
+mppurge firewood-pile-twigs
+~
+|
+#11029
+acorns~
+A bunch of acorns~
+A few acorns lie on the ground, a tempting snack for squirrels.~
+~
+food~
+organic~
+take~
+~
+6 0 0 0 0 0 0 0 0 0 0
+1 0 1 9999 0 None None None
+E
+acorns~
+Small brown nuts found in certain woodland areas. They are rather
+tasty but not really filling. Makes for excellent squirrel bait.
+~
+#11030
+aloe root~
+A twisted aloe root~
+A scraggly, twisted aloe root sticks out from the ground. ~
+~
+pill~
+~
+take~
+~
+10 -1 -1 -1 0 0 0 0 0 0 0
+1 0 -1 9999 0 None None None
+'cure poison' 'NONE' 'NONE'
+E
+aloe root~
+A root from the aloe plant. Despite how simple and uninteresting it
+looks, it is said to have useful applications in warding against
+poisons of all kinds.
+~
+#11031
+fresh herbs damp poultice~
+A poultice of fresh herbs~
+A pungent smelling poultice of damp fresh herbs lie in the dirt.~
+~
+salve~
+~
+take~
+~
+10 1 1 0 -1 -1 0 0 0 0 0
+1 0 -1 9999 0 None None None
+'cure light' 'NONE'
+E
+fresh herbs damp poultice~
+Looks like a messy pile of damp mosses, leaves and fungi. It smells
+even worse too. Fortunately it has medicinal uses. Perhaps it would
+take away the sting from some of your wounds.
+~
+#11032
+vermeir herb~
+A pinch of vermeir~
+Some greenish herb lies scattered about the floor here.~
+~
+herb~
+~
+take~
+~
+0 3 2 0 0 0 0 0 0 0 0
+1 0 1 9999 0 None None None
+#11033
+occadaal herb~
+A pinch of occadaal~
+Some yellowish herb lies scattered about the floor here.~
+~
+herb~
+~
+take~
+~
+0 3 4 0 0 0 0 0 0 0 0
+1 0 1 9999 0 None None None
+#11034
+nooracht herb~
+A pinch of nooracht~
+Some reddish herb lies scattered about the floor here.~
+~
+herb~
+~
+take~
+~
+0 3 3 0 0 0 0 0 0 0 0
+1 0 1 9999 0 None None None
+#11035
+breadl herb~
+A pinch of breadl~
+Some purplish herb lies scattered about the floor here.~
+~
+herb~
+~
+take~
+~
+0 3 5 0 0 0 0 0 0 0 0
+1 0 1 9999 0 None None None
+#11036
+black gwyvel herb~
+A pinch of black gwyvel~
+Some blackish herb lies scattered about the floor here.~
+~
+herb~
+~
+take~
+~
+0 3 1 0 0 0 0 0 0 0 0
+1 0 1 9999 0 None None None
+#11037
+pipeweed herb~
+A pinch of pipeweed~
+Some brownish herb lies scattered about the floor here.~
+~
+herb~
+~
+take~
+~
+0 3 0 0 0 0 0 0 0 0 0
+1 0 1 9999 0 None None None
+#11038
+faerie dust~
+A pinch of faerie dust~
+A small pinch of faerie dust lies by your feet.~
+~
+salve~
+~
+take~
+~
+15 1 1 0 -1 -1 0 0 0 0 0
+1 0 -1 0 0 None None None
+'invisibility' 'NONE'
+E
+faerie dust~
+A shimmering pile of dust that fades in and out of sight.
+~
+#11039
+gnomish flamethrower~
+A gnomish flamethrower~
+A hot gnomish flamethrower lies on the ground, spitting out intermittent bursts of flame.~
+~
+wand~
+organic~
+take hold~
+~
+7 1 1 -1 0 0 0 0 0 0 0
+5 500 -1 9999 0 None None None
+'fireball'
+E
+gnomish flamethrower~
+A machine consisting of a long pipe connected to a small bottle of
+flammable oils and spirits by a rubber hose. Interestingly enough,
+there appears to be a small fire burning at the end of the pipe.
+~
+> use_prog 10~
+mea 0.$n The flamethrower chokes as it shoots out a ball of fire.
+mea 0.$n You are caught in a backdraft as the flamethrower sputters!
+mpdamage 0.$n 40
+mea 0.$n &RYou are scorched by the flames and take damage!&z
+~
+|
+#11040
+gnomish collapsible ladder~
+A gnomish collapsible ladder~
+A folded up gnomish collapsible ladder gathers dust on the ground.~
+~
+armor~
+~
+take hold~
+~
+1 1 0 0 0 0 0 0 0 0 0
+8 500 -1 9999 0 None None None
+E
+gnomish collapsible ladder~
+A lightweight ladder made out of a mix of metals that lend it some
+strength and sturdiness. By the height of its rungs, you deduce that
+it was made for gnomish use.
+~
+A climb 60
+> wear_prog 10~
+mea 0.$n The ladder suddenly collapses as you are attempting to hold it!
+mea 0.$n You are caught in between the steps of the ladder!
+mpdamage 0.$n 40
+mea 0.$n &ROUCH!&z
+~
+|
+#11041
+gnomish digging excavational device~
+A gnomish excavational device~
+A strange digging device is seen on the ground, humming away.~
+~
+shovel~
+metal~
+take hold~
+~
+0 0 0 0 0 0 0 0 0 0 0
+10 500 -1 0 0 None None None
+E
+gnomish digging excavational device~
+A strange mix of machinery resembling a hand-held device with numerous
+rotating spades and spinning drills. Obviously it is used to dig
+through the earth with great efficiency.
+~
+A dig 25
+> wear_prog 10~
+mea 0.$n The device suddenly goes wild and takes on a life of its own!
+mea 0.$n You are injured by the wildly spinning drills!
+mpdamage 0.$n 40
+mea 0.$n &ROUCH!&z
+~
+|
+#11042
+gnomish universal lockpick~
+A gnomish universal lockpick~
+A single piece of thin metal is seen on the ground.~
+~
+lockpick~
+metal~
+take hold~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 500 -1 0 0 None None None
+E
+gnomish univeral lockpick~
+A thin sliver of metal which can easily slide into a keyhole, this device
+can be adjusted to fit different keyhole sizes. It looks like it is meant
+to be used to pick open locked doors.
+~
+A pick 20
+#11043
+gnomish underwater breathing apparatus~
+A gnomish underwater breathing apparatus~
+A strange metal cylinder with a short tube and a mouthpiece lies here.~
+~
+armor~
+metal~
+take back~
+~
+1 1 0 0 0 0 0 0 0 0 0
+20 500 -1 0 0 None None None
+E
+gnomish underwater breathin apparatus~
+This strange piece of equipment consists of a metal cylinder with a long
+tube attached to the top. The tube ends in a mouthpiece made from some
+rubbery substance. There is a small knob at the top of the cylinder which
+when you turn, releases a steady stream of air.
+~
+A affected 'recurringspell'
+#11044
+generic treasure item~
+a newly created generic treasure item~
+Some god dropped a newly created generic treasure item here.~
+~
+trash~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11045
+generic rune item~
+a newly created generic rune item~
+Some god dropped a newly created generic rune item here.~
+~
+rune~
+magic~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11064
+jailor guard~
+a newly created jailor guard~
+Some god dropped a newly created jailor guard here.~
+~
+trash~
+proto~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11300
+iron ore~
+An iron ore~
+A shiny black metallic piece of rock lies here.~
+~
+ore~
+metal~
+take~
+~
+1 0 0 0 0 0 0 0 0 0 0
+1 200 25 9999 0 None None None
+#11301
+gold ore~
+A gold ore~
+A piece of black rock with veins of gold lies here.~
+~
+ore~
+metal~
+take~
+~
+2 0 0 0 0 0 0 0 0 0 0
+1 350 50 9999 0 None None None
+#11302
+silver ore~
+A silver ore~
+A dull piece of rock with silver veins lies here.~
+~
+ore~
+metal~
+take~
+~
+3 0 0 0 0 0 0 0 0 0 0
+1 500 100 9999 0 None None None
+#11303
+adamantine ore~
+A piece of adamantine ore~
+A metallic rock with specks of silver lies here.~
+~
+ore~
+metal~
+take~
+~
+4 0 0 0 0 0 0 0 0 0 0
+1 500 100 9999 0 None None None
+#11304
+mithril ore~
+A mithril ore~
+A shiny piece of rock with silvery veins lies here.~
+~
+ore~
+metal~
+take~
+~
+5 0 0 0 0 0 0 0 0 0 0
+1 500 100 9999 0 None None None
+#11305
+blackmite ore~
+blackmite ore~
+A piece of shiny black ore rests here.~
+~
+ore~
+magic~
+take~
+~
+6 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11306
+titanium ore~
+titanium ore~
+A piece of dull grey ore rests here.~
+~
+ore~
+magic~
+take~
+~
+9 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11307
+steel ingot ore~
+A steel ingot~
+A bar of steel rests here.~
+~
+ore~
+magic~
+take~
+~
+7 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11308
+bronze ingot ore~
+A bronze ingot~
+A bronze ingot rests here.~
+~
+ore~
+magic~
+take~
+~
+8 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11309
+dwarven steel ingot ore~
+A Dwarven steel ingot~
+A darkened steel ingot lies here.~
+~
+ore~
+metal~
+take~
+~
+9 0 0 0 0 0 0 0 0 0 0
+1 200 25 9999 0 None None None
+#11310
+elven steel ingot ore~
+An Elven steel ingot~
+A bright, shiny steel ingot lies here.~
+~
+ore~
+metal~
+take~
+~
+10 0 0 0 0 0 0 0 0 0 0
+1 200 25 9999 0 None None None
+#11368
+tan tanned jacket~
+A jacket made from the hide of %s~
+A jacket made from something's hide lies here.~
+~
+armor~
+~
+take body~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11369
+tan tanned boots~
+Boots made from the hide of %s~
+Boots made from something's hide lies here.~
+~
+armor~
+~
+take feet~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11370
+tan tanned gloves~
+Gloves made from the hide of %s~
+Gloves made from something's hide lies here.~
+~
+armor~
+~
+take hands~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11371
+tan tanned leggings~
+Leggings made from the hide of %s~
+Leggings made from something's hide lies here.~
+~
+armor~
+~
+take legs~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11372
+tan tanned sleeves~
+Sleeves made from the hide of %s~
+Sleeves made from something's hide lies here.~
+~
+armor~
+~
+take arms~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11373
+tan tanned helmet~
+A helmet made from the hide of %s~
+A helmet made from something's hide lies here.~
+~
+armor~
+~
+take head~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11374
+tan tanned bag~
+A bag made from the hide of %s~
+A bag made from something's hide lies here.~
+~
+container~
+~
+take hold~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11375
+tan tanned cloak~
+A cloak made from the hide of %s~
+A cloak made from something's hide lies here.~
+~
+armor~
+~
+take about~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11376
+tan tanned belt~
+A belt made from the hide of %s~
+A belt made from something's hide lies here.~
+~
+armor~
+~
+take waist~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11377
+tan tanned collar~
+A collar made from the hide of %s~
+A collar made from something's hide lies here.~
+~
+armor~
+~
+take neck~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11378
+waterskin skin tan tanned~
+A Waterskin mad from the hide of %s~
+A waterskin made from something's hide lies here.~
+~
+drinkcon~
+~
+take hold~
+~
+10 10 0 0 0 0 0 0 0 0 0
+15 50 10 9999 0 None None None
+#11379
+tan tanned quiver~
+A quiver made from the hide of %s~
+A quiver made from something's hide lies here~
+~
+quiver~
+organic~
+take back~
+~
+20 0 0 100 0 0 0 0 0 0 0
+2 100 100 9999 0 None None None
+#11380
+whip tan tanned whip~
+A whip made from the hide of %s~
+A whip made of somethings hide lies here.~
+~
+weapon~
+~
+take wield~
+~
+12 0 0 1 3 0 12 0 0 0 0
+1 200 1 9999 0 None None None
+#11381
+tan tanned shield~
+A shield made from the hide of %s~
+A shield made from something's hide lies here.~
+~
+armor~
+~
+take shield~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11401
+coin gold~
+a gold coin~
+One miserable gold coin.~
+~
+money~
+~
+take~
+~
+1 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11402
+coins gold~
+%d gold coins~
+A pile of gold coins.~
+~
+money~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11403
+corpse~
+the corpse of %s~
+The corpse of %s lies here.~
+~
+corpse~
+~
+take~
+~
+0 0 3 1 0 0 0 0 0 0 0
+100 0 0 9999 0 None None None
+#11404
+corpse~
+the corpse of %s~
+The corpse of %s is lying here.~
+~
+corpse_pc~
+~
+~
+~
+0 0 3 1 0 0 0 0 0 0 0
+100 0 0 9999 0 None None None
+#11405
+head~
+the head of %s~
+The severed head of %s is lying here.~
+%s gobble$q down $p with gusto... disgusting!~
+cook~
+~
+take~
+~
+10 0 0 0 0 0 0 0 0 0 0
+5 0 0 9999 0 None None None
+#11406
+heart~
+the heart of %s~
+The torn-out heart of %s is lying here.~
+%s savagely devour$q $p!~
+cook~
+~
+take~
+~
+16 0 0 0 0 0 0 0 0 0 0
+2 0 0 9999 0 None None None
+#11407
+arm~
+the arm of %s~
+The sliced-off arm of %s is lying here.~
+%s chomp$q on $p.~
+cook~
+~
+take~
+~
+20 0 0 0 0 0 0 0 0 0 0
+5 0 0 9999 0 None None None
+#11408
+leg~
+the leg of %s~
+The sliced-off leg of %s is lying here.~
+%s chomp$q on $p.~
+cook~
+~
+take~
+~
+20 0 0 0 0 0 0 0 0 0 0
+5 0 0 9999 0 None None None
+#11409
+guts~
+the spilled guts of %s~
+The spilled guts of %s makes you lose your appetite.~
+~
+cook~
+~
+take~
+~
+5 0 0 1 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11410
+blood~
+the spilled blood~
+A pool of spilled blood lies here.~
+~
+blood~
+~
+~
+~
+5 0 0 1 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11411
+bloodstain~
+the bloodstain~
+Blood stains the ground.~
+~
+bloodstain~
+~
+~
+~
+5 0 0 1 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11412
+scraps~
+the scraps of %s~
+The scraps of %s lie here.~
+~
+scraps~
+~
+take~
+~
+5 0 0 1 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11413
+mushroom~
+a magic mushroom~
+A delicious magic mushroom is here.~
+%s enjoy$q $p.~
+food~
+~
+take~
+~
+24 0 0 0 0 0 0 0 0 0 0
+1 10 1 9999 0 None None None
+#11414
+ball light~
+a bright ball of light~
+A bright ball of light shimmers in the air.~
+~
+light~
+~
+take~
+~
+0 0 -1 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11415
+spring~
+a magical spring~
+A magical spring flows here.~
+~
+fountain~
+magic~
+~
+~
+100000 100000 0 0 0 0 0 0 0 0 0
+10 10 1 9999 0 None None None
+#11416
+vine whip~
+A vine whip~
+A long whip made out of magical vines is lying on the ground here.~
+~
+weapon~
+magic bless anticleric antimage antirogue antiwarrior antibard antimonk antipaladin antinecro antiapal~
+take wield~
+~
+12 2 10 5 3 0 12 0 0 0 0
+3 0 -1 9999 0 None None None
+E
+vine whip~
+A whip made out of magically intertwining vines. It is strong and
+very durable.
+~
+A hitroll 4
+A damroll 4
+#11417
+meat fresh slice~
+a slice of raw meat from %s~
+A slice of raw meat from %s lies lies on the ground.~
+~
+cook~
+~
+take~
+~
+15 1 0 0 0 0 0 0 0 0 0
+2 0 0 9999 0 None None None
+#11418
+shopping bag~
+a bag~
+A shopping bag lies discarded on the ground nearby.~
+~
+container~
+~
+take~
+~
+50 0 0 0 0 0 0 0 0 0 0
+2 20 2 9999 0 None None None
+#11419
+berry goodberry~
+a Goodberry~
+A goodberry lies on the ground here.~
+~
+pill~
+magic~
+take hold~
+~
+20 -1 -1 -1 10 0 0 0 0 0 0
+1 0 -1 9999 0 None None None
+'cure light' 'NONE' 'NONE'
+#11420
+flame blade~
+A flame blade~
+A blade wreathed in flames is lying on the ground here.~
+~
+weapon~
+magic anticleric antimage antirogue antibard antimonk antinecro~
+take wield~
+~
+12 2 8 1 1 0 12 0 0 0 0
+1 0 -1 9999 0 None None None
+E
+flame blade~
+A magically created blade seemingly made of pure fire. Only a druid or
+a ranger safely wield it.
+~
+A hitroll 2
+A damroll 2
+#11421
+piece flint arrowhead~
+A piece of flint~
+A sharp piece of flint is embedded in the ground here.~
+A piece of flint~
+treasure~
+~
+take hold~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 30 200 9999 0 None None None
+#11422
+arrow~
+An Arrow~
+An arrow lies discarded here.~
+An Arrow~
+projectile~
+~
+take hold~
+~
+5 1 6 6 1 0 0 0 0 0 0
+1 1000 100 9999 0 None None None
+#11423
+fire~
+a magical fire~
+A magical fire burns brightly.~
+~
+fire~
+magic~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+10 10 1 9999 0 None None None
+#11424
+trap~
+a trap~
+You detect a trap.~
+~
+trap~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+100 10 1 9999 0 None None None
+#11425
+portal~
+a portal~
+A misty portal beckons you to the unknown.~
+~
+portal~
+magic~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+100 10 1 9999 0 None None None
+#11426
+black poison powder~
+Some black poisoning powder~
+A small amount of black poisoning powder sits in a small container on the ground.~
+~
+trash~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 10000 2000 9999 0 None None None
+#11427
+scroll scribing blank~
+a blank scroll~
+A blank scroll lays here gathering dust.~
+~
+scroll~
+~
+take hold~
+~
+0 -1 -1 -1 0 0 0 0 0 0 0
+2 1000 100 9999 0 None None None
+'NONE' 'NONE' 'NONE'
+#11428
+flask empty~
+an empty flask~
+An empty flask lays here gathering dust.~
+~
+potion~
+~
+take hold~
+~
+1 -1 -1 -1 0 0 0 0 0 0 0
+1 1000 100 9999 0 None None None
+'NONE' 'NONE' 'NONE'
+#11429
+parchment paper note~
+a note~
+A note has been discarded here.~
+~
+paper~
+~
+take hold~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 1500 150 9999 0 None None None
+#11430
+quill pen~
+a quill~
+A feather dipped in ink here lies.~
+~
+pen~
+~
+take~
+~
+15 15 0 0 0 0 0 0 0 0 0
+2 2000 200 9999 0 None None None
+#11431
+black wire garrotte~
+A garrotte wire~
+A black wire rests innocently on the ground, you almost didn't see it.~
+~
+weapon~
+onlyrogue~
+take wield~
+~
+12 3 3 1 0 0 12 0 0 0 0
+1 5000 100 9999 0 None None None
+#11432
+blank spell wand~
+A blank spell wand~
+An empty spell wand sits here on the ground.~
+~
+wand~
+~
+take hold~
+~
+-1 -1 -1 -1 0 0 0 0 0 0 0
+1 20000 450 9999 0 None None None
+'NONE'
+#11433
+holy mistletoe~
+A Holy Mistletoe~
+A mistletoe lies here, shining.~
+~
+armor~
+glow bless~
+take hold~
+~
+5 5 0 0 0 0 0 0 0 0 0
+5 0 0 0 0 None None None
+> wear_prog 100~
+if class ($n) != druid
+mpechoat 0.$n The mistletoe flares with a blinding silver light.
+mpechoat 0.$n You are forced to drop the mistletoe.
+mpechoaround 0.$n $n is forced to drop the mistletoe as it flares silver.
+mpforce 0.$n remove mistletoe
+mpforce 0.$n drop mistletoe
+endif
+~
+|
+#11434
+holy symbol faith~
+A Symbol of Faith~
+A holy symbol lies here, shining.~
+~
+armor~
+glow bless~
+take hold~
+~
+5 5 0 0 0 0 0 0 0 0 0
+5 0 0 9999 0 None None None
+> wear_prog 100~
+if class ($n) != cleric
+mpechoat 0.$n &WThe symbol flares with a blinding white light.&z
+mpechoat 0.$n You are forced to drop the symbol.
+mpechoaround 0.$n &W$n is forced to drop the symbol as it flares white.&z
+mpforce 0.$n remove symbol-faith
+mpforce 0.$n drop symbol-faith
+endif
+~
+|
+#11435
+brains~
+the brains of %s~
+The squishy remains of the brains of %s lie in a gooey pile.~
+~
+cook~
+~
+take~
+~
+12 0 0 0 0 0 0 0 0 0 0
+3 0 0 9999 0 None None None
+#11436
+hand~
+the hand of %s~
+The severed hand of %s lies here.~
+~
+cook~
+~
+take~
+~
+8 0 0 0 0 0 0 0 0 0 0
+4 0 0 9999 0 None None None
+#11437
+foot~
+the foot of %s~
+The severed foot of %s is lying here rotting.~
+~
+cook~
+~
+take~
+~
+10 0 0 0 0 0 0 0 0 0 0
+3 0 0 9999 0 None None None
+#11438
+FINGER~
+the finger of %s~
+A severed finger from %s lies here.~
+~
+cook~
+~
+take~
+~
+3 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11439
+ear~
+the ear of %s~
+The ear of %s lies here on the ground.~
+~
+cook~
+~
+take~
+~
+2 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11440
+eye~
+the eye of %s~
+An eyeball from the corpse of %s lies here.~
+~
+cook~
+~
+take~
+~
+1 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11441
+tongue~
+the long tongue of %s~
+The ripped out tongue of %s is lying here.~
+~
+cook~
+~
+take~
+~
+12 0 0 0 0 0 0 0 0 0 0
+2 0 0 9999 0 None None None
+#11442
+eyestalk~
+the eyestalk of %s~
+A severed eyestalk from %s is here.~
+~
+cook~
+~
+take~
+~
+8 0 0 0 0 0 0 0 0 0 0
+3 0 0 9999 0 None None None
+#11443
+tentacle~
+the tentacle of %s~
+A long tentacle from the body of %s is strung out here.~
+~
+cook~
+~
+take~
+~
+7 0 0 0 0 0 0 0 0 0 0
+4 0 0 9999 0 None None None
+#11444
+fin~
+the fin of %s~
+A scaly fin from the body of %s is here.~
+~
+cook~
+~
+take~
+~
+2 0 0 0 0 0 0 0 0 0 0
+2 0 0 9999 0 None None None
+#11445
+wing~
+the wing of %s~
+A wing from the body of %s is here.~
+~
+cook~
+~
+take~
+~
+9 0 0 0 0 0 0 0 0 0 0
+6 0 0 9999 0 None None None
+#11446
+tail~
+the tail of %s~
+A long tail from the corpse of %s is here.~
+~
+cook~
+~
+take~
+~
+5 0 0 0 0 0 0 0 0 0 0
+4 0 0 9999 0 None None None
+#11447
+scale~
+the scale of %s~
+A flexible scale from the body of %s is here.~
+~
+treasure~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 1200 120 9999 0 None None None
+#11448
+tusk~
+the tusk of %s~
+A hardened tusk from the body of %s is lying here.~
+~
+treasure~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+8 4000 400 9999 0 None None None
+#11449
+horn~
+the horn of %s~
+A sharp horn from the corpse of %s is sitting here.~
+~
+treasure~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+9 5000 500 9999 0 None None None
+#11450
+claw~
+the claw of %s~
+A sharp claw from the body of %s is here.~
+~
+weapon~
+~
+take wield~
+~
+3 2 6 5 0 0 0 0 0 0 0
+4 2000 200 9999 0 None None None
+#11451
+blank rune~
+A blank recall rune~
+A small magical rune is lying here.~
+~
+rune~
+magic~
+take~
+~
+-1 0 0 0 0 0 0 0 0 0 0
+1 100000 0 9999 0 None None None
+#11452
+holy symbol paladin~
+The Paladin Holy Symbol~
+A holy symbol lies here, shining.~
+~
+armor~
+glow bless~
+take hold~
+~
+5 5 0 0 0 0 0 0 0 0 0
+5 0 0 9999 0 None None None
+> wear_prog 100~
+if class ($n) != paladin
+mpechoat 0.$n &WThe symbol flares with a blinding white light.&z
+mpechoat 0.$n You are forced to drop the symbol.
+mpechoaround 0.$n &W$n is forced to drop the symbol as it flares white.&z
+mpforce 0.$n remove symbol-paladin
+mpforce 0.$n drop symbol-paladin
+endif
+~
+|
+#11453
+skull death~
+The Skull of Death~
+A skull lies here, shimmering with dark energy.~
+~
+armor~
+glow~
+take hold~
+~
+5 5 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+> wear_prog 100~
+if class ($n) != necromancer
+mpechoat 0.$n &rThe skull flares with a blazing red light.&z
+mpechoat 0.$n You are forced to drop the skull.
+mpechoaround 0.$n &r$n is forced to drop the skull as it flares red.&z
+mpforce 0.$n remove skull-death
+mpforce 0.$n drop skull-death
+endif
+~
+|
+#11462
+feather~
+the feather of %s~
+A soft feather from the body of %s is here.~
+~
+treasure~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 3500 350 9999 0 None None None
+#11463
+foreleg~
+the foreleg of %s~
+The powerful foreleg of %s is lying here.~
+~
+cook~
+~
+take~
+~
+10 0 0 0 0 0 0 0 0 0 0
+8 0 0 9999 0 None None None
+#11464
+paw~
+the paw of %s~
+A large paw from the body of %s is here.~
+~
+cook~
+~
+take~
+~
+2 0 0 0 0 0 0 0 0 0 0
+3 0 0 9999 0 None None None
+#11465
+hoof~
+the hoof of %s~
+A hard hoof from the body of %s is here.~
+~
+trash~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+2 0 0 9999 0 None None None
+#11466
+beak~
+the beak of %s~
+A sharp beak from the corpse of %s lies here.~
+~
+trash~
+~
+take~
+~
+0 0 0 0 0 0 0 0 0 0 0
+3 0 0 9999 0 None None None
+#11467
+sharp scale~
+the sharp scale of %s~
+A hard, sharp scale from the corpse of %s is here.~
+~
+weapon~
+~
+take wield~
+~
+3 2 5 5 0 0 0 0 0 0 0
+1 2000 200 9999 0 None None None
+#11468
+haunches~
+the haunches of %s~
+The haunches of %s lie here.~
+~
+cook~
+~
+take~
+~
+15 0 0 0 0 0 0 0 0 0 0
+11 0 0 9999 0 None None None
+#11469
+fang~
+the fang of %s~
+A sharp fang from the body of %s is here.~
+~
+weapon~
+~
+take wield~
+~
+3 2 4 5 0 0 0 0 0 0 0
+3 2000 200 9999 0 None None None
+#11470
+minstru flute~
+A Flute~
+A finely inlayed silver flute lies here.~
+~
+instrument~
+~
+take hold~
+~
+4 4 0 0 0 0 0 0 0 0 0
+1 200 20 9999 0 None None None
+#11471
+minstru lute~
+A Lute~
+A finely carved wooden lute is propped against the wall here.~
+~
+instrument~
+~
+take hold~
+~
+6 6 0 0 0 0 0 0 0 0 0
+4 350 35 9999 0 None None None
+#11472
+minstru mandolin~
+A Mandolin~
+A well-made mandolin rests here.~
+~
+instrument~
+~
+take hold~
+~
+8 8 0 0 0 0 0 0 0 0 0
+5 400 40 9999 0 None None None
+#11473
+minstru harp~
+A Harp~
+A beautifully sculpted golden harp rests here.~
+~
+instrument~
+~
+take hold~
+~
+10 10 0 0 0 0 0 0 0 0 0
+8 750 75 9999 0 None None None
+#11474
+minstru horn~
+A Horn~
+A dented brass horn lies here.~
+~
+instrument~
+~
+take hold~
+~
+2 2 0 0 0 0 0 0 0 0 0
+5 100 10 9999 0 None None None
+#11475
+testing bow~
+The bow of testing~
+Just your average coder's toy used to test projectile code~
+~
+missileweapon~
+~
+take missile~
+~
+5 1 7 6 6 1 0 0 0 0 0
+1 1000 100 9999 0 None None None
+#11476
+testing arrow~
+A testing arrow~
+An arrow used in a testing bow.~
+~
+projectile~
+~
+take~
+~
+5 5 2 6 1 0 0 0 0 0 0
+1 1000 100 9999 0 None None None
+#11477
+idea suggestion board~
+Idea/Suggestion Board~
+The Idea/Suggestion Board sits here patiently.~
+~
+furniture~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#11478
+lantern wisdom light~
+A lantern of wisdom~
+A lantern stands here, waiting to guide wayfarers in their journeys.~
+~
+light~
+glow magic donated~
+take hold~
+~
+0 0 -1 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+E
+lantern wisdom light~
+This is one of the various types of lightsources available in the Lands.
+It comes in handy especially at night or in dark places. As you journey
+onward you will find better equipment, but this will serve you for now.
+~
+A save_spell -1
+#11479
+book tome beginner's wayfaring guide abecedarium~
+The Beginner's Guide to Wayfaring~
+A small tattered book lies here.~
+~
+armor~
+organic magic donated~
+take hold~
+~
+5 5 0 0 0 0 0 0 0 0 0
+1 10 10 9999 0 None None None
+E
+book tome beginner's wayfaring guide abecedarium~
+Some helpful files for those new to the Lands:
+   
+SPAM -        Will explain what spam is, and why you should not do it.
+CONFIG -      Will teach you about our configuration menu.
+SCORE -       Will tell you about your characters personal score sheet.
+MOVEMENT -    Will teach you various commands for moving about the game.
+OBJECTS -     Will teach you various commands to use your equipment.
+CONTAINER -   Will teach you about using containers to hold belongings.
+CHANNELS -    Will teach you about communication with other players.
+GROUP -       Will help you with grouping with other adventurers.
+COMBAT -      Will teach you how to choose, start and stop a fight.
+DEATH -       Will tell you about the death experience in the game.
+PRACTICE -    Will teach you about training spells, skills, and weapons.
+INFORMATION - Will cover ways to find certain types of information.
+   
+To use these help files, type HELP <topic> from the topics listed in
+capital letters above.
+~
+A intelligence 1
+A constitution 1
+A wisdom 1
+#11999
+Last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+trash~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#0
+
+
+#ROOMS
+#11000
+Quest Storage Room~
+This room is used for quests. No one should be in here except quest mobs/objs.
+~
+~
+indoors~
+nomob indoors safe nocamp noportal proto noteleport noscry nobeacon~
+0
+S
+#11001
+The Confiscation Chamber~
+This is where stuff that mobs need to take from players will end up.
+~
+~
+indoors~
+nomob~
+0
+S
+#11002
+The Mob Vanishing Room~
+This room is where mobs that need to "disappear" will end up so as
+not to give away that they've left the room they were in.
+~
+~
+indoors~
+indoors~
+0
+S
+#11400
+The Void~
+All around you the blackness of the ether closes in like an evil fog.
+Nothing is visible in any direction. Even the floor itself appears
+to be nonexistant..... you are floating in pure nothingness!
+~
+~
+indoors~
+nomob indoors nosummon norecall noportal noastral~
+0
+R M 0 11000 1 11400 -1 -1 -1
+> speech_prog test~
+say triggered by (name):	$n
+say triggered by (name&title): 	$N
+say triggerer is (he,she,it):	$e
+say triggerer is (him,her,it):	$m
+say triggerer is (his,hers,its):$s
+say random char (name):		$r
+say random char (name&title or short): 	$R
+say random char  (he,she,it):	$J
+say random char (him,her,it):	$K
+say random char (his,hers,its):	$L
+~
+> speech_prog test2~
+say firstname of room:	 	$i
+say short_desc/title of room: 	$I
+say he/she/it of room:	 	$j
+say him/her/it of room:	 	$k
+say his/hers/its of room:	$l
+say firstname of victim: 	$t
+say short_desc/title of victim:	$T
+say he/she/it of victim: 	$E
+say him/her/it of victim: 	$M
+say his/hers/its of victim:	$S
+~
+|
+S
+#11401
+LIMBO~
+You float in a formless void, detached from all sensation of physical
+matter, surrounded by swirling glowing light which fades into the
+relative darkness around you without any trace of edge or shadow.
+~
+~
+city~
+nomob indoors nosummon norecall noportal noastral~
+0
+R M 0 11400 1 11401 -1 -1 -1
+S
+#11402
+Storage~
+This room is reserved for storage of polymorphed players.
+~
+~
+city~
+nomob nosummon norecall noportal noastral~
+0
+S
+#11403
+Creeping Doom Room~
+This is where all the creeping dooms come to get purged.
+~
+~
+indoors~
+nomob indoors nosummon norecall noportal noastral~
+0
+> act_prog creeping~
+mpslay creeping
+~
+|
+S
+#11404
+Failed Animate Dead Room~
+Failed animate dead attempts get sent here. This room is not to be
+used for ANYTHING other than that.
+~
+~
+indoors~
+nomob indoors nosummon norecall noportal noastral noscry~
+0
+S
+#11405
+Hell~
+You are suddenly dropped off in a truly hellish place! Wait.... not
+just hellish.... this IS hell! The Gods must have been truly angry
+to have sent you to dwell in such a place. Needless to say, hell is
+all you expected, and much more. It stretches on forever in all
+directions, and demons dog your every move. There is no escape.
+You may as well get comfortable, if that's possible, and wait for
+the Gods to decide your fate.
+~
+~
+desert~
+nomob indoors safe nosummon silence nosupplicate norecall noportal noastral~
+0
+D
+north~
+~
+~
+~
+-1 11405 -1 -1
+D
+east~
+~
+~
+~
+-1 11405 -1 -1
+D
+south~
+~
+~
+~
+-1 11405 -1 -1
+D
+west~
+~
+~
+~
+-1 11405 -1 -1
+S
+#11406
+Parlor of the Immortals~
+The parlor room where all immortals come to meet and plan their
+activities. Build to suit, etc.
+~
+~
+indoors~
+indoors~
+0
+R M 0 11000 10 11406 -1 -1 -1
+S
+#11407
+Recall and Death Room - Primary Continent~
+This is where players get recalled to when recalling on the primary
+continent, and on other planes such as Astral. Also where they'll
+come when they die. You will want to change this to something more
+suitable to your needs.
+~
+~
+indoors~
+indoors~
+0
+S
+#11408
+Recall and Death Room - Second Continent~
+This is where players get recalled to when recalling on the second 
+continent. Also where they'll come when they die. You will want to 
+change this to something more suitable to your needs.
+~
+~
+indoors~
+indoors~
+0
+S
+#11409
+Recall and Death Room - Third Continent~
+This is where players get recalled to when recalling on the third 
+continent. Also where they'll come when they die. You will want to 
+change this to something more suitable to your needs.
+~
+~
+indoors~
+indoors~
+0
+S
+#11410
+Donations Room~
+This is where donated goods will come when the donate command is used.
+Build to suite your needs.
+~
+~
+indoors~
+indoors~
+0
+S
+#11411
+Beginning Redemption Room~
+This is the room players will need to be in to start a prize redemption
+using the automated system and the mpsindhae mudprog.
+~
+~
+indoors~
+indoors~
+0
+S
+#11412
+Ending Redemption Room~
+This is the room players will be transferred to after completing an
+automated prize redemption.
+~
+~
+indoors~
+indoors~
+0
+S
+#11999
+Standing in Pure Nothingness~
+~
+~
+indoors~
+nomob indoors~
+0
+S
+#0
+
+
+#SHOPS
+ 11000    1  0  0  0  0   120  90         0 28    ; Somedude
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

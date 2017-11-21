@@ -1,0 +1,169 @@
+#CHANNEL
+ChanName    chat~
+ChanColorname chat~
+ChanLevel   1
+ChanType    0
+ChanFlags 1
+End
+
+#CHANNEL
+ChanName    auction~
+ChanColorname auction~
+ChanLevel   1
+ChanType    0
+ChanFlags 1
+End
+
+#CHANNEL
+ChanName    quest~
+ChanColorname chat~
+ChanLevel   1
+ChanType    0
+ChanFlags 1
+End
+
+#CHANNEL
+ChanName    music~
+ChanColorname chat~
+ChanLevel   1
+ChanType    0
+ChanFlags 1
+End
+
+#CHANNEL
+ChanName    shout~
+ChanColorname shout~
+ChanLevel   2
+ChanType    0
+ChanFlags 1
+End
+
+#CHANNEL
+ChanName    wartalk~
+ChanColorname wartalk~
+ChanLevel   1
+ChanType    4
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    yell~
+ChanColorname yells~
+ChanLevel   2
+ChanType    1
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    newbiechat~
+ChanColorname chat~
+ChanLevel   1
+ChanType    0
+ChanFlags 1
+End
+
+#CHANNEL
+ChanName    think~
+ChanColorname think~
+ChanLevel   101
+ChanType    0
+ChanFlags 3
+End
+
+#CHANNEL
+ChanName    muse~
+ChanColorname muse~
+ChanLevel   113
+ChanType    0
+ChanFlags 3
+End
+
+#CHANNEL
+ChanName    comm~
+ChanColorname log~
+ChanLevel   102
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    info~
+ChanColorname log~
+ChanLevel   101
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    auth~
+ChanColorname log~
+ChanLevel   103
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    warn~
+ChanColorname log~
+ChanLevel   108
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    build~
+ChanColorname log~
+ChanLevel   103
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    Log~
+ChanColorname log~
+ChanLevel   101
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    IMCLog~
+ChanColorname log~
+ChanLevel   113
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    I3Log~
+ChanColorname log~
+ChanLevel   113
+ChanType    5
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    guildtalk~
+ChanColorname guildtalk~
+ChanLevel   1
+ChanType    2
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    counciltalk~
+ChanColorname guildtalk~
+ChanLevel   101
+ChanType    3
+ChanFlags 0
+End
+
+#CHANNEL
+ChanName    Clantalk~
+ChanColorname guildtalk~
+ChanLevel   1
+ChanType    2
+ChanFlags 0
+End
+
+#END

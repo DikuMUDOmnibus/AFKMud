@@ -1,0 +1,699 @@
+=== The #OBJECTS section
+
+Last modified by Dwip, 6/19/03
+
+The syntax of this section is:
+
+      #OBJECTS
+      #<vnum>
+	<keywords>~
+	<short-description>~
+	<long-description>~
+	<action-description>~
+	<item-type>~
+	<extra-flags>~
+	<wear-flags>~
+      <magic flags>~
+	<value0 value1 value2 value3 value4 value5 value6 value7 value8 value9 value10>
+	<weight> <cost> <rent> <limit> <layers> <socket1> <socket2> <socket3>
+	E
+	<keyword(s)>~
+	<description>
+	~
+	A
+	<apply-type> <apply-value>
+      #<vnum of next obj......>
+      .
+      .
+      .
+      .
+	#0
+
+What each part of the syntax means:
+
+<vnum>
+
+The vnum is the virtual number of the object.
+
+<keywords>
+
+The keywords are words which can be used in commands to identify the object.
+
+<short-description>
+
+The short-description is the description used by the 'act' function and other
+functions to identify the object. The first character of the short-description
+should be lower case, because this description is used in the middle of
+sentences.
+
+<long-description>
+
+The long-description is the description used when a character walks in the
+room and the object is visible.
+
+The <action-description> is not used.
+
+The <item-type> is the type of the item (weapon, armor, potion, et cetera).
+
+"none", "light", "scroll", "wand", "staff", "weapon", "_fireweapon", "_missile",
+"treasure", "armor", "potion", "_worn", "furniture", "trash", "_oldtrap",
+"container", "_note", "drinkcon", "key", "food", "money", "pen", "boat",
+"corpse", "corpse_pc", "fountain", "pill", "blood", "bloodstain",
+"scraps", "pipe", "herbcon", "herb", "incense", "fire", "book", "switch",
+"lever", "pullchain", "button", "dial", "rune", "runepouch", "match", "trap",
+"map", "portal", "paper", "tinder", "lockpick", "spike", "disease", "oil",
+"fuel", "piece", "tree", "missileweapon", "projectile", "quiver", "shovel",
+"salve", "cook", "keyring", "odor", "campgear", "drinkmix", "instrument", "ore"
+
+( Be aware that not all of the item types are working )
+
+The <extra-flags> describe more attributes of the object.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+glow	        | Item glows.
+hum	        | Item makes noise, thieves can't sneak.
+metal		  | Item has +20% resistance to damage. ( metallic composition )
+loyal	        | Item returns to PC when disarmed (PK only).
+organic       | Item has +20% suceptibility to damage.
+invis	        | Item cannot be seen without detect invisible.
+magic	        | Item is magical, cannot be enchanted.
+nodrop	  | Item cannot be dropped, is cursed.
+bless	        | Item has +20% resistance to damage. ( magical resistance )
+antigood      | Item cannot be used by Good alignment. (>+350)
+antievil      | Item cannot be used by Evil alignment. (<-350)
+antineutral   | Item cannot be used by Neutral alignment (-350 to +350)
+anticleric    | Item cannot be used by clerics.
+antimage      | Item cannot be used by mages.
+antirogue     | Item cannot be used by rogues.
+antiwarrior   | Item cannot be used by warriors.
+inventory     | Autoset for shopkeeper inventory items, DO NOT USE
+noremove      | Item cannot be removed when worn, is cursed.
+dark   	  | Currently this flag does nothing.
+evil 	        | Item will glow red with detect evil spell.
+donation      | Prevents "get all" when item is a container.
+clanobject    | Item belongs to a clan - autoset by code, DO NOT USE
+clancorpse    | Corpse of a clan member - DO NOT USE
+antibard      | Item cannot be used by bards.
+hidden        | Item is hidden, need search skill to locate it.
+antidruid     | Item cannot be used by druids.
+poisoned      | Item has poison damage.
+covering      | Item is able to cover other items (see 'help layers' in game)
+deathrot      | Item disappears when owner dies.
+buried        | Item is underground, and needs to be dug up.
+proto         | Item is a prototype. Used only by OLC system.
+nolocate      | Item cannot be located using the locate object spell.
+groundrot     | Item rots when on the ground.
+antimonk      | Item cannot be used by monks.
+mineral	  | Currently inactive.
+brittle       | Item breaks easily.
+resistant	  | Item has a +20% natural resistance to damage.
+immune        | Currently inactive.
+antimen	  | Item cannot be used by males.
+antiwomen     | Item cannot be used by females.
+antineuter    | Item cannot be used by neuters.
+antiherma     | Item cannot be used by hermaphrodytes.
+antisun       | Currently inactive.
+antiranger    | Item cannot be used by rangers.
+antipaladin   | Item cannot be used by paladins.
+antinecro     | Item cannot be used by necromancers.
+antiapal      | Item cannot be used by antipaladins.
+onlycleric    | Item can only be used by clerics.
+onlymage      | Item can only be used by mages.
+onlyrogue     | Item can only be used by rogues.
+onlywarrior   | Item can only be used by warriors.
+onlybard      | Item can only be used by bards.
+onlydruid     | Item can only be used by druids.
+onlymonk      | Item can only be used by monks.
+onlyranger    | Item can only be used by rangers.
+onlypaladin   | Item can only be used by paladins.
+onlynecro     | Item can only be used by necromancers.
+onlyapal      | Item can only be used by antipaladins.
+personal      | A personal item. Must also set the item's owner to use this.
+sindhae       | A Sindhae prize item.
+mustmount     | Item can only be used while mounted.
+noauction     | Item cannot be auctioned.
+
+The <wear-flags> describe whether the item can be picked up, and if so, what 
+bodily locations can wear it.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+take	        | Item can be picked up by players.
+finger        | Worn on fingers (2 slots)
+neck          | Worn on neck    (2 slots)
+body          | Worn on the body
+head          | Worn on the head
+legs          | Worn on the legs
+feet          | Worn on the feet
+hands         | Worn on the hands
+arms          | Worn on the arms
+shield        | Used as a shield
+about         | Worn about the body
+waist         | Worn on the waist
+wrist         | Worn on the wrists (2 slots)
+wield         | Used as a weapon
+hold          | Item is held in hand
+throw         | Item can be thrown (no code support yet)
+dual          | Weapon can be dual wielded
+ears          | Worn on the ears
+eyes          | Worn over the eyes
+missile       | Weapon is a missile shooter
+back          | Worn on the back
+face          | Worn on the face
+ankle         | Worn on the ankle (2 slots)
+
+The <layers> value determines how the object can be layered with other
+objects that use layering. See the online help for more details. For an
+object with no layering, set this to 0.
+
+The interpretation of the four <value> numbers depends upon the type of the
+object. An 'sn' in an item type indicates the slot number of a spell. See the list
+of spell slots in values.txt. A zero or negative sn means 'no spell'.
+
+Item type: light
+   value[0] unused
+   value[1] unused
+   value[2] hours of light available, 0 is dead, -1 is infinite
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: scroll
+   value[0] level
+   value[1] sn 1
+   value[2] sn 2
+   value[3] sn 3
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: wand
+   value[0] level
+   value[1] max charges
+   value[2] current charges
+   value[3] sn
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: staff
+   value[0] level
+   value[1] max charges
+   value[2] current charges
+   value[3] sn
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: weapon/missileweapon
+   value[0] base condition
+   value[1] number dice	  v1 and v2 are optional and will be
+   value[2] size dice	  autogenerated if set to 0
+   value[3] damage type ( Not relevant to missile weapons ):
+      01 slash
+      02 stab
+      03 hack
+      04 crush
+      05 lash
+      06 pierce
+      07 thrust
+   value[4] weapon skill:
+      00 barehand
+      01 sword
+      02 dagger
+      03 whip
+      04 talon ( talonous arms )
+      05 mace ( includes hammers )
+      06 archery ( bows and crossbows )
+      07 blowgun ( missileweapon )
+      08 sling ( missileweapon )
+      09 axe
+      10 spear
+      11 staff
+   value[5] projectile type ( for missile weapons only ):
+	( Determines the type of projectile this weapon can fire )
+	00 bolt
+	01 arrow
+	02 dart
+	03 stone
+   value[6] current condition
+   value[7] available rune/gem sockets
+
+   The following 3 settings override most of the above. See Itemgen.txt for details.
+   value[8] Weapon type
+   value[9] Weapon material
+   value[10] Weapon quality
+
+Item type: projectile
+   value[0] base condition
+   value[1] number dice	  v1 and v2 are optional and will be
+   value[2] size dice	  autogenerated if set to 0
+   value[3] damage type:
+      01 slash
+      02 stab
+      03 hack
+      04 crush
+      05 lash
+      06 pierce
+      07 thrust
+   value[4] projectile type:
+      00 bolt
+      01 arrow
+      02 dart
+      03 stone
+   value[5] current condition
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: treasure
+   value[0] unused
+   value[1] unused
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: armor
+   value[0] AC adjust/current condition
+   value[1] Original AC
+   value[2] available rune/gem sockets
+
+   The v3 and v4 settings override much. See Itemgen.txt for details.
+   value[3] Armor type
+   value[4] Armor material
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: potion
+   value[0] level
+   value[1] sn 1
+   value[2] sn 2
+   value[3] sn 3
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: furniture
+   value[0]  unused
+   value[1]  unused
+   value[2]  See below. Add the BV values to get the value of value[2].
+   value[3]  unused
+   value[4]  unused
+   value[5]  unused
+   value[6]  unused
+   value[7]  unused
+   value[8]  unused
+   value[9]  unused
+   value[10] unused
+
+FLAG     -     BV  - DESCRIPTION
+------------------------------------------------------------
+NORMAL   -       0 - Just a regular piece of furniture.
+SIT_ON   -       1 - Can be sat on.
+SIT_IN   -       2 - Can be sat in.
+SIT_AT   -       4 - Can be sat at.
+STAND_ON -       8 - Can be stood on.
+STAND_IN -      16 - Can be stood in.
+STAND_AT -      32 - Can be stood at.
+SLEEP_ON -      64 - Can be slept on.
+SLEEP_IN -     128 - Can be slept in.
+SLEEP_AT -     256 - Can be slept at.
+REST_ON  -     512 - Can be rested on.
+REST_IN  -    1024 - Can be rested in.
+REST_AT  -    2048 - Can be rested at.
+
+Item type: trash
+   value[0] unused
+   value[1] unused
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: container
+   value[0] weight capacity
+   value[1] flags: 1 closeable, 2 pickproof, 4 closed, 8 locked, 16 eatkey
+   value[2] key vnum
+   value[3] durability
+   value[4] unused
+   value[5] identifies matching key on value[5] of a key.
+		If these values do not match, the key will not open the lock.
+		Primarily used with the camping system to safeguard the strongbox.
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: drinkcon
+   value[0] capacity
+   value[1] current quantity
+   value[2] liquid number (see 'liquids table' in values.txt)
+   value[3] if non-zero, drink is poisoned
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: key
+   value[0] unused
+   value[1] unused
+   value[2] unused
+   value[3] unused
+   value[4] Number of retries before key breaks if used in wrong lock.
+   value[5] identifies matching lock on value[5] of a container.
+		If these values do not match, the key will not open the lock.
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+	
+Item type: food
+   value[0] hours of food value
+   value[1] (condition)
+   value[2] unused
+   value[3] if non-zero, food is poisoned
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: money
+   value[0] value in gold pieces
+   value[1] unused
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: boat
+   value[0] unused
+   value[1] unused
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: fountain
+   value[0] unused
+   value[1] Number of drinks (any value = infinite )
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: pill
+   value[0] level of spells
+   value[1] sn 1
+   value[2] sn 2
+   value[3] sn 3
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: switch
+   value[0] flags
+   value[1] vnum or sn
+   value[2] vnum
+   value[3] vnum/value
+   ( See lever flags in values.txt for switches, levers, pullchains, and buttons )
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: lever
+   value[0] flags
+   value[1] vnum or sn
+   value[2] vnum
+   value[3] vnum/value
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: pullchain
+   value[0] flags
+   value[1] vnum or sn
+   value[2] vnum
+   value[3] vnum/value
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: button
+   value[0] flags
+   value[1] vnum or sn
+   value[2] vnum
+   value[3] vnum/value
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: dial
+   value[0] flags
+   value[1] vnum or sn
+   value[2] vnum
+   value[3] vnum/value
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: trap
+   value[0] charges
+   value[1] type
+   value[2] level
+   value[3] flags ( See Trap Flags and types in values.txt )
+   value[4] minimum damage
+   value[5] maximum damage
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: campgear
+   value[0] Type of camping gear:
+     1 - Bedroll. Used to sleep on while camped.
+     2 - Gear. Miscelaneous things such as utensils etc.
+     3 - Firewood. Required to light the campfire.
+   value[1] unused
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: ore
+   value[0] Type of ore material:
+     1 - Iron
+     2 - Gold
+     3 - Silver
+     4 - Adamantine
+     5 - Mithril
+     6 - Blackmite*
+     7 - Steel
+     8 - Bronze
+     9 - Titanium
+    10 - Dwarven Steel
+    11 - Elven Steel
+
+     * - Magical ore found only in Arthmoor's palace.
+
+   value[1] Purity of the ore from 1-100%, affects cost/skill roll for forging weapons and armor.
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+Item type: piece
+   value[0] Vnum of other half of the object.
+   value[1] Vnum of the combined object.
+   value[2] unused
+   value[3] unused
+   value[4] unused
+   value[5] unused
+   value[6] unused
+   value[7] unused
+   value[8] unused
+   value[9] unused
+   value[10] unused
+
+The <weight> of the object is just that.
+
+<Cost> is a relative estimate of the object's value in gold.
+
+<rent> is the amount of rent the item is worth. See RentGeneration.txt
+for details.
+
+<limit> governs how many copies of the object are allowed to load into
+the game. This can apply to both normal and rare items. Normal items with
+a limit value will only load up to the limit based on how many copies
+of the object are currently online. For an item that is intended to be
+unrestricted, use a value of 9999 for the limit. See RentGeneration.txt
+for more on rent items and how limits work with them.
+
+*** NOTE ***
+If the item is a scroll, potion, pill, staff, wand, or salve, an extra 
+line is needed between your <limit> value and the line containing the 
+<magic flags>. Enclosed in single quotes you need the spell names of the
+spells each item needs. This isn't easy to explain - so an example is in
+order:
+
+'recall' 'NONE' 'NONE'
+
+This would create a recall item, the 2 NONEs indicate it doesn't have
+spells for the other 2 values. The word NONE is case sensitive.
+You need to know the exact NAME of the skill to put here, the slot 
+numbers used in the values section won't help. So you'd need to log on 
+to the build port, type: slookup 'recall', and verify that the name 
+you used is correct. If you don't verify the name, chances are you'll
+either cause the mud to crash, or the item will simply load with bogus
+data. In either case, your item won't work right, and your KL is likely
+to get pissed. :)
+
+A potion, pill, or scroll requires 3 words. Salves require 2.
+Staves and wands require 1.
+
+<magic flags>
+These are some additional flags that give the item magical properties.
+It's not known exactly what they do, or if they do anything at all.
+Further details will be included once this is known.
+
+returning, backstabber, bane, loyal, haste, drain, lightning_blade 
+
+<socket1> <socket2> and <socket3> contain the names of whatever runes or
+gems have been inserted into the item's available sockets. These should
+never be edited offline and are just shown here for completeness. Set them
+to "None" to keep the code happy.  See Runes.txt for more on runes and sockets.
+
+The optional 'E' sections and 'A' sections come after the main data.
+An 'E' section ('extra description') contains a keyword-list and a string
+associated with those keywords. This description string is used when a
+character looks at a word on the keyword list.
+
+An 'A' section ('apply') contains an <apply-type> and an <apply-value>.  When a
+character uses this object as equipment (holds, wields, or wears it), then
+the value of <apply-value> is added to the character attribute identified by
+<apply-type>.
+
+An object may have an unlimited number of 'E' and 'A' sections.
+
+#0
+
+The #0 is to be placed on a new line at the end of your LAST object in the area.
+
+An example of a completed object follows:
+
+#11008
+quest item mage ring~
+A Mage Quest Ring~
+A Mage Quest Ring. Any Immortal seeing this is to purge it immediately!~
+~
+armor~
+glow magic bless anticleric antirogue antiwarrior antibard antidruid antimonk antiranger antipaladin antinecro antiapal~
+take finger~
+~
+5 5 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+A
+19 1
+A
+3 1
+A
+12 20
+
+This completes the #OBJECTS section. Refer to Rooms.txt to continue
+building your area file.

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="Intermud-3 Network Listing." />
+<meta name="keywords" content="imc,imc2,imc3,i3,intermud,intermud-3,network" />
+<meta name="robot" content="index,follow" />
+<title>Intermud-3 Network Listing</title>
+<style type="text/css">
+<!--
+body         { background-color: black; font-family: Verdana, sans-serif; font-size: 10pt; color: #C0C0C0 }
+a:active     { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000 }
+a:link       { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000; text-decoration: none }
+a:visited    { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000; text-decoration: none }
+a:hover      { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000; text-decoration: underline }
+ -->
+</style>
+</head>
+
+<body>
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="5">
+ <tr>
+  <td><img src="images/flame.gif" alt="flame.gif" height="60" width="30" /></td>
+  <td valign="bottom" rowspan="2">
+  <h2 align="center"><font color="#ff0000" face="Comic Sans MS" size="5">Muds on Intermud-3</font></h2>
+  </td>
+  <td><img src="images/flame.gif" alt="flame.gif" height="60" width="30" /></td>
+ </tr>
+ <tr>
+  <td height="15"></td>
+  <td height="15"></td>
+ </tr>
+</table>
+</div>
+
+<div align="center">
+Below is a list of muds which are currently connected to the
+Intermud-3 network. Intermud-3 is a chat network which allows people from one mud to chat with
+those on another. Further information and code to enable you to connect can be found <a 
+href="http://www.afkmud.com/i3" target="_blank">here</a>.
+
+<hr width="68%" />   
+
+<!-- End of header piece. Mud code generates the middle section, tail section is in another chunk. -->

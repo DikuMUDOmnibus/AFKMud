@@ -1,0 +1,36 @@
+AFKMud: Alsherok Game Code Release - Version 1.8: December 2006
+---------------------------------------------------------------
+
+Quick install:
+
+Unpack the archive in your host account.
+
+Open and READ afkmud/doc/license.txt, you MUST agree to the terms in order to use AFKMud.
+
+cd afkmud/src
+
+Edit the startup script and change the port number to the one you've been assigned.
+
+Edit mudcfg.h and chage the port defines to match your situation.
+
+Edit the Makefile and set options as needed for your mud.
+
+Cygwin: Uncomment the WINDOZE marker. Comment the NEED_DL marker.
+FreeBSD: Comment the NEED_DL marker.
+OpenBSD( with gcc 2.95.3 ): Comment the NEED_DL marker, comment the EXPORT_SYMBOLS marker.
+
+On Linux/Cygwin:
+make clean
+
+On FreeBSD/OpenBSD:
+gmake clean
+
+nohup ./startup &
+
+Use the "Admin" character, password "admin" to log in and create your first immortal.
+Delete Admin upon doing so!
+
+Change the test port password using cset. Only useful if MULTIPORT has been enabled.
+
+Refer to README.AFKMUD if anything should go wrong. Probably a good idea to read that
+anyway since there are some things you probably should know :)

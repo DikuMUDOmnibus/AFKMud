@@ -1,0 +1,48 @@
+body         { background-color: black; font-family: Verdana, sans-serif; font-size: 10pt; color: #C0C0C0 }
+text         { color: #C0C0C0 }
+table        { font-family: Verdana, sans-serif; font-size: 10pt; color: #C0C0C0 }
+a:active     { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000 }
+a:link       { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000; text-decoration: none }
+a:visited    { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000; text-decoration: none }
+a:hover      { font-family: Verdana, sans-serif; font-size: 10pt; color: #FF0000; text-decoration: underline }
+
+span.dashborder { color: #00FFFF; }
+span.bordertext { color: #007F7F; }
+
+/* This is really stupid, but the fucking validator forced my hand */
+span.black { color: #000000; }
+span.dblue { color: #00007F; }
+span.cyan  { color: #007F7F; }
+span.dgreen{ color: #007F00; }
+span.dred  { color: #7F0000; }
+span.grey  { color: #BFBFBF; }
+span.yellow{ color: #FFFF00; }
+span.blue  { color: #0000FF; }
+span.lblue { color: #00FFFF; }
+span.green { color: #00FF00; }
+span.red   { color: #FF0000; }
+span.white { color: #FFFFFF; }
+span.dgrey { color: #7F7F7F; }
+span.orange{ color: #7F7F00; }
+span.purple{ color: #7F007F; }
+span.pink  { color: #FF00FF; }
+
+span.credits{
+   font-family: Arial, sans-serif;
+   font-size: 7pt;
+   font-style: italic;
+}
+
+.menu{ 
+   width: 630px;
+   height: 375px;
+   border: 0;
+   background: black;
+}
+
+.footer{
+   width: 630px;
+   height: 32px;
+   border: 0;
+   background: black;
+}

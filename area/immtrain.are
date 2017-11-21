@@ -1,0 +1,4207 @@
+#AREA   Immortal Training Grounds~
+
+#VERSION 20
+
+#AUTHOR Tarl~
+
+#VNUMS 21100 21299
+
+#RANGES
+101 115 101 115
+$
+
+#RESETMSG The area resets around you with a crunch.~
+
+#RESETFREQUENCY 5
+
+#FLAGS
+nocamp noteleport~
+
+#CONTINENT immortal~
+
+#COORDS 0 0
+
+#CLIMATE 2 2 2
+
+#TREASURE
+20 74 85 93
+20 50 60 75
+
+#MOBILES
+#21100
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#21101
+rapper~
+A hand~
+A hand floats here.
+~
+~
+npc sentinel~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#21102
+takeover~
+takeover~
+Takeover, the switch test mobile stands here.
+~
+~
+npc sentinel immortal~
+~
+0 0 0 0 0 150 100 0.000000
+50 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+male~
+drow~
+ranger~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#21103
+rich money~
+A rich man~
+A rich man with lots of money stands here.
+~
+~
+npc sentinel~
+~
+0 -1 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#21299
+Last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+npc~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+~
+~
+#0
+
+
+#OBJECTS
+#21100
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+trash~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#21101
+keg whiskey~
+A keg of whiskey~
+A key of whiskey sits here, waiting to get you drunk.~
+~
+drinkcon~
+~
+~
+~
+100 100 5 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#21299
+Last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+trash~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#0
+
+
+#ROOMS
+#21100
+Entrance Court~
+Greetings Immortal, Welcome to this training area.
+Please take the time here to learn the commands, so
+a higher level Imm doesn't feel the need to 'educate'
+you. Wizhelp is still your best friend, in particular,
+because it will display what level a command is at,
+so you can go to the right section. To rush ahead to
+a section, merely say aloud the Level of command you
+are after.
+~
+~
+indoors~
+nomob indoors safe nocamp nodrop~
+0
+D
+south~
+~
+~
+~
+-1 21101 0 0
+> speech_prog 101~
+mptrlook $n 21101
+~
+> speech_prog 102~
+mptrlook $n 21102
+~
+> speech_prog 103~
+mptrlook $n 21103
+~
+> speech_prog 104~
+mptrlook $n 21104
+~
+> speech_prog 105~
+mptrlook $n 21105
+~
+> speech_prog 106~
+mptrlook $n 21106
+~
+> speech_prog 107~
+mptrlook $n 21107
+~
+> speech_prog 108~
+mptrlook $n 21108
+~
+> speech_prog 109~
+mptrlook $n 21109
+~
+|
+S
+#21101
+Level 101 Section.~
+The passage down to the east will discuss the commands
+available to a level 101 Immortal. Alternatively, saying
+a Level 101 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21100 0 0
+D
+east~
+~
+~
+~
+-1 21116 0 0
+D
+south~
+~
+~
+~
+-1 21102 0 0
+> speech_prog bamfin~
+mptrlook $n 21116
+~
+> speech_prog bamfout~
+mptrlook $n 21116
+~
+> speech_prog coords~
+mptrlook $n 21117
+~
+> speech_prog fixed~
+mptrlook $n 21118
+~
+> speech_prog goto~
+mptrlook $n 21119
+~
+> speech_prog hedit~
+mptrlook $n 21120
+~
+> speech_prog holylight~
+mptrlook $n 21121
+~
+> speech_prog hset~
+mptrlook $n 21122
+~
+> speech_prog imotd~
+mptrlook $n 21123
+~
+> speech_prog landmarks~
+mptrlook $n 21124
+~
+> speech_prog morph~
+mptrlook $n 21125
+~
+> speech_prog unmorph~
+mptrlook $n 21125
+~
+> speech_prog peace~
+mptrlook $n 21126
+~
+> speech_prog project~
+mptrlook $n 21127
+~
+> speech_prog rap~
+mptrlook $n 21128
+~
+> speech_prog sedit~
+mptrlook $n 21129
+~
+> speech_prog showclass~
+mptrlook $n 21130
+~
+> speech_prog showrace~
+mptrlook $n 21131
+~
+> speech_prog slookup~
+mptrlook $n 21132
+~
+> speech_prog think~
+mptrlook $n 21133
+~
+> speech_prog wizinfo~
+mptrlook $n 21134
+~
+> speech_prog wizhelp~
+mptrlook $n 21135
+~
+|
+S
+#21102
+Level 102 Section~
+The passage down to the east will discuss the commands
+available to a level 102 Immortal. Alternatively, saying
+a Level 102 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21101 0 0
+D
+east~
+~
+~
+~
+-1 21136 0 0
+D
+south~
+~
+~
+~
+-1 21103 0 0
+> speech_prog invis~
+mptrlook $n 21136
+~
+> speech_prog switch~
+mptrlook $n 21137
+~
+> speech_prog return~
+mptrlook $n 21137
+~
+> speech_prog showclan~
+mptrlook $n 21138
+~
+> speech_prog showcouncil~
+mptrlook $n 21139
+~
+> speech_prog sober~
+mptrlook $n 21140
+~
+> speech_prog showdeity~
+mptrlook $n 21141
+~
+> speech_prog showorder~
+mptrlook $n 21142
+~
+> speech_prog showguild~
+mptrlook $n 21143
+~
+> speech_prog users~
+mptrlook $n 21144
+~
+|
+S
+#21103
+Level 103 Section.~
+The passage down to the east will discuss the commands
+available to a level 103 Immortal. Alternatively, saying
+a Level 103 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21102 0 0
+D
+east~
+~
+~
+~
+-1 21145 0 0
+D
+south~
+~
+~
+~
+-1 21104 0 0
+> speech_prog authorize~
+mptrlook $n 21145
+~
+> speech_prog at~
+mptrlook $n 21146
+~
+> speech_prog aassign~
+mptrlook $n 21147
+~
+> speech_prog aexit~
+mptrlook $n 21148
+~
+> speech_prog loadarea~
+mptrlook $n 21149
+~
+> speech_prog savearea~
+mptrlook $n 21149
+~
+> speech_prog newzones~
+mptrlook $n 21150
+~
+> speech_prog noemote~
+mptrlook $n 21151
+~
+> speech_prog notell~
+mptrlook $n 21152
+~
+> speech_prog notitle~
+mptrlook $n 21153
+~
+> speech_prog rat~
+mptrlook $n 21154
+~
+> speech_prog rdelete~
+mptrlook $n 21155
+~
+> speech_prog stat~
+mptrlook $n 21157
+~
+> speech_prog redit~
+mptrlook $n 21156
+~
+> speech_prog show~
+mptrlook $n 21158
+~
+> speech_prog silence~
+mptrlook $n 21159
+~
+> speech_prog unsilence~
+mptrlook $n 21159
+~
+> speech_prog wizlock~
+mptrlook $n 21160
+~
+> speech_prog zones~
+mptrlook $n 21161
+~
+|
+S
+#21104
+Level 104 Section.~
+The passage down to the east will discuss the commands
+available to a level 104 Immortal. Alternatively, saying
+a Level 104 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21103 0 0
+D
+east~
+~
+~
+~
+-1 21162 0 0
+D
+south~
+~
+~
+~
+-1 21105 0 0
+> speech_prog find~
+mptrlook $n 21162
+~
+> speech_prog Hell~
+mptrlook $n 21163
+~
+> speech_prog unhell~
+mptrlook $n 21163
+~
+> speech_prog load~
+mptrlook $n 21164
+~
+> speech_prog ocreate~
+mptrlook $n 21165
+~
+> speech_prog odelete~
+mptrlook $n 21166
+~
+> speech_prog oset~
+mptrlook $n 21167
+~
+> speech_prog purge~
+mptrlook $n 21168
+~
+> speech_prog restore~
+mptrlook $n 21169
+~
+> speech_prog restoretime~
+mptrlook $n 21170
+~
+> speech_prog strip~
+mptrlook $n 21171
+~
+> speech_prog transfer~
+mptrlook $n 21172
+~
+> speech_prog vsearch~
+mptrlook $n 21173
+~
+|
+S
+#21105
+Level 105 Section~
+The passage down to the east will discuss the commands
+available to a level 105 Immortal. Alternatively, saying
+a Level 105 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21104 0 0
+D
+east~
+~
+~
+~
+-1 21174 0 0
+D
+south~
+~
+~
+~
+-1 21106 0 0
+> speech_prog coinduct~
+mptrlook $n 21174
+~
+> speech_prog cooutcast~
+mptrlook $n 21174
+~
+> speech_prog force~
+mptrlook $n 21175
+~
+> speech_prog gfighting~
+mptrlook $n 21176
+~
+> speech_prog instazone~
+mptrlook $n 21177
+~
+> speech_prog instaroom~
+mptrlook $n 21178
+~
+> speech_prog mcreate~
+mptrlook $n 21179
+~
+> speech_prog mdelete~
+mptrlook $n 21180
+~
+> speech_prog mset~
+mptrlook $n 21181
+~
+> speech_prog reset~
+mptrlook $n 21182
+~
+> speech_prog rreset~
+mptrlook $n 21183
+~
+|
+S
+#21106
+Level 106 Section.~
+The passage down to the east will discuss the commands
+available to a level 106 Immortal. Alternatively, saying
+a Level 106 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21105 0 0
+D
+east~
+~
+~
+~
+-1 21184 0 0
+D
+south~
+~
+~
+~
+-1 21107 0 0
+> speech_prog climate~
+mptrlook $n 21184
+~
+> speech_prog makerepair~
+mptrlook $n 21185
+~
+> speech_prog makeshop~
+mptrlook $n 21186
+~
+> speech_prog mpedit~
+mptrlook $n 21187
+~
+> speech_prog mpstat~
+mptrlook $n 21188
+~
+> speech_prog mpcopy~
+mptrlook $n 21189
+~
+> speech_prog opedit~
+mptrlook $n 21190
+~
+> speech_prog opstat~
+mptrlook $n 21191
+~
+> speech_prog opcopy~
+mptrlook $n 21192
+~
+> speech_prog repairset~
+mptrlook $n 21193
+~
+> speech_prog repairshops~
+mptrlook $n 21194
+~
+> speech_prog repairstat~
+mptrlook $n 21195
+~
+> speech_prog rpedit~
+mptrlook $n 21196
+~
+> speech_prog rpstat~
+mptrlook $n 21197
+~
+> speech_prog shops~
+mptrlook $n 21198
+~
+> speech_prog shopset~
+mptrlook $n 21199
+~
+> speech_prog shopstat~
+mptrlook $n 21200
+~
+> speech_prog showweather~
+mptrlook $n 21201
+~
+> speech_prog setweather~
+mptrlook $n 21202
+~
+|
+S
+#21107
+Level 107 Section.~
+The passage down to the east will discuss the commands
+available to a level 107 Immortal. Alternatively, saying
+a Level 107 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21106 0 0
+D
+east~
+~
+~
+~
+-1 21203 0 0
+D
+south~
+~
+~
+~
+-1 21108 0 0
+> speech_prog aset~
+mptrlook $n 21203
+~
+> speech_prog astat~
+mptrlook $n 21204
+~
+> speech_prog disconnect~
+mptrlook $n 21205
+~
+> speech_prog echo~
+mptrlook $n 21206
+~
+> speech_prog foldarea~
+mptrlook $n 21207
+~
+> speech_prog Log~
+mptrlook $n 21208
+~
+> speech_prog makewizlist~
+mptrlook $n 21209
+~
+> speech_prog makeslay~
+mptrlook $n 21210
+~
+> speech_prog morphset~
+mptrlook $n 21211
+~
+> speech_prog morphstat~
+mptrlook $n 21212
+~
+> speech_prog morphcreate~
+mptrlook $n 21213
+~
+> speech_prog morphdestroy~
+mptrlook $n 21214
+~
+> speech_prog morphlist~
+mptrlook $n 21215
+~
+> speech_prog skills~
+mptrlook $n 21216
+~
+> speech_prog system~
+mptrlook $n 21217
+~
+> speech_prog slay~
+mptrlook $n 21218
+~
+> speech_prog setdeity~
+mptrlook $n 21219
+~
+> speech_prog scatter~
+mptrlook $n 21220
+~
+> speech_prog strew~
+mptrlook $n 21221
+~
+> speech_prog setslay~
+mptrlook $n 21222
+~
+> speech_prog showslay~
+mptrlook $n 21223
+~
+> speech_prog voice~
+mptrlook $n 21224
+~
+|
+S
+#21108
+Level 108 Section.~
+The passage down to the east will discuss the commands
+available to a level 108 Immortal. Alternatively, saying
+a Level 108 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21107 0 0
+D
+east~
+~
+~
+~
+-1 21225 0 0
+D
+south~
+~
+~
+~
+-1 21109 0 0
+> speech_prog allow~
+mptrlook $n 21225
+~
+> speech_prog ban~
+mptrlook $n 21226
+~
+> speech_prog boards~
+mptrlook $n 21227
+~
+> speech_prog bset~
+mptrlook $n 21228
+~
+> speech_prog bstat~
+mptrlook $n 21229
+~
+> speech_prog comment~
+mptrlook $n 21230
+~
+> speech_prog deny~
+mptrlook $n 21231
+~
+> speech_prog dmesg~
+mptrlook $n 21232
+~
+> speech_prog delay~
+mptrlook $n 21233
+~
+> speech_prog forceclose~
+mptrlook $n 21234
+~
+> speech_prog freeze~
+mptrlook $n 21235
+~
+> speech_prog khistory~
+mptrlook $n 21236
+~
+> speech_prog litterbug~
+mptrlook $n 21237
+~
+> speech_prog makeboard~
+mptrlook $n 21238
+~
+> speech_prog moblog~
+mptrlook $n 21239
+~
+> speech_prog reboot~
+mptrlook $n 21240
+~
+> speech_prog snoop~
+mptrlook $n 21241
+~
+> speech_prog warn~
+mptrlook $n 21242
+~
+> speech_prog watch~
+mptrlook $n 21243
+~
+|
+S
+#21109
+Level 109 Section.~
+The passage down to the east will discuss the commands
+available to a level 109 Immortal. Alternatively, saying
+a Level 109 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21108 0 0
+D
+east~
+~
+~
+~
+-1 21244 0 0
+D
+south~
+~
+~
+~
+-1 21101 0 0
+> speech_prog fixchar~
+mptrlook $n 21244
+~
+> speech_prog newpass~
+mptrlook $n 21245
+~
+|
+S
+#21110
+Level 110 Section.~
+The passage down to the east will discuss the commands
+available to a level 110 Immortal. Alternatively, saying
+a Level 110 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+south~
+~
+~
+~
+-1 21111 0 0
+S
+#21111
+Level 111 Section.~
+The passage down to the east will discuss the commands
+available to a level 111 Immortal. Alternatively, saying
+a Level 111 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21110 0 0
+D
+south~
+~
+~
+~
+-1 21112 0 0
+S
+#21112
+Level 112 Section.~
+The passage down to the east will discuss the commands
+available to a level 112 Immortal. Alternatively, saying
+a Level 112 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21111 0 0
+D
+south~
+~
+~
+~
+-1 21113 0 0
+S
+#21113
+Level 113 Section.~
+The passage down to the east will discuss the commands
+available to a level 113 Immortal. Alternatively, saying
+a Level 113 command out loud will transfer you to the 
+appropriate room.
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+~
+-1 21112 0 0
+S
+#21116
+Bamfin/Bamfout~
+This command will change the message that is displayed when
+you use the goto command. It allows the usage of the $n operator
+in place of your name. 
+For example: bamfin Your world rocks as $n appears in a cloud of smoke.
+Then, when you use the goto command, any one in the room you appear in
+will see: Your world rocks as <your name> appears in a cloud of smoke.
+Similarly, the bamfout command will change the message displayed in the room
+you are leaving from.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21117 0 0
+D
+west~
+~
+~
+~
+-1 21101 0 0
+S
+#21117
+coords~
+The coords command will relocate you on the overland map
+to the co-ordinates you specify.
+For example: coord 472 392 will put you just outside of
+Bywater on the overland map.
+Try it, and then type: goto 21117 to return here.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21118 0 0
+D
+west~
+~
+~
+~
+-1 21116 0 0
+S
+#21118
+fixed~
+This command is used to record information when you have
+fixed or otherwise made changes to an area. 
+Usage is: fixed <message up to 250 characters>
+Alternatively, you can list all the recorded fixes using
+fixed list
+
+NOTE: This file supports color tokens, be careful with them.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21119 0 0
+D
+west~
+~
+~
+~
+-1 21117 0 0
+S
+#21119
+goto~
+This command is used to transport you to a different area of the MUD.
+It works by either goto <vnum> or goto <keyword> Be warned though,
+keywords are often used by several different mobs and objects, so you
+might not end up where you meant to be.
+ie: goto 13950  This will transfer you to the Entrance Court of the 
+Arcanium Guildhall. Test it out, and then use goto 21119
+to get back here.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21120 0 0
+D
+west~
+~
+~
+~
+-1 21118 0 0
+S
+#21120
+hedit~
+This command allows you to create a new help file entry.
+NOTE: ALWAYS check if an entry for the keyword you are planning to use
+exists BEFORE using this command.
+ 
+Usage: hedit <keyword>
+Colors are supported, but use discretion.
+See help hedit for more information.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21121 0 0
+D
+west~
+~
+~
+~
+-1 21119 0 0
+S
+#21121
+holylight~
+This command allows you to see (almost) every character in the MUD.
+You can see in darkness, hidden, invisible, etc.
+In addition, you can see a MUCH larger area of the overland then normal.
+ 
+NOTE: This command does not reveal invisible imms of a higher level then you.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21122 0 0
+D
+west~
+~
+~
+~
+-1 21120 0 0
+S
+#21122
+hset~
+This command sets various aspects of help files.
+hset save will save the current list of help files to help.are
+hset level <level> <help topic> will restrict a helpfile to a
+certain level or above.
+hset keyword <keyword> <help topic> will assign a keyword to a
+help topic. For multiple keywords, put them in quotes.
+hset remove <level.><help topic> will remove a help topic. If
+more then one help topic matches, and no level is specified, it
+will remove the lowest level first.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21123 0 0
+D
+west~
+~
+~
+~
+-1 21121 0 0
+S
+#21123
+imotd~
+This will display the Immortal MOTD to you.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21124 0 0
+D
+west~
+~
+~
+~
+-1 21122 0 0
+S
+#21124
+landmarks~
+This command will list all of the landmarks displayed on the overland
+map. It will also list where they occur, as well as the distances they
+are visible from.
+ 
+Test it out.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21125 0 0
+D
+west~
+~
+~
+~
+-1 21123 0 0
+S
+#21125
+Morph/Unmorph~
+Morph will, strangely enough, turn you into something.
+ie: morph 1010 will turn you into an Iron Golem.
+Similarly, unmorph will return you to your normal shape.
+
+Practice now by morphing yourself into an Iron Golem, and returning to
+normal.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21126 0 0
+D
+west~
+~
+~
+~
+-1 21124 0 0
+> act_prog p A screeching of metal on metal can be heard as~
+echoat $n Congratulations. You have done well.
+~
+> act_prog p A screeching of metal on metal can be heard as~
+mpechoat $n Congratulations. You have done well.
+~
+> act_prog p solidifies into cold iron as~
+mpechoat $n Well Done. Half way there. :)
+~
+|
+S
+#21126
+peace~
+This command will make all characters in a room stop fighting.
+They will then sit down, to ensure no aggressive flags trigger the start of
+another fight.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21127 0 0
+D
+west~
+~
+~
+~
+-1 21125 0 0
+S
+#21127
+project~
+This command will list all the current projects. See help project
+for more details.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21128 0 0
+D
+west~
+~
+~
+~
+-1 21126 0 0
+S
+#21128
+rap~
+This command allows you to 'rap' or 'knock' on a door, or in a 
+direction, and anyone on the other side will be able to hear you.
+ 
+Test it out by typing rap north
+~
+~
+indoors~
+~
+0
+D
+north~
+~
+~
+isdoor closed locked pickproof nopassdoor bashproof~
+-1 21246 0 0
+D
+east~
+~
+~
+~
+-1 21129 0 0
+D
+west~
+~
+~
+~
+-1 21127 0 0
+R D 0 21128 0 2
+> act_prog p raps loudly on the door.~
+mptransfer rapper
+mpforce rapper emote taps $n on the shoulder. Well done.
+mptransfer rapper 21246
+~
+|
+S
+#21129
+sedit~
+This command is used for editing socials. See help sedit for more
+details.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21130 0 0
+D
+west~
+~
+~
+~
+-1 21128 0 0
+S
+#21130
+showclass~
+This command will show you information about a particular class type.
+ie: showclass ranger will display information on rangers.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21131 0 0
+D
+west~
+~
+~
+~
+-1 21129 0 0
+S
+#21131
+showrace~
+This command will show you information about a particular race type.
+ie: showclass wild-elf will display information on wild-elves.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21132 0 0
+D
+west~
+~
+~
+~
+-1 21130 0 0
+S
+#21132
+slookup~
+This command allows you to look up what a specific skill/spell does.
+For instance, slookup fly will show you information on the spell fly.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21133 0 0
+D
+west~
+~
+~
+~
+-1 21131 0 0
+S
+#21133
+Think/"~
+This is the equivalent of chat, but only between imms. Similarly,
+a " is the shortcut for think.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21134 0 0
+D
+west~
+~
+~
+~
+-1 21132 0 0
+S
+#21134
+wizinfo~
+This command will display information on the immortals.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21135 0 0
+D
+west~
+~
+~
+~
+-1 21133 0 0
+S
+#21135
+wizhelp~
+This command lists all the immortal commands available to you.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21101 0 0
+D
+west~
+~
+~
+~
+-1 21134 0 0
+S
+#21136
+invis~
+This command allows you to turn invisible to people below a certain level.
+That level is set using invis <level>
+ 
+Similarly, using the invis command a second time will cancel the invisibility.
+Try turning yourself invisible, and then back to visible now.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21137 0 0
+D
+west~
+~
+~
+~
+-1 21102 0 0
+> act_prog p slowly fades into existence.~
+mpechoat $n Congrats! You did it :)
+~
+|
+S
+#21137
+Switch/Return~
+This command allows you to 'take over' the body of another Non-PC character.
+The return command will bring you out of that body and take you back to your
+own.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21138 0 0
+D
+west~
+~
+~
+~
+-1 21136 0 0
+R M 0 21102 1 21137 -1 -1 -1
+S
+#21138
+showclan~
+The Showclan command will reveal information on a specific clan.
+For example, showclan MistWraith
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21139 0 0
+D
+west~
+~
+~
+~
+-1 21137 0 0
+S
+#21139
+showcouncil~
+This command displays information on a council.
+Usage is: showcouncil <council name>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21140 0 0
+D
+west~
+~
+~
+~
+-1 21138 0 0
+S
+#21140
+sober~
+This command will instantly sober up a player from a drunken state.
+Usage is: sober <player>
+ 
+Note: Immortals don't appear to be affected by alcohol.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21141 0 0
+D
+west~
+~
+~
+~
+-1 21139 0 0
+R O 0 21101 1 21140 -1 -1 -1
+S
+#21141
+showdeity~
+The showdeity command will reveal information on a specific deity
+for you.
+ie: showdeity Ortheus
+For more information on deities, say setdeity out loud here.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21144 0 0
+D
+west~
+~
+~
+~
+-1 21140 0 0
+> speech_prog setdeity~
+mptrlook $n 21219
+~
+|
+S
+#21142
+showorder~
+The showorder command will reveal details about a specific order to you.
+ie: showorder <ordername>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21143 0 0
+D
+west~
+~
+~
+~
+-1 21141 0 0
+S
+#21143
+showguild~
+This command will show information on a particular guild.
+ie: showguild Arcanium
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21144 0 0
+D
+west~
+~
+~
+~
+-1 21141 0 0
+S
+#21144
+users~
+This command will list all of the visible users connected to the server,
+including users in the process of logging in.
+If used with an argument you can view all users from that host, or all users
+with that playername.
+Shortened forms (ie, 203.113 or fre) will also work, and display all the users
+from 203.113.* or users Frerick and Fred respectively.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21102 0 0
+D
+west~
+~
+~
+~
+-1 21141 0 0
+S
+#21145
+authorize~
+This command will allow you to authorize a player's name.
+Usage: authorize by itself will list any names currently pending authorization.
+authorize <name> will authorize that player's name, and allow the player
+to continue using it.
+authorize <name> no will wipe the player's pfile, and deny the name.
+authorize <name> name will require the player to change names, and deny
+them from using their current name.
+authorize fixlist will attempt to fix a broken authorize list.
+authorize show approved will list all the approved names.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21146 0 0
+D
+west~
+~
+~
+~
+-1 21103 0 0
+S
+#21146
+at~
+This command executes the given command at the location specified.
+The location can be given as a vnum, the name of a mob or player, or
+the name of an object.
+Usage: at <location> <command>
+To test, try: at rapper look
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21147 0 0
+D
+west~
+~
+~
+~
+-1 21145 0 0
+S
+#21147
+aassign~
+What can I put here, apart from, This command sucks major ass.
+This command will assign a given area to you, so you can work on it.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21148 0 0
+D
+west~
+~
+~
+~
+-1 21146 0 0
+S
+#21148
+aexit~
+Tell me what this does :)
+This command will list all the 'external' exits from an area. 
+ 
+Test it out now.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21149 0 0
+D
+west~
+~
+~
+~
+-1 21147 0 0
+S
+#21149
+Loadarea/Savearea~
+This command will load your assigned area up for you to edit.
+Similarly, the savearea command will save your assigned area.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21150 0 0
+D
+west~
+~
+~
+~
+-1 21148 0 0
+S
+#21150
+newzones~
+This command will list the vnum range for prototype (assigned) areas that
+have been loaded.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21151 0 0
+D
+west~
+~
+~
+~
+-1 21149 0 0
+S
+#21151
+noemote~
+This command will prevent a character from using emote's.
+To remove, simply use the command again.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21152 0 0
+D
+west~
+~
+~
+~
+-1 21150 0 0
+S
+#21152
+notell~
+This command will prevent a character from using tell's.
+To remove, simply use the command again.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21153 0 0
+D
+west~
+~
+~
+~
+-1 21151 0 0
+S
+#21153
+notitle~
+This command will prevent a character from using title's.
+To remove, simply use the command again.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21154 0 0
+D
+west~
+~
+~
+~
+-1 21152 0 0
+S
+#21154
+rat~
+The rat command works similarly to the at command, except it is
+executed within the range of rooms you specify, instead of merely
+one location.
+Usage: rat vnum1 vnum2 command
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21155 0 0
+D
+west~
+~
+~
+~
+-1 21153 0 0
+S
+#21155
+rdelete~
+This command will in essence delete a room, by marking it not to be
+saved.
+ 
+Usage: rdelete <vnum>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21156 0 0
+D
+west~
+~
+~
+~
+-1 21154 0 0
+S
+#21156
+redit~
+The redit command is used to set various things about the room.
+For example
+redit name <name> This sets the rooms name.
+Also, you can 'lock' redit on, by using the command
+redit on
+To remove it, simply type done.
+For more information on redit, please see help redit.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21157 0 0
+D
+west~
+~
+~
+~
+-1 21155 0 0
+S
+#21157
+stat~
+This command is a replacement for ostat, rstat and mstat, all rolled
+into one. It will display statistics on the target.
+Usage: stat obj <vnum or keyword>
+stat mob <vnum or keyword>
+stat room <vnum>
+stat player <name>
+NOTE: This can be shortened to stat o <vnum or keyword>, etc.
+ 
+As an example, try stat player <your name>
+stat m rapper
+stat o keg
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21158 0 0
+D
+west~
+~
+~
+~
+-1 21156 0 0
+S
+#21158
+show~
+The show command will display a list of all the rooms, objects or
+mobiles depending on the parameters you pass it.
+ 
+Usage: show room <lowvnum> <hivnum>
+show room <area filename>
+show obj <lowvnum> <hivnum>
+show obj <area filename>
+show mob <lowvnum> <hivnum>
+show mob <area filename>
+ 
+This command combines and replaces mlist, olist and rlist.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21159 0 0
+D
+west~
+~
+~
+~
+-1 21157 0 0
+S
+#21159
+Silence/Unsilence~
+This command will allow you to silence a character, ie, stop them
+from using any and all channels.
+ 
+Simply use unsilence to remove a player's silence and return the power of
+speech to them.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21160 0 0
+D
+west~
+~
+~
+~
+-1 21158 0 0
+S
+#21160
+wizlock~
+This command toggles wizlocking on and off. When the server is wizlocked
+only level 101 or above can log in to the MUD. If a previously connected
+mortal player gets disconnected, they won't be able to log back in until
+the wizlock is removed.
+ 
+See help wizlock for more information on WHEN this command should be used.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21161 0 0
+D
+west~
+~
+~
+~
+-1 21159 0 0
+S
+#21161
+zones~
+This command will list the File name, Area name, and vnum range for every
+non-prototype area in the MUD.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21103 0 0
+D
+west~
+~
+~
+~
+-1 21160 0 0
+S
+#21162
+find~
+This command will locate all the objs or mobs with a particular keyword.
+The resulting display will show you the vnum, and a short description
+of the mob or obj.
+ 
+Usage: find m keyword
+or find o keyword
+ 
+This command combines and replaces ofind and mfind.
+Try find m rapper
+and find o keg
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21163 0 0
+D
+west~
+~
+~
+~
+-1 21104 0 0
+S
+#21163
+Hell/Unhell~
+The hell command shows your displeasure. It will send a character to hell
+for a given period of time. It will automatically release them when their time
+is up. 
+ 
+Usage: hell <character> <number> <hours or days> If hours or days isn't
+specified, it will default to hours.
+ 
+Unhell <character> will release a character from hell.
+ 
+NOTE: This is a punishment command, do not use it as a joke.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21164 0 0
+D
+west~
+~
+~
+~
+-1 21162 0 0
+S
+#21164
+load~
+The load command allows you to load an instance of either an object,
+or a mobile. 
+ 
+Usage: load obj <vnum or keyword>
+load mob <vnum or keyword>
+ 
+This command combines and replaces minvoke and oinvoke.
+Try load o keg
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21165 0 0
+D
+west~
+~
+~
+~
+-1 21163 0 0
+S
+#21165
+ocreate~
+Ocreate will create a new prototype object for you to edit. The object
+will appear in your inventory.
+ 
+Usage: ocreate <vnum> <keywords>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21166 0 0
+D
+west~
+~
+~
+~
+-1 21164 0 0
+S
+#21166
+odelete~
+The odelete command will in essence delete an object, by marking it not
+to be saved.
+ 
+Usage: odelete <vnum>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21167 0 0
+D
+west~
+~
+~
+~
+-1 21165 0 0
+S
+#21167
+oset~
+The oset command is used to set everything about an object.
+As such, it would take too long to list all of its properties here,
+so please refer to help oset.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21168 0 0
+D
+west~
+~
+~
+~
+-1 21166 0 0
+S
+#21168
+purge~
+The purge command will remove all the mobs and objects in the current room.
+If used with an argument, it will purge one mob or object with that/those
+keywords from anywhere in the world.
+ 
+The purge command will not get rid of PC's.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21169 0 0
+D
+west~
+~
+~
+~
+-1 21167 0 0
+S
+#21169
+restore~
+The restore command will restore full hp's, mana points and movement points
+to the target character. Similarly, restore all does this for all mortals
+except deadly ones, and those who happen to be in the arena.
+ 
+Usage: restore <character>
+or restore all
+Try restoring yourself.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21170 0 0
+D
+west~
+~
+~
+~
+-1 21168 0 0
+S
+#21170
+restoretime~
+This command will display how much time has passed since you last did
+a restore all.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21171 0 0
+D
+west~
+~
+~
+~
+-1 21169 0 0
+S
+#21171
+strip~
+The strip command will remove all items and clothing from a character
+and transfer them into your inventory.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21172 0 0
+D
+west~
+~
+~
+~
+-1 21170 0 0
+S
+#21172
+transfer~
+The transfer command allows you to transfer a mob or PC to anywhere you wish.
+ 
+Usage: transfer <character or mob keyword/vnum> <destination>
+If no destination is specified, your current location is used.
+Try transfer rapper, then remember to put him back. He lives in 21246
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21173 0 0
+D
+west~
+~
+~
+~
+-1 21171 0 0
+S
+#21173
+vsearch~
+This command will list all occurances of an object with the specified
+vnum that are currently in the game.
+ 
+Usage: vsearch <vnum>
+Try: vsearch 21101
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21104 0 0
+D
+west~
+~
+~
+~
+-1 21172 0 0
+S
+#21174
+Coinduct/Cooutcast~
+These commands induct and outcast a player into a council. 
+They should only be used if it is either your council, or you have
+authorisation to induct/remove people from it.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21175 0 0
+D
+west~
+~
+~
+~
+-1 21105 0 0
+S
+#21175
+force~
+The force command is used to make a character or mob execute a command.
+It only works on characters of a lower level then you.
+ 
+Similarly, force all will make all characters lower then you execute a command
+ie. force all save
+Try transfering rapper here, and forcing him to sit, and then stand again.
+Remember to return rapper to his room, at 21246.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21176 0 0
+D
+west~
+~
+~
+~
+-1 21174 0 0
+S
+#21176
+gfighting~
+At a rough guess, this lists all the current PK fights occuring.
+ 
+(If you know that this is not the case, please correct us.)
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21177 0 0
+D
+west~
+~
+~
+~
+-1 21175 0 0
+S
+#21177
+instazone~
+This command will do the resets for your entire zone. Simply place
+everything EXACTLY as you want it, and then use instazone. *boom*
+Resets done. :)
+ 
+NOTE: This command should NEVER EVER be used on an installed area, only on a
+proto area, and even then, only use it ONCE.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21178 0 0
+D
+west~
+~
+~
+~
+-1 21176 0 0
+S
+#21178
+instaroom~
+This command will do the resets for the room you are standing in.
+Simply place everything where you want it, and instaroom.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21179 0 0
+D
+west~
+~
+~
+~
+-1 21177 0 0
+S
+#21179
+mcreate~
+This command will create a new prototype mob for you to edit.
+ 
+Usage: mcreate <vnum> <keywords>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21180 0 0
+D
+west~
+~
+~
+~
+-1 21178 0 0
+S
+#21180
+mdelete~
+This command will in essence delete a mobile by marking it not to be
+saved.
+ 
+Usage: mdelete <vnum>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21181 0 0
+D
+west~
+~
+~
+~
+-1 21179 0 0
+S
+#21181
+mset~
+This command allows you to set all aspects of a mobile. As such, it is
+much better explained under help mset
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21182 0 0
+D
+west~
+~
+~
+~
+-1 21180 0 0
+S
+#21182
+reset~
+This command edits the resets of an area. However, it is strongly recommended
+that you edit resets yourself by hand, as this is much much easier and safer.
+ 
+For more information on this command, see help reset
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21183 0 0
+D
+west~
+~
+~
+~
+-1 21181 0 0
+S
+#21183
+rreset~
+This command will allow you to do reset editing. However, it appears
+buggy and dangerous to use. My advice is to edit all your resets
+by hand.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21105 0 0
+D
+west~
+~
+~
+~
+-1 21182 0 0
+S
+#21184
+climate~
+This command allows you to view, or edit the climate settings for an
+area. There are settings for temperature, precipitation and wind.
+You may also specify neighboring areas to be affected by the changes
+in the current areas climate.
+ 
+See help climate for more details.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21185 0 0
+D
+west~
+~
+~
+~
+-1 21106 0 0
+S
+#21185
+makerepair~
+The makerepair command will give a mobile the ability to repair damaged
+equipment. 
+ 
+Say either repairset or repairstat out loud to be taken to those commands.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21186 0 0
+D
+west~
+~
+~
+~
+-1 21184 0 0
+> speech_prog repairset~
+mptrlook $n 21193
+~
+> speech_prog repairstat~
+mptrlook $n 21195
+~
+|
+S
+#21186
+makeshop~
+The makeshop command will turn a mobile into a shop.
+ 
+Say shopset or shopstat to be transferred to those rooms.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21187 0 0
+D
+west~
+~
+~
+~
+-1 21185 0 0
+> speech_prog shopset~
+mptrlook $n 21199
+~
+> speech_prog shopstat~
+mptrlook $n 21200
+~
+|
+S
+#21187
+mpedit~
+This command allows online editing of a Mobile Prog.
+For more detailed information, please view help mpedit.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21188 0 0
+D
+west~
+~
+~
+~
+-1 21186 0 0
+S
+#21188
+mpstat~
+The Mpstat command will display all of the mobile programs on a particular
+mob.
+ 
+Usage: mpstat <mob/vnum>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21189 0 0
+D
+west~
+~
+~
+~
+-1 21187 0 0
+S
+#21189
+mpcopy~
+This command will copy an mprog from one mobile to another.
+For exact syntax, type mpcopy.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21190 0 0
+D
+west~
+~
+~
+~
+-1 21188 0 0
+S
+#21190
+opedit~
+This is the command to edit or create a program on an object.
+For lots more help, see help opedit
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21191 0 0
+D
+west~
+~
+~
+~
+-1 21189 0 0
+S
+#21191
+opstat~
+This command will display all the object programs on a particular object.
+ 
+Usage: opstat <obj keyword/vnum>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21192 0 0
+D
+west~
+~
+~
+~
+-1 21190 0 0
+S
+#21192
+opcopy~
+Opcopy will copy the mud prog of an object to another object.
+For exact syntax, please type opcopy
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21193 0 0
+D
+west~
+~
+~
+~
+-1 21191 0 0
+S
+#21193
+repairset~
+The repairset command allows you to set various aspects of a repair shop.
+For lots more information, see help repairset
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21194 0 0
+D
+west~
+~
+~
+~
+-1 21192 0 0
+S
+#21194
+repairshops~
+This command will display information on all the repair shops in the MUD.
+Try typing it now.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21195 0 0
+D
+west~
+~
+~
+~
+-1 21193 0 0
+S
+#21195
+repairstat~
+The repairstat command will display detailed statistics on a certain
+mobiles repair shop.
+
+Test it out with repairstat 7032
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21196 0 0
+D
+west~
+~
+~
+~
+-1 21194 0 0
+S
+#21196
+rpedit~
+This command allows the creation and editing of a room program.
+For more information, see help rpedit
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21197 0 0
+D
+west~
+~
+~
+~
+-1 21195 0 0
+S
+#21197
+rpstat~
+This command displays all the programs on a room.
+ 
+Test it out now.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21198 0 0
+D
+west~
+~
+~
+~
+-1 21196 0 0
+> speech_prog test~
+mpechoat $n If you can read this, you obviously found the prog in this room.
+mpechoat $n Well done :)
+~
+|
+S
+#21198
+shops~
+The shops command displays information on all the shops in the MUD.
+Test it out now.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21199 0 0
+D
+west~
+~
+~
+~
+-1 21197 0 0
+S
+#21199
+shopset~
+Shopset allows you to change details about a specific shop.
+See help shopset for information.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21200 0 0
+D
+west~
+~
+~
+~
+-1 21198 0 0
+S
+#21200
+shopstat~
+This command will display statistics on a particular shop.
+Test it using shopstat 7031
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21201 0 0
+D
+west~
+~
+~
+~
+-1 21199 0 0
+S
+#21201
+showweather~
+This command displays a whole heap of information on the weather.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21202 0 0
+D
+west~
+~
+~
+~
+-1 21200 0 0
+S
+#21202
+setweather~
+This command allows you to set the weather for an area.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21106 0 0
+D
+west~
+~
+~
+~
+-1 21201 0 0
+S
+#21203
+aset~
+The Aset command is used to set area information, such as author, filename,
+vnums used, levels, etc.
+ 
+For more information on this command, see help aset
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21204 0 0
+D
+west~
+~
+~
+~
+-1 21107 0 0
+S
+#21204
+astat~
+This command will display information on an area.
+ 
+Usage: astat <filename>
+ 
+Test it out using astat arcanium.are
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21205 0 0
+D
+west~
+~
+~
+~
+-1 21203 0 0
+S
+#21205
+disconnect~
+This command will forcibly boot a character from the MUD.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21206 0 0
+D
+west~
+~
+~
+~
+-1 21204 0 0
+S
+#21206
+echo~
+This command will display the specified text to everyone in the current room.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21207 0 0
+D
+west~
+~
+~
+~
+-1 21205 0 0
+S
+#21207
+foldarea~
+The foldarea command is used to save an area file, generally after you
+have edited it.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21208 0 0
+D
+west~
+~
+~
+~
+-1 21206 0 0
+S
+#21208
+Log~
+The log command will cause all of a characters commands to be logged into
+the log file.
+ 
+Similarly, log all will log every characters commands into the log file.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21209 0 0
+D
+west~
+~
+~
+~
+-1 21207 0 0
+S
+#21209
+makewizlist~
+This command will re-make the wizlist using the levels from all of the MUD's
+pfiles.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21210 0 0
+D
+west~
+~
+~
+~
+-1 21208 0 0
+S
+#21210
+makeslay~
+This command creates a new slay type, with the default options.
+Once it is created, you then use setslay to edit it.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21211 0 0
+D
+west~
+~
+~
+~
+-1 21209 0 0
+S
+#21211
+morphset~
+The morphset command is used to set various aspects of a new morph.
+Type morphset for more information.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21212 0 0
+D
+west~
+~
+~
+~
+-1 21210 0 0
+S
+#21212
+morphstat~
+Morphstat displays information on a particular morph.
+ 
+For example: morphstat 1010
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21213 0 0
+D
+west~
+~
+~
+~
+-1 21211 0 0
+S
+#21213
+morphcreate~
+This command is used for the creation of a new morph type.
+ 
+Alternatively, this command can be used to copy an existing morphtype.
+ 
+Usage: To create a new morphtype: morphcreate <name>
+To copy an existing: morphcreate <name/vnum> copy
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21214 0 0
+D
+west~
+~
+~
+~
+-1 21212 0 0
+S
+#21214
+morphdestroy~
+This command deletes a morph type.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21215 0 0
+D
+west~
+~
+~
+~
+-1 21213 0 0
+S
+#21215
+morphlist~
+This command will list all the morphs available.
+ 
+Try it out.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21216 0 0
+D
+west~
+~
+~
+~
+-1 21214 0 0
+S
+#21216
+skills~
+This command allows you to view exactly what skills, and what level they
+have practiced to, a player has.
+ 
+Usage: skills <player>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21217 0 0
+D
+west~
+~
+~
+~
+-1 21215 0 0
+S
+#21217
+system~
+System will send whatever text you tell it to, to everyone on the MUD.
+ 
+ie: system Testing 1 2 3
+Testing 1 2 3 will be echoed to everyone on the MUD.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21218 0 0
+D
+west~
+~
+~
+~
+-1 21216 0 0
+S
+#21218
+slay~
+This command will instantly kill a character. An optional type can also be
+provided.
+Use just the word slay to see the current list of slay types available.
+ 
+Usage: slay <victim> [option]
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21219 0 0
+D
+west~
+~
+~
+~
+-1 21217 0 0
+S
+#21219
+setdeity~
+This command will set all aspects of a deity. 
+Type setdeity for information.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21220 0 0
+D
+west~
+~
+~
+~
+-1 21218 0 0
+S
+#21220
+scatter~
+This command will throw a character to a random location in the MUD.
+Note that the character doesn't have to be currently connected for this
+to work.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21221 0 0
+D
+west~
+~
+~
+~
+-1 21219 0 0
+S
+#21221
+strew~
+The strew command allows you to toss all of a character or mobiles
+inventory or coins wildly over the MUD.
+ 
+Usage: strew <character/mobile> <inv or coins>
+ 
+Test it out now, using strew rich coins
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21222 0 0
+D
+west~
+~
+~
+~
+-1 21220 0 0
+R M 0 21103 1 21221 -1 -1 -1
+S
+#21222
+setslay~
+The setslay command is used to customize a particular type of slay.
+see help setslay for more details.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21223 0 0
+D
+west~
+~
+~
+~
+-1 21221 0 0
+S
+#21223
+showslay~
+This command will display information on a particular slay.
+ 
+For example, showslay mech
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21224 0 0
+D
+west~
+~
+~
+~
+-1 21222 0 0
+S
+#21224
+voice~
+This command displays to the entire MUD whatever text you passed it,
+preceded by The Voice of God says:
+ 
+ie: voice Be kind to Bunnies.
+will display The Voice of God says: Be kind to Bunnies.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21107 0 0
+D
+west~
+~
+~
+~
+-1 21223 0 0
+S
+#21225
+allow~
+This command will remove a site from the ban list.
+ 
+Usage: allow <address>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21226 0 0
+D
+west~
+~
+~
+~
+-1 21108 0 0
+S
+#21226
+ban~
+This command will ban an address from connecting to the MUD.
+ 
+Usage: ban <address>
+ 
+OR, simply typing ban will list all the current bans on the MUD.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21227 0 0
+D
+west~
+~
+~
+~
+-1 21225 0 0
+S
+#21227
+boards~
+This command will display statistics on all the boards in the game.
+ 
+Try it now.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21228 0 0
+D
+west~
+~
+~
+~
+-1 21226 0 0
+S
+#21228
+bset~
+This command is used to set various aspects of a board.
+See help bset for more information.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21229 0 0
+D
+west~
+~
+~
+~
+-1 21227 0 0
+S
+#21229
+bstat~
+This command will display information on a specific board.
+ 
+Usage: bstat <board filename>
+ 
+For example: bstat arena.brd
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21230 0 0
+D
+west~
+~
+~
+~
+-1 21228 0 0
+S
+#21230
+comment~
+The comment command essentially treats players like a bulletin board.
+This is so notes can be made of any disciplinary action that has been
+taken, etc.
+ 
+See help comment for more information.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21231 0 0
+D
+west~
+~
+~
+~
+-1 21229 0 0
+S
+#21231
+deny~
+Deny will stop a player being able to log in, and will throw them
+immediately out of the game. A Deny will persist past a reboot or crash, and
+can only be removed by either loading up the character and doing an 
+mset <character> flags deny, or by editing the pfile.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21232 0 0
+D
+west~
+~
+~
+~
+-1 21230 0 0
+S
+#21232
+dmesg~
+This command will display the contents of the bootlog.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21233 0 0
+D
+west~
+~
+~
+~
+-1 21231 0 0
+S
+#21233
+delay~
+This command will delay a victim for a specified number of rounds.
+ 
+Usage: delay <character> <number of rounds>
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21234 0 0
+D
+west~
+~
+~
+~
+-1 21232 0 0
+S
+#21234
+forceclose~
+This command forcibly closes a descriptor. If you don't know EXACTLY
+what you are doing here, DON'T TOUCH IT.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21235 0 0
+D
+west~
+~
+~
+~
+-1 21233 0 0
+S
+#21235
+freeze~
+Freeze will prevent a character from issuing any commands. 
+To unfreeze a character, simply freeze them again.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21236 0 0
+D
+west~
+~
+~
+~
+-1 21234 0 0
+S
+#21236
+khistory~
+Khistory will list the last few mobs killed by a player.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21237 0 0
+D
+west~
+~
+~
+~
+-1 21235 0 0
+S
+#21237
+litterbug~
+The litterbug command allows/prevents players from dropping objects.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21238 0 0
+D
+west~
+~
+~
+~
+-1 21236 0 0
+S
+#21238
+makeboard~
+This command will create a board. You should then use bset to set up
+all the attributes of the board.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21239 0 0
+D
+west~
+~
+~
+~
+-1 21237 0 0
+S
+#21239
+moblog~
+Please tell me. :)
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21240 0 0
+D
+west~
+~
+~
+~
+-1 21238 0 0
+S
+#21240
+reboot~
+This command will cause the mud to start a 5 minute countdown, and then
+reboot.
+ 
+If the command is given as reboot mud now, the MUD will immediately reboot
+saving all connected players to disk.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21241 0 0
+D
+west~
+~
+~
+~
+-1 21239 0 0
+S
+#21241
+snoop~
+The snoop command will allow you to see exactly what text is going to,
+and coming from, a character.
+ 
+See help snoop for more information on the specific policies about snooping.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21242 0 0
+D
+west~
+~
+~
+~
+-1 21240 0 0
+S
+#21242
+warn~
+This will send a warning to a certain group of people. Either all those
+of one particular class, race, or host site.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21243 0 0
+D
+west~
+~
+~
+~
+-1 21241 0 0
+S
+#21243
+watch~
+The watch command is very similar to the log command, except it logs
+it to your own personal watch file.
+ 
+Please see help watch for important information on the command.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21108 0 0
+D
+west~
+~
+~
+~
+-1 21242 0 0
+S
+#21244
+fixchar~
+Fixchar will unequip a character, check all their stats, affects and the like
+are correct, and then re-equip them. Use if something really weird happens
+and a character is permenantly affected by something, or something similar.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21245 0 0
+D
+west~
+~
+~
+~
+-1 21109 0 0
+S
+#21245
+newpass~
+The newpass command allows you to change a characters password.
+If the target is offline, you will need to load their pfile by using the 
+loadup command before you try to change their password.
+~
+~
+indoors~
+~
+0
+D
+east~
+~
+~
+~
+-1 21109 0 0
+D
+west~
+~
+~
+~
+-1 21244 0 0
+S
+#21246
+Should you be here ?~
+You aren't supposed to be in here. This is merely to demonstrate the rap
+command. Use goto 21128 to leave.
+~
+~
+indoors~
+~
+0
+D
+south~
+~
+~
+isdoor closed locked nopassdoor~
+-1 21128 0 0
+R M 0 21101 1 21246 -1 -1 -1
+R D 0 21246 2 2
+S
+#21247
+Engulfed in a Swirling Mass of Void Space~
+~
+~
+indoors~
+~
+0
+S
+#21248
+Engulfed in a Swirling Mass of Void Space~
+~
+~
+indoors~
+~
+0
+S
+#21249
+Engulfed in a Swirling Mass of Void Space~
+~
+~
+indoors~
+~
+0
+S
+#21299
+Engulfed in a Swirling Mass of Void Space~
+~
+~
+indoors~
+~
+0
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

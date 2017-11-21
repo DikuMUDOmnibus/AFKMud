@@ -1,0 +1,148 @@
+#HOLIDAY
+Name		Yeartidings~
+Announce	Today is the Graecian holiday of Yeartidings, the first day of a new year.~
+Month		1
+Day		1
+End
+
+#HOLIDAY
+Name		The Olympiad~
+Announce	Today is the day of The Olympiad.~
+Month		1
+Day		26
+End
+
+#HOLIDAY
+Name		Faerieluck~
+Announce    Today is the Elven holiday of Faerieluck.~
+Month		2
+Day		4
+End
+
+#HOLIDAY
+Name		Feast of the Earth~
+Announce	Today is the Feast of the Earth.~
+Month		2
+Day		8
+End
+
+#HOLIDAY
+Name		Festival of Hera~
+Announce	Today is the Festival of Hera.~
+Month 	3
+Day		26
+End
+
+#HOLIDAY
+Name		Axeheft~
+Announce	Today is the Dwarven holiday of Axeheft.~
+Month		4
+Day		1
+End
+
+#HOLIDAY
+Name		Warsday~
+Announce	Today is the Graecian holiday of Warsday.~
+Month		4
+Day		5
+End
+
+#HOLIDAY
+Name		All Gods' Day~
+Announce	Today is the Halfling holiday of All Gods' Day.~
+Month		4
+Day		12
+End
+
+#HOLIDAY
+Name		Springrite~
+Announce    Today is the Elven holiday of Springrite.~
+Month		4
+Day		13
+End
+
+#HOLIDAY
+Name		Feast of Athena~
+Announce	Today is the Feast of Athena.~
+Month		5
+Day		26
+End
+
+#HOLIDAY
+Name		Agelong~
+Announce	Today is the Elven holiday of Agelong.~
+Month		6
+Day		8
+End
+
+#HOLIDAY
+Name		Deathtidings~
+Announce	Today is the Graecian holiday of Deathtidings.~
+Month		6
+Day		26
+End
+
+#HOLIDAY
+Name		Fallrite~
+Announce	Today is the Elven holiday of Fallrite.~
+Month		7
+Day		1
+End
+
+#HOLIDAY
+Name		Feast of Demeter~
+Announce	Today is the Feast of Demeter.~
+Month		7
+Day		19
+End
+
+#HOLIDAY
+Name		Feast of Dionysus~
+Announce	Today is the Feast of Dionysus.~
+Month		8
+Day		1
+End
+
+#HOLIDAY
+Name		Vineday~
+Announce	Today is the Graecian holiday of Vineday.~
+Month		8
+Day		6
+End
+
+#HOLIDAY
+Name		Travelers' Day~
+Announce	Today is the Graecian holiday of Travelers' Day.~
+Month		9
+Day		6
+End
+
+#HOLIDAY
+Name		Yeartide~
+Announce	Today is the Elven holiday of Yeartide.~
+Month		10
+Day		1
+End
+
+#HOLIDAY
+Name		Feast of Music~
+Announce	Today is the Feast of Music.~
+Month		10
+Day		17
+End
+
+#HOLIDAY
+Name		Founding Day~
+Announce	Today is the Graecian holiday of Founding Day.~
+Month		11
+Day		7
+End
+
+#HOLIDAY
+Name		Year's End~
+Announce	Today is the Graecian holiday of Year's End, the last day of the year.~
+Month		12
+Day		26
+End
+
+#END

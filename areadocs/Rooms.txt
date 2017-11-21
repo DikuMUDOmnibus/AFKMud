@@ -1,0 +1,333 @@
+=== The #ROOMS section
+
+Last modified by Dwip, 6/20/03
+
+The syntax of this section is:
+
+      #ROOMS
+      #<vnum>
+      <name>~
+      <description>
+      ~
+	<nighttime description>
+	~
+	<sector-type>~
+	<room-flags>~
+      <options?> ( optional: teledelay televnum tunnel )
+      D
+	<direction>~
+      <exit description>
+      ~
+      <exit keywords>~
+	<exit flags>~
+      <key> <to_room> <x-coord> <y-coord> <pulltype> <pull>
+      E
+      <keywords>~
+      <description>
+      ~
+      S
+      #<vnum of next room....>
+      .
+      .
+      .
+      .
+      #0
+
+The <vnum> is the virtual number of the room.
+
+The <name> is the name of the room.
+
+The <description> is the long multi-line description of the room.
+This description is the one chosen by default, and during daytime for the room.
+
+The <nighttime description> is the long multi-line description of the room
+as it appears at night, assuming you wish to specify one.
+
+The <sector-type> identifies the type of terrain.  This affects movement cost
+through the room.  Certain sector types (air and water) require special
+capabilities to enter. The following is a list of sector types:
+
+Sector:      | Move | Description
+-------------+------+-------------
+air          | 1    | Midair.  Must be flying, or will fall through down exit.
+barren       | 2    | Barrens, such as rocky deserts.
+blands       | 2    | Special Blasted Lands overland sector.  Do not use.
+bridge       | 1    | For bridges on the overland. 
+city         | 1    | City roads.
+desert       | 3    | Sandy deserts.
+exit         | 1    | Special exit sector for overland.  Do not use.
+field        | 1    | Grassy fields and meadows.
+forest       | 2    | Normal forests.
+glacier      | 10   | Impassable glacier for overland.  Do not use.
+grassland    | 1    | Normal grasslands.
+hills        | 3    | Hilly terrain.
+ice          | 3    | Solid sheets of ice.
+indoors      | 1    | Building interiors.  Cannot use dig command.
+jungle       | 2    | Jungles
+landing      | 1    | Overland landingsite.  Do not use.
+lava         | 2    | Lava.  Does damage on enterance.  See below.
+mountain     | 5    | Mountainous terrain.
+ocean        | 1    | Surface of the ocean.  Need boat to enter.
+oceanfloor   | 4    | Bottom of the ocean.  Need aquabreath to avoid damage.
+quicksand    | 10   | Impassable swamp for overland.  Do not use.
+road         | 1    | Non-city roads.
+river        | 3    | Rivers.  Need boat to enter.
+scrub        | 2    | Sparse vegitation.
+shore        | 3    | Beaches and the like.
+stone        | 10   | Impassable mountains for overland.  Do not use.
+swamp        | 3    | Swampy terrain.
+trail        | 1    | Small trails.
+tree         | 10   | Impassable forest for overland.  Do not use.
+tundra       | 2    | Tundra.  Does damage on enterance.  See below.
+underground  | 3    | Underground caves.
+underwater   | 5    | Underwater.  Need aquabreath to avoid damage.
+wall         | 10   | Impassable wall for overland.  Do not use.
+water_swim   | 2    | Water.  Swimming or a boat required to enter.
+water_noswim | 2    | Water.  Boat required to enter.
+
+Note that indoors, underground, underwater, and oceanfloors do not prevent the display of weather messages and the like.  To do that, the indoors room flag is required.
+
+Lava and tundra sectors do damage to characters enterting them.  This damage is 20 if not protected, 10 if resistant to fire and cold respectively, and 0 if immune.
+
+The <options?> value is used to tell the mud that the room contains
+some additional data in it. Enter a 0 if no optional data is being used,
+or a 1 if it is. Optional values need to be placed on the same line as the
+1 if they are being specified.
+
+The teledelay specifies an optional delay to teleport everyone out of the
+room and into the room specified by televnum. Requires the roomflags
+'teleport', 'teleshowdesc', or 'telenofly' in order for these values to function.
+
+The tunnel value specifies how many people are allowed to fit inside
+a room flagged as a tunnel. Requires the roomflag 'tunnel' in order
+to work.
+
+The <room-flags> describe more attributes of the room. 
+The following chart lists the valid room flag values:
+Separate flag names with a space or the code will not recognize them.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+dark          | Room is always dark 
+death         | Room causes instant death (A DT)
+nomob         | Mobs cannot wander into this room
+indoors       | A small indoor room - area magic will do full
+                damage to the caster.
+safe          | Room is safe, no violence allowed
+nocamp        | Players cannot camp in this room
+nosummon      | Player cannot be summoned out of or into this room
+nomagic       | Magic cannot be used in this room
+tunnel        | Room is a tunnel - x number of players allowed
+                (use 'redit tunnel #' to  set the number)
+private       | Room is private (restricted to 2 people)
+silence       | Room is silent, players cannot speak in the room
+nosupplicate  | Players cannot supplicate their deities in this room
+arena         | Designates the room as an arena space - get approval
+nomissile     | Projectile weapons cannot be used in this room
+norecall      | Players cannot recall out of this room
+noportal      | Players cannot make portals into or out of this room
+noastral      | Players cannot astral walk from this room
+chaotic       | Room is oriented to those of chaotic alignment
+nodrop        | Nothing can be dropped in this room
+neutral       | Room is oriented to those of neutral alignment
+lawful        | Room is oriented to those of lawful alignment
+teleport      | People in this room will be teleported out
+teleshowdesc  | Shows description of target room for a teleport
+nofloor       | Room has no floor: exit down + no fly = fall
+solitary      | Only 1 person can be in this room at one time
+petshop       | Petshop (next vnum must be the storeroom)
+donation      | Donation room, player cannot "get all"
+nodropall     | Player cannot "drop all" in this room
+logspeech     | All speech in this room is logged
+proto         | Room is a prototype. Only used by OLC system.
+noteleport    | Players cannot teleport to or from this room
+noscry        | Players cannot scry or use farsight to see this room
+cave          | A medium sized indoor room. Area magic will do half damage to the caster.
+cavern        | A large indoor room. Area magic will not damage the caster.
+nobeacon      | Players cannot set recall beacons in this room.
+auction	  | Room is an auction house. See below.
+map		  | Room is part of the overland map system. DONT USE!
+forge		  | Room is a forge where players can make things.
+clanstoreroom | Room is a storage room for a guild or clan.
+guildinn	  | Room is an inn for a guild or clan.
+watchtower    | Room is an overland watchtower. See below.
+noquit        | Players cannot quit while in this room.
+telenofly     | Room will not teleport player if they are flying.
+
+Auction houses require that the next vnum used be set aside to use as a storage
+room for the items, much like a petshop. Be sure and flag the storage room with the appropriate flags so no players can get in, or the mobs can get out.  There must also be a mob in the room with the AUCTION flag.
+
+-----
+
+To create a watchtower: 
+ 
+in the room you want the tower connected to, make an exit in whichever 
+direction you choose, though up usually makes the most sense. 
+Flag it as overland, and optionally ( though HIGHLY recommended ) as nomob. 
+This exit can lead to any vnum you want, but it would be a Really Bad Plan(tm) 
+to assign this to an existing overland room. You then need to assign it 
+coordinates for where on the overland the watchtower is supposed to be. 
+ 
+Example for how to setup the source room: 
+ 
+redit exit up 7035 overland nomob 
+redit excoord up 468 380 
+ 
+In the room that will be the tower, flag it as "map" and as "watchtower" and 
+then make an exit that returns to the room you just made. 
+ 
+Example for how to setup the target room: 
+ 
+redit flags map watchtower 
+redit exit down 7004 
+ 
+That should do it, and you should end up with a nice view of the overland :)
+
+-----
+
+Unlike mobiles and objects, rooms don't have any keywords associated with them.
+One may not manipulate a room in the same way one manipulates a mobile or
+object.
+
+The optional 'D' sections and 'E' sections come after the main data.
+A 'D' section contains a 'door', chosen from the following list:
+
+DIRECTION
+---------------
+north
+east
+south
+west
+up
+down
+northeast
+northwest
+southeast
+southwest
+somewhere ( usually a portal type exit )
+  
+A 'D' command also contains an <exit description> for that direction, 
+and <exit keywords> for manipulating the door. Doors include not just 
+real doors, but any kind of exit from the room.
+
+<exit flags> describe additional properties of the exit.
+Separate exit flags with a space or the code will not recognize them.
+
+NAME        | DESCRIPTION OF TYPE              
+---------------------------------------------------
+isdoor      | There is a door in that direction ( required if it's actually intended to be a door )
+closed      | The door is closed
+locked      | The door is locked
+isbolt      | Door a bolt on it
+bolted      | Door has been bolted shut
+secret      | Door is Secret, Trying to go that way won't reveal door
+searchable  | Searching in this direction can remove the SECRET flag
+swim        | Must be able to swim to go that way (or have a boat or float)
+pickproof   | Door is Pickproof (Door can't be picked by spell or skill)
+bashproof   | Door cannot be bashed down
+fly         | Must be able to fly to go that way
+climb       | Must be able to climb to go that way
+dig         | Passage is blocked and must be dug out
+eatkey      | Door will eat the key used to open it
+nopassdoor  | Door is impervious to the passdoor spell
+hidden      | Door is not "obvious" -- doesn't appear with autoexits
+overland    | Exit leads out to the overland map ( see below )
+nomob       | Mobs cannot travel out this exit - recommended to use with the OVERLAND flag
+arrowslit   | Exit is an arrowslit, can see through, fire arrows, but otherwise acts as a wall
+window      | Can see through this exit, otherwise acts as a wall
+fortified   | A heavily fortified wall - can be attacked
+heavy       | A fortified wall - can be attacked*
+medium      | A sturdy wall - can be attacked*
+light       | An ordinary wall - can be attacked*
+crumbling   | A wall on its last legs, one more attack destroys it*
+can_climb   | Can use the climb command to go this way
+can_enter   | Can use the enter command to go this way
+can_leave   | Can use the leave command to go this way
+can_look    | Can look into this exit
+auto        | Keyword can be typed to go this way
+noflee      | Players and mobs cannot flee through this exit
+
+Note: Swim exit flag has not been implemented yet.
+
+* Attackable walls can only be damaged by siege engines - which don't yet exist in game.
+  Each grade of wall is stronger than the one below it. When setting wall flags, only
+  use one flag, combining them will only result in the greatest flag being acknowleged.
+
+You must specify two 'D' sections, one for each side of the door. If you
+specify just one then you'll get a one-way exit.
+
+Exits with the OVERLAND flag need to have a set of coordinates added to them.
+These coordinates are determined by the location on the map where the area
+is supposed to exit out. Check with your KL to get these. Your KL is also
+responsible for adding the overland link into your area.
+
+The <key> value is the vnum of an object which locks and unlocks the door.
+A value of -1 signifies the door does not have a key.
+
+<to_room> is the vnum of the room to which this door leads.
+
+<x-coord> and <y-coord> specify the coordinates on the overland map that this
+exit leads out to.
+
+<pulltype> and <pull> will be further explained when more is known about them.
+In the meantime, leave them out.
+
+An 'E' section (extended description) contains a <keywords> string and a
+<description> string. As you might guess, looking at one of the words in
+'keywords' yields the 'description' string.
+
+The 'S' at the end marks the end of the room.  It is not optional.
+
+#0
+
+The #0 is to be placed on a new line at the end of your LAST room in the area.
+
+The following is an example of a completed room:
+
+#1610
+Thag's Garden of Serenity~
+The door from the hallway leads you into a large garden, open to the
+air.  Large walls of stone surround you, each covered in various
+creeping vines.  Various types of trees provide the next layer, and 
+under the trees are any number of beautiful bushes and flowers.  The 
+central area of the garden is all sand, raked in strange patterns 
+around a number of very interesting looking rocks.  A stream flows 
+from out of nowhere through the southeast corner of the garden, and a 
+small redwood bridge crosses it.  Small stones lead from the bridge to 
+the exact center of the garden, which is a small grassy area under a 
+large fir tree.  A small shrine has been set up under the tree.  The 
+garden radiates an aura of calm and peacefulness, and you get the 
+feeling that all is right with the world.
+~
+~
+indoors~
+indoors~
+0
+D
+southeast~
+~
+door~
+isdoor closed~
+-1 1607 -1 -1
+E
+Shrine~
+The shrine is nothing more than a small stone, carved with a number of 
+designs, all surrounding the symbol of an open eye in the center of the 
+stone.  Small offerings of food and water sit next to the shrine.
+~
+E
+rock rocks~
+The rocks are of many different sizes and shapes, but every one
+possesses a strange kind of beauty you cannot quite put a finger on.
+Looking at the stones, you imagine seeing any number of fantastic scenes.
+~
+E
+pattern patterns~
+The patterns make no sense at all, forming no recognizable shape, but 
+somehow flow smoothly around the scattered stones, enhancing the 
+peacefulness and beauty of the garden.
+~
+S
+
+This concludes the #ROOMS section. Refer to Resets.txt to complete
+your area file.

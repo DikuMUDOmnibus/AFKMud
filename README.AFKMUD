@@ -1,0 +1,243 @@
+AFKMud: Alsherok Game Code Release - Version 1.8: December 2006
+---------------------------------------------------------------
+
+January 2002:
+
+After a little over 4 years of tinkering and such, we've decided to release our
+work to others. The decision was somewhat spur of the moment, due in part to the
+overall decrease in player traffic frequenting the mud. We figured that if we were
+no longer going to have the traffic to sustain regular interest that the code at
+least should not go to waste.
+
+Over the last 6 months or so many of the staff members took to idling on the mud
+just for the hell of it. Sometimes to the point of being disconnected. After awhile,
+this led to the nickname AFKMud. The name stuck, and so it was chosen for the name
+to give the codebase as it is now. We hope you can derive as much enjoyment from this
+work as we have over the years. Good luck with your mud :)
+
+--- Samson, Implementor of Alsherok. Home site for the AFKMud codebase.
+
+Homepage: http://www.alsherok.net
+
+Licensing
+---------
+
+See the file 'license.txt' in your afkmud/doc directory. Read, obey.
+Downloading and installing this code implies your agreement to the terms.
+It also affords a few fringe benifits you might want to take advantage of.
+
+Installation Notes
+------------------
+
+There are somethings that you need to be aware of prior to installing the game.
+Please read this stuff BEFORE you try and run the game. You'll avoid alot of
+hassle, and we'll be asking if you checked this stuff anyway.
+
+Documentation
+-------------
+
+Documentation on various features of AFKMud can be found in the
+areadocs directory. For information on area construction, see Area.txt.
+Adding races and classes are covered by Addrace.txt and Addclass.txt
+respectively. Overland editing is covered by Newcontinent.txt and RGB.txt.
+ 
+Older SMAUG and Merc documentation can be found in the /doc directory.
+Most of these older docs have been superceded by newer AFK docs, but
+there may still be useful elements in them.  One that you should most
+likely read anyway is hacker.txt - it offers some basic thoughts on
+how to be a mud admin.
+
+If anything seems lacking or there is a feature you want to know about that
+isn't documented here, please let us know.
+
+Cygwin Support
+--------------
+
+Yes, at long last, Cygwin support has come to AFKMud :)
+Can't guarantee it works under every install, but hey.
+Tested with Cygwin 1.5.19-4 on Windows XP, with Service Pack 2 installed.
+Once done, uncomment the WINDOZE define in the Makefile, and comment out
+the NEED_DL define in the Makefile to compile.
+
+FreeBSD Support
+---------------
+
+This version contains support for FreeBSD and has been tested on version 4.3 Stable
+using gmake instead of the standard make. If your system does not have gmake, you'll
+either need to contact your system administrator to get it installed, or figure out
+how to get it to compile on your own.
+
+Comment out the NEED_DL define in the Makefile to compile.
+
+OpenBSD Support
+---------------
+
+This version contains support for OpenBSD using GCC 2.95.3, it has not been tested
+with OpenBSD using GCC 3.x. This will require the use of gmake, and if you don't have
+that available, get in touch with your system administrator. Or figure out how to
+make it compile on your own.
+
+Comment out the NEED_DL define, and the EXPORT_SYMBOLS define in the Makefile to compile.
+
+CPU, Memory, and Hard Drive Requirements
+----------------------------------------
+
+AFKMud is on the large side due to the sheer number of features included. You will
+need to take this into consideration first, before ever even thinking about where
+to host it. The following are the minimum resource requirements to run the mud as
+shipped:
+
+CPU: 0.5% average idle use. Measured on an Athlon 1.1Ghz CPU.
+RAM: 11MB, doesn't matter whether this is physical or virtual.
+HDD: 29MB - and no, this is NOT a typo.
+
+The mud will unpack to a size of 18MB or so. The 26MB figure is what you need
+AFTER having comopiled the source code. Yes, this is huge. Perhaps even bloated.
+Blame GCC3. After having tested against GCC 2.9x, it was found that the GCC 3.x
+object files and binary were coming out considerably larger. The added debugging
+information it puts in is rather large.
+
+First Immortal
+--------------
+
+A pfile named "Admin" is included, with password "admin". Use this to get your first
+immortal advanced. Then promptly delete him!
+
+The Makefile
+------------
+
+The Makefile has some suggestions on what to comment out if you get certain errors during
+your compile. If you encounter any, refer there to see if there's a fix for it.
+The usual 'make clean' command will do its usual thing, then proceed to recompile the code.
+Don't panic, this is normal. If all you want to do is remove the *.o files, use the
+'make purge' option instead.
+
+Areas
+-----
+
+The area file format in AFKMud is significantly different from stock Smaug. Over the
+years, the multitude of different version numbers in our area formats grew into a
+titanic mess in the code that loaded them. So eventually the ability to read native
+Smaug areas was lost. A conversion routine was created to allow stock zones to be
+loaded once more. This can be accomplished one of two ways:
+
+1. Leave your areas and area.lst file alone and try to boot the mud with them as is.
+Your logs will look like a train wreck, but if you're lucky they'll load and you
+can then execute a "fold all" command once you've logged in. This would be advisable
+ASAP after an event of this magnitude. If any of the zones crash the mud, you'll
+need to take them out of the area.lst file and hold them over for method 2 below.
+
+2. If you come across a stock zone that won't convert and you need to try it again
+later, or if you decide to load one you've downloaded at some point, drop it into
+your areaconvert directory and type "areaconvert <filename.are>". If it fails to load,
+your mud has probably crashed. Examine the logs, core dumps, etc to find out why,
+correct it, and try again.
+
+This functionality allows you to load Smaug 1.02a, 1.4a, SmaugWiz, ResortMUD,
+Chronicles, Dark Rifts, DOTDII, and SWR areas. Other formats are considered
+non-standard and will not be supported.
+
+Areaconvert cannot load CalareyMUD zones due to format incompatibilities.
+
+Keep in mind that you may also need to do some fine tuning once the area is
+converted - subtle differences in each version may produce unpredictable
+stats on the areas.
+
+Dlsym
+-----
+
+The code uses dlsym functionality to load the command, skill, spell, and spec_fun
+tables into memory. If your operating system does not support this, then chances
+are high you'll have problems. These problems can only be fixed by your system
+administrator. So contact them first in this case.
+
+Overland
+--------
+
+This code comes with the Overland map system installed. This can be a problem on
+small accounts with limited memory or hard drive space. It's a resource hog, somewhat.
+In brief, here's the stats it generates:
+
+USER       PID %CPU %MEM   VSZ  RSS TTY      STAT START   TIME COMMAND
+alsherok 22051  0.4  1.1 11032 8648 pts/15   SN   04:42   0:01 ../src/smaug 9500
+
+The VSZ indicates this uses approximately 11MB of ram. This is barebones. Keep this in
+mind for future growth. Alsherok uses up roughly twice this with 9000+ rooms.
+Don't get yourself screwed by your host because you ignored the resource requirements.
+
+IMC2
+----
+
+The code comes with IMC2 support installed. IMC2 is an intermud chat protocol which allows you to communicate with 
+other people on other muds. There is currently only 1 network in operation. The 
+network caters mainly to the Diku community, but some LPMuds have begun to connect.
+The AFKMud team highly recommends connecting to the network as it is a valuable resource
+for new and old admins alike. Infomation is available at: http://imc2.intermud.us
+
+If your mudhost does not allow outbound connections from your mud you can't use it.
+
+An option in the Makefile allows you to disable it from compiling.
+
+Intermud-3
+----------
+
+The code comes with the Intermud-3 protocol installed. Intermud-3 is an alternative chat protocol which also allows 
+you to communicate with other people on other muds. It is primarily used by the LPMud community, but Diku muds are 
+making their pressence known. Currently there is only one known public network in operation.
+Information on connecting to Intermud-3 can be found at http://www.intermud.org/i3
+
+If your mudhost does not allow outbound connections from your mud you can't use it.
+
+An option in the Makefile allows you to disable it from compiling.
+
+As of AFKMud 1.76, Intermud-3 support is deprecated and will be removed in a future version.
+
+Internal Webserver
+------------------
+
+The mud has an internal webserver port that allows the mud to serve up some simple
+HTML content. This requires that your mud be able to bind an additional listening port, which
+is hard-defined as mudport+1. IE: if your mud is on port 9500, the web server will bind 9501.
+
+If your mud host does not allow you to bind additional ports, you will need to
+disable the webserver.
+
+An option in the Makefile allows you to disable it from compiling.
+
+Multiple Port Support
+---------------------
+
+The code now has ways to check which port the mud is running on. This allows for
+things to behave differently based on which port the game is running on. This requires
+that some defines be set prior to startup or things will not behave properly.
+The defines are located in mud.h and are called MAINPORT, BUILDPORT, and CODEPORT.
+These values MUST be different from each other or the mud will not compile. Change them
+to fit your hosting situation. These should only be used for additional testing ports
+and will require an additional password for newly created characters to enter.
+This password can be set using cset, and ships with the default password of "blocked".
+Change this ASAP if you intend to use it.
+
+This feature is diabled by default in the Makefile.
+
+Shell Code
+----------
+
+The mud has an internal shell processor that will allow some limited functions to make
+life easier. It is not recommended that these commands be given to anyone but administrators.
+Also, some mud hosts may not allow this kind of access, check with them first if you have
+any doubts.
+
+This feature will not be available if Multiport support has been disabled in the Makefile.
+Command entries will need to be created for this code if the support is activated.
+Help for this will not be given. Expect to be ignored if you ask, this is dangerous code
+in the wrong hands and we refuse to be responsible for any damage that could be done.
+
+MSP - Mud Sound Protocol
+------------------------
+
+MSP has been a feature of this base for some time, but only now is it's potential beginning
+to be tapped. A small bundle of sound files is now available in afkmud/sounds upon unpacking
+the archive.
+
+MSP is typically only available under Zmud, and further information on the protocol can be
+found at: http://www.zuggsoft.com/zmud/mspzmud.htm

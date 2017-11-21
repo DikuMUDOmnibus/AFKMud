@@ -1,0 +1,185 @@
+=== The #AREA section (also referred to as the header)
+
+Last Modified by Samson, 6/19/03
+
+The syntax of this section is:
+
+
+#AREA	<area-name>~
+
+The name of the area.
+
+#VERSION <value>
+
+Specifies the version of the area file.
+Version 0 is for Smaug 1.02a format files, Version 1 is for
+Smaug 1.4a files. Versions between 2 and 16 are not supported by AFKMud.
+
+The current area version is 19, so make any new areas with a 19 in the
+version field.
+
+#AUTHOR  <author-name>~
+
+The name of the Builder who created this area.
+
+#VNUMS <low> <high>
+
+Specifies the vnum range for the entire area. Please be sure that your
+vnums don't conflict with another area, as it will prevent this one from
+loading, and possibly crash the mud as well.
+
+#RANGES
+<val1> <val2> <val3> <val4>
+$
+
+The first two numbers are recommended level range, while the last 2 
+numbers are the enforced level range. Enforced level range means that
+a player outside that range will NOT be able to enter the zone. Unless
+your zone is strictly intended for newbies or immortals only, it should
+be set to enforced range of 0 to 115.
+
+#RESETMSG <message>~
+
+The message displayed to players by the mud when the area is 
+repopulated. It is a good idea to try and come up with one that makes
+sense for the entire area. If you have half indoors, and half outdoors,
+your repopulation message should make sense to the player no matter
+where in the zone they are.
+
+#RESETFREQUENCY <value>
+
+The <value> setting sets the amount of time before an area is to reset
+itself. Leaving this section out defaults to a 15 minute reset timer.
+
+#FLAGS
+<string>~
+
+The <string> setting here determines the area flags for this zone.
+Separate multiple flags with a space or the code won't recognize any
+of them. They are case-sensitive, so enter them as listed.
+These settings override any roomflags set for individual rooms 
+in an area, so be careful when setting these. They affect an entire zone.
+
+FLAG NAME     | DESCRIPTION
+----------------------------------------------------------------------
+nopkill	      | No Pkillers are allowed in this zone.
+nocamp        | Players cannot camp anywhere in this zone.
+noastral      | Players may not astral walk from or to this zone.
+noportal      | Players may not portal to or from this zone.
+norecall      | Players may not recall from this zone.
+nosummon      | Players may not summon to or from this zone.
+noscry        | Players may not use the farsight spell in this zone.
+noteleport    | Players may not teleport to or from this zone.
+freekill      | Treats the entire zone as an arena. Get approval first.
+nobeacon      | Players may not set recall beacons in this zone.
+noquit        | Players may not quit while in this area.
+
+#CONTINENT <name>~
+
+This header determines what continent or plane an area is on.
+For the most part, your continent will be determined by what
+building kingdom you build for. Check with your KL if you are
+not sure what continent your area goes on.
+
+Name         |  Description
+------------------------------------------------------------------
+Alsherok     | For a zone connected on the main continent of Alsherok.
+Eletar       | For a zone connected on the continent of Eletar.
+Alatia       | For a zone connected on the continent of Alatia.
+Astral       | For a zone connected to the Astral Plane.
+Past         | For a zone set in the distant past.
+Immortal     | For a zone connected to the immortal plane.
+Varsis       | Only used for a zone which is part of the Immortal Trials.
+
+#COORDS <x> <y>
+
+The X and Y coordinates of this zone on the overland. When picking
+coordinates, use the center of the area on the map as your reference.
+Doesn't need to be exact, just close. If your area is not connecting
+directly to the overland, it still needs coordinates. Go to the area
+you are connecting to, and use it's coordinates. If that area also is
+not connected to the overland, keep going until you find the nearest
+area that DOES, and use its coordinates. Keep in mind that current
+coordinate range is 0 to 999 in both directions.
+
+#CLIMATE <value1> <value2> <value3>
+
+This sets the climate for your area. These values affect the severity of
+weather within the zone. More information on this will be available
+when we understand it all better. Or better yet, refer to the online
+helpfiles. They probably explain it fairly well.
+
+The <value1> setting is the temperature range, <value2> is the precipitation,
+and <value3> is the wind. Refer to the following tables.
+
+Value1 | Temperature   Value2 | Precipitation   Value3 | Wind
+--------------------   ----------------------   ----------------
+    0  | Cold               0 | Arid                 0 | Still
+    1  | Cool               1 | Dry                  1 | Calm
+    2  | Normal             2 | Normal               2 | Normal 
+    3  | Warm               3 | Damp                 3 | Breezy
+    4  | Hot                4 | Wet                  4 | Windy
+
+#TREASURE
+<val1> <val2> <val3> <val4>
+<val5> <val6> <val7> <val8>
+
+These set the random chances of generating a certain type of random
+treasure for this area. If this section is left out, the code will
+adpot some default settings based on the original hardcoded formulas.
+
+<val1> is the chance to generate nothing at all.
+<val2> is the chance to generate some gold.
+<val3> is the chance to generate a random item, which is further broken
+down by <val5> through <val8>
+<val4> is the chance to generate a gem.
+Runes are generated based on the values above, and if you exceed 100% in any
+of the previous 4 settings runes will not be generated at all for this area.
+
+<val5> is the chance to generate a random scroll.
+<val6> is the chance to generate a random potion.
+<val7> is the chance to generate a random wand.
+<val8> is the chance to generate a random armor, which may have item sockets
+for rune insertion.
+Weapons are generated based on the values above, and if you exceed 100% in any
+of the previous 4 settings, weapons will not be generated at all for this area.
+Further, weapons can also randomly be assigned item sockets for rune insertion.
+
+#NEIHGBOR <area name>~
+
+This specifies what area(s) affect the climate in this area. To specify
+more than one, a seperate #NEIGHBOR field is required for each.
+
+Below is an example of a completed header section:
+
+#AREA   Halls of the Gods~
+
+#VERSION 18
+
+#AUTHOR All~
+
+#VNUMS 1200 1499
+
+#RANGES
+100 115 100 115
+$
+
+#RESETMSG An ether storm produces a brilliant display of colors.~
+
+#RESETFREQUENCY 60
+
+#FLAGS
+nocamp noastral noportal norecall nosummon noscry noteleport~
+
+#CONTINENT immortal~
+
+#COORDS 0 0
+
+#CLIMATE 2 2 2
+
+#NEIGHBOR Challenge of Immortality~
+
+#NEIGHBOR Halls of Creation~
+
+This ends the header information. Refer to the Mobiles.txt file to
+continue with building the area file.

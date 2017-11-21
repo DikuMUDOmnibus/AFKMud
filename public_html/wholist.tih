@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="A list of visible players currently online." />
+<meta name="keywords" content="afkmud, afkmud codebase, afkmud webserver" />
+<meta name="robot" content="index,follow" />
+<title>Who is on Alsherok now</title>
+<link rel="stylesheet" href="afkmud.css" type="text/css" />
+</head>
+
+<body>
+<table border="0" cellspacing="0" cellpadding="5" width="610">
+ <tr>
+  <td width="30%" align="right"></td>
+  <td width="40%" align="center"><font color="#FF0000" face="Comic Sans MS" size="5">Players currently online</font></td>
+  <td width="30%" align="left"></td>
+ </tr>
+</table>
+<pre>
+<!-- End of header piece. Mud code generates the middle section, tail section is in another chunk. -->

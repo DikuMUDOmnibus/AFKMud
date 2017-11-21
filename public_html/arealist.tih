@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="A list of areas on Alsherok." />
+<meta name="keywords" content="afkmud, afkmud codebase, afkmud webserver" />
+<title>Alsherok: Places to Visit</title>
+<link rel="stylesheet" href="afkmud.css" type="text/css" />
+</head>
+
+<body>
+<div align="center">
+
+<table border="0" cellspacing="0" cellpadding="5">
+ <tr>
+  <td><img src="images/flame.gif" alt="flame.gif" height="60" width="30" /></td>
+  <td valign="bottom" rowspan="2">
+  <h2 align="center"><font color="#FF0000" face="Comic Sans MS" size="5">Areas of Alsherok</font></h2>
+  </td>
+  <td><img src="images/flame.gif" alt="flame.gif" height="60" width="30" /></td>
+ </tr>
+ <tr>
+  <td height="15"></td>
+  <td height="15"></td>
+ </tr>
+</table>
+</div>
+
+<div align="center">
+Below is a list of the areas currently 
+available to players in Alsherok. They are all original or modified areas. 
+We are sure you will find them both interesting as well as challenging. We 
+are also constantly building new quality areas for your enjoyment. So keep 
+looking here for new updated areas.
+    
+<hr width="68%" />
+
+<!-- End of header piece. Mud code generates the middle section, tail section is in another chunk. -->

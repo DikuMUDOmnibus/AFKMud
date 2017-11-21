@@ -1,0 +1,2178 @@
+#AREA   Halls of Creation~
+
+#VERSION 20
+
+#AUTHOR Samson~
+
+#VNUMS 100 199
+
+#RANGES
+0 1 0 115
+$
+
+#RESETMSG A strange pulsing sound reverberates in the background...~
+
+#RESETFREQUENCY 240
+
+#FLAGS
+nocamp noastral noportal norecall nosummon noscry noteleport~
+
+#CONTINENT immortal~
+
+#COORDS 472 381
+
+#CLIMATE 2 2 2
+
+#TREASURE
+20 74 85 93
+20 50 60 75
+
+#MOBILES
+#100
+autoadvancer mobile~
+Autoadvancer~
+The autoadvancer mob is here.
+~
+Insert description appropriate to your world here.
+~
+npc sentinel immortal pacifist~
+detect_invis detect_hidden sanctuary truesight~
+0 -1 0 0 0 150 100 0.000000
+30 21 0 5000 10d10+1000
+common~
+common~
+standing~
+standing~
+female~
+high-elf~
+cleric~
+head heart~
+~
+~
+~
+~
+~
+~
+> act_prog p arrives from below.~
+if level($n) == 1
+mpechoat 0.$n Yet another brave soul has entered the portal, I see.
+mpechoat 0.$n Welcome to (INSERT MUD NAME HERE) $n!
+mpechoat 0.$n For your courage in entering the portal, you are now level 2!
+mpadvance 0.$n 2
+mpechoat 0.$n If this were a functioning world, I would then tell you a bit about it.
+mpechoat 0.$n I would probably also have a gift or two for you. But for now, I'm simply a stock fixture.
+endif
+~
+> act_prog p flies in from below.~
+if level($n) == 1
+mpechoat 0.$n Yet another brave soul has entered the portal, I see.
+mpechoat 0.$n Welcome to (INSERT MUD NAME HERE) $n!
+mpechoat 0.$n For your courage in entering the portal, you are now level 2!
+mpadvance 0.$n 2
+mpechoat 0.$n If this were a functioning world, I would then tell you a bit about it.
+mpechoat 0.$n I would probably also have a gift or two for you. But for now, I'm simply a stock fixture.
+endif
+~
+|
+#199
+spacermob~
+a newly created spacermob~
+Some god abandoned a newly created spacermob here.
+~
+~
+npc proto~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+~
+~
+~
+~
+~
+~
+~
+#0
+
+
+#OBJECTS
+#100
+rope~
+a rope~
+A rope hangs from high above, waiting to be pulled.~
+~
+lever~
+organic~
+~
+~
+29 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+E
+rope~
+If you are ready to pass beyond the Void Island, you need only pull this
+rope to notify the Immortals that you are ready to enter the game!
+ 
+If your name has been approved, you will be sent into the actual game.
+ 
+If you receive a message stating your name has been denied by the Immortals,
+you must choose a NEW, original medieval or fantasy name.
+To do this, you type:
+ 
+"name <newname>"                 For example:  name Tsythia
+ 
+Then pull the rope to announce your new name to the Immortals.  Give them
+about 30 seconds to approve or deny the new name.  If you have not gotten
+a response, pull the rope again.
+ 
+The rope is on a 30 second timer, meaning you can pull it as often as you
+wish, but the Immortals will only be notified once every 30 seconds.  The
+Immortals are often busy and may not see you the first time around, so
+please be patient - one will be with you as quickly as possible.
+~
+#199
+Placeholder~
+a placeholder~
+An evil placeholding object! RUN!~
+~
+furniture~
+~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 1 1 9999 0 None None None
+#0
+
+
+#ROOMS
+#100
+The Race Room~
+&cA thunderous roar echoes through the sky..... and suddenly you are
+transported into this tiny room! An odd blue mist begins to slowly
+fill the room, clouding your vision and giving you a very strange
+sensation......
+
+After a few minutes, the mist clears away and suddenly you notice your 
+body has been altered! You are no longer in a physical form!
+
+From somewhere high overhead a deep booming voice shouts:
+
+"Welcome stranger! Examine the &wpaintings&c before you and choose 
+your new race by saying its name out loud. For example, if you wish to
+become a High Elf, you would type: &wsay high-elf&c to do so.
+Refer to the website for further information on races and classes
+located at &whttp://www.alsherok.net&c. You may also get a brief overview
+of which classes are allowed by examining the &wscrolls&c here."&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+scroll scrolls~
+&cPlease look at &wscrolls1&c, &wscrolls2&c, &wscrolls3&c, or
+&wscrolls4&c to view the classes available to each race.
+
+&wScrolls1&c contains Human, Dwarf, High-Elf, Wild-Elf, and Half-Elf.
+&wScrolls2&c contains Halfling, Pixie, Half-Orc, Half-Troll, and Gith.
+&wScrolls3&c contains Minotaur, Duergar, Centaur, and Half-Ogre.
+&wScrolls4&c contains Lizardman, Gnome, Insectoid, and Sahuagin.
+
+The information on these scrolls is available on our webpage
+at www.alsherok.net under the Information/Races section.&D
+~
+E
+scrolls1~
+Human
+Warrior Ranger Paladin Anti-Paladin Mage Necromancer Cleric Druid 
+Rogue Bard Monk
+
+Dwarf
+Warrior Cleric Rogue
+
+High-Elf
+Warrior Ranger Mage Necromancer Cleric Druid Rogue Bard
+
+Wild-Elf
+Warrior Ranger Cleric Druid Rogue Bard
+
+Half-Elf
+Warrior Mage Necromancer Cleric Rogue Bard 
+~
+E
+scrolls2~
+Halfling
+Warrior Cleric Rogue Bard
+
+Pixie
+Ranger Mage Cleric Druid Rogue
+
+Half-Orc
+Warrior Cleric Rogue
+
+Half-Troll
+Warrior Cleric
+
+Gith
+Warrior Mage Necromancer Cleric Rogue Antipaladin
+~
+E
+scrolls3~
+Minotaur
+Warrior Cleric
+
+Duergar
+Warrior Cleric Rogue
+
+Centaur
+Warrior Ranger Cleric Druid
+
+Drow
+Warrior Mage Necromancer Cleric Rogue
+
+Half-Ogre
+Warrior Cleric
+~
+E
+scrolls4~
+Lizardman
+Warrior Cleric Rogue
+ 
+Gnome
+Warrior Mage Cleric Rogue
+
+Insectoid
+Warrior Ranger Cleric Druid Monk
+
+Sahuagin
+Warrior Cleric Rogue Antipaladin Necromancer
+~
+E
+painting paintings~
+The walls are lined with several paintings, each with a gold plaque
+displayed beneath it. The plaques display the following under each painting:
+
+Human, High-Elf, Wild-Elf, Half-Elf, Halfling, Pixie, Half-Orc,
+Half-Troll, Dwarf, Gith, Minotaur, Duergar, Centaur, Drow, Half-Ogre,
+Lizardman, Gnome, Insectoid, and Sahuagin.
+
+The same information in these paintings is available on our webpage
+at www.alsherok.net under the Information/Races section.
+
+To pick your race, say its name out loud and you will be transformed.
+~
+> speech_prog p human~
+if level($n) == 1
+mpmset 0.$n race human
+mpapplyb 0.$n
+mptrlook 0.$n 104
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p high-elf~
+if level($n) == 1
+mpmset 0.$n race high-elf
+mpapplyb 0.$n
+mptrlook 0.$n 103
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p wild-elf~
+if level($n) == 1
+mpmset 0.$n race wild-elf
+mpapplyb 0.$n
+mptrlook 0.$n 108
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-elf~
+if level($n) == 1
+mpmset 0.$n race half-elf
+mptrlook 0.$n 109
+mpapplyb 0.$n
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p halfling~
+if level($n) == 1
+mpmset 0.$n race halfling
+mpapplyb 0.$n
+mptrlook 0.$n 110
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p pixie~
+if level($n) == 1
+mpmset 0.$n race pixie
+mpapplyb 0.$n
+mptrlook 0.$n 111
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-orc~
+if level($n) == 1
+mpmset 0.$n race half-orc
+mpapplyb 0.$n
+mptrlook 0.$n 112
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-troll~
+if level($n) == 1
+mpmset 0.$n race half-troll
+mpapplyb 0.$n
+mptrlook 0.$n 113
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p dwarf~
+if level($n) == 1
+mpmset 0.$n race dwarf
+mpapplyb 0.$n
+mptrlook 0.$n 114
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p gith~
+if level($n) == 1
+mpmset 0.$n race gith
+mpapplyb 0.$n
+mptrlook 0.$n 115
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p minotaur~
+if level($n) == 1
+mpmset 0.$n race minotaur
+mpapplyb 0.$n
+mptrlook 0.$n 116
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p centaur~
+if level($n) == 1
+mpmset 0.$n race centaur
+mpapplyb 0.$n
+mptrlook 0.$n 117
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p drow~
+if level($n) == 1
+mpmset 0.$n race drow
+mpapplyb 0.$n
+mptrlook 0.$n 118
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-ogre~
+if level($n) == 1
+mpmset 0.$n race half-ogre
+mpapplyb 0.$n
+mptrlook 0.$n 119
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p lizardman~
+if level($n) == 1
+mpmset 0.$n race lizardman
+mpapplyb 0.$n
+mptrlook 0.$n 122
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p gnome~
+if level($n) == 1
+mpmset 0.$n race gnome
+mpapplyb 0.$n
+mptrlook 0.$n 123
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p duergar~
+if level($n) == 1
+mpmset 0.$n race duergar
+mpapplyb 0.$n
+mptrlook 0.$n 124
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p insectoid~
+if level($n) == 1
+mpmset 0.$n race insectoid
+mpapplyb 0.$n
+mptrlook 0.$n 126
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p sahuagin~
+if level($n) == 1
+mpmset 0.$n race sahuagin
+mpapplyb 0.$n
+mptrlook 0.$n 125
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#102
+The Race Room~
+&cA thunderous roar echoes through the sky..... and suddenly you are
+transported into this tiny room! An odd blue mist begins to slowly
+fill the room, clouding your vision and giving you a very strange
+sensation......
+
+After a few minutes, the mist clears away and suddenly you notice your 
+body has been altered! You are no longer in a physical form!
+
+From somewhere high overhead a deep booming voice shouts:
+
+"Welcome stranger! Examine the &wpaintings&c before you and choose 
+your new race by saying its name out loud. For example, if you wish to
+become a High Elf, you would type: &wsay high-elf&c to do so.
+Refer to the website for further information on races and classes
+located at &whttp://www.alsherok.net&c. You may also get a brief overview
+of which classes are allowed by examining the &wscrolls&c here."&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+scroll scrolls~
+&cPlease look at &wscrolls1&c, &wscrolls2&c, &wscrolls3&c, or
+&wscrolls4&c to view the classes available to each race.
+
+&wScrolls1&c contains Human, Dwarf, High-Elf, Wild-Elf, and Half-Elf.
+&wScrolls2&c contains Halfling, Pixie, Half-Orc, Half-Troll, and Gith.
+&wScrolls3&c contains Minotaur, Duergar, Centaur, and Half-Ogre.
+&wScrolls4&c contains Lizardman, Gnome, Insectoid, and Sahuagin.
+
+The information on these scrolls is available on our webpage
+at www.alsherok.net under the Information/Races section.&D
+~
+E
+scrolls1~
+Human
+Warrior Ranger Paladin Anti-Paladin Mage Necromancer Cleric Druid 
+Rogue Bard Monk
+
+Dwarf
+Warrior Cleric Rogue
+
+High-Elf
+Warrior Ranger Mage Necromancer Cleric Druid Rogue Bard
+
+Wild-Elf
+Warrior Ranger Cleric Druid Rogue Bard
+
+Half-Elf
+Warrior Mage Necromancer Cleric Rogue Bard 
+~
+E
+scrolls2~
+Halfling
+Warrior Cleric Rogue Bard
+
+Pixie
+Ranger Mage Cleric Druid Rogue
+
+Half-Orc
+Warrior Cleric Rogue
+
+Half-Troll
+Warrior Cleric
+
+Gith
+Warrior Mage Necromancer Cleric Rogue
+~
+E
+scrolls3~
+Minotaur
+Warrior Cleric
+
+Duergar
+Warrior Cleric Rogue
+
+Centaur
+Warrior Ranger Cleric Druid
+
+Drow
+Warrior Mage Necromancer Cleric Rogue
+
+Half-Ogre
+Warrior Cleric
+~
+E
+scrolls4~
+Lizardman
+Warrior Cleric Rogue
+ 
+Gnome
+Warrior Mage Cleric Rogue
+
+Insectoid
+Warrior Ranger Cleric Druid Monk
+
+Sahuagin
+Warrior Cleric Rogue Antipaladin Necromancer
+~
+E
+painting paintings~
+The walls are lined with several paintings, each with a gold plaque
+displayed beneath it. The plaques display the following under each painting:
+
+Human, High-Elf, Wild-Elf, Half-Elf, Halfling, Pixie, Half-Orc,
+Half-Troll, Dwarf, Gith, Minotaur, Duergar, Centaur, Drow, Half-Ogre,
+Lizardman, Gnome, Insectoid, and Sahuagin.
+
+The same information in these paintings is available on our webpage
+at www.alsherok.net under the Information/Races section.
+
+To pick your race, say its name out loud and you will be transformed.
+~
+> speech_prog p human~
+if level($n) == 1
+mpmset 0.$n race human
+mptrlook 0.$n 104
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p high-elf~
+if level($n) == 1
+mpmset 0.$n race high-elf
+mptrlook 0.$n 103
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p wild-elf~
+if level($n) == 1
+mpmset 0.$n race wild-elf
+mptrlook 0.$n 108
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-elf~
+if level($n) == 1
+mpmset 0.$n race half-elf
+mptrlook 0.$n 109
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p halfling~
+if level($n) == 1
+mpmset 0.$n race halfling
+mptrlook 0.$n 110
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p pixie~
+if level($n) == 1
+mpmset 0.$n race pixie
+mptrlook 0.$n 111
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-orc~
+if level($n) == 1
+mpmset 0.$n race half-orc
+mptrlook 0.$n 112
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-troll~
+if level($n) == 1
+mpmset 0.$n race half-troll
+mptrlook 0.$n 113
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p dwarf~
+if level($n) == 1
+mpmset 0.$n race dwarf
+mptrlook 0.$n 114
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p gith~
+if level($n) == 1
+mpmset 0.$n race gith
+mptrlook 0.$n 115
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p minotaur~
+if level($n) == 1
+mpmset 0.$n race minotaur
+mptrlook 0.$n 116
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p centaur~
+if level($n) == 1
+mpmset 0.$n race centaur
+mptrlook 0.$n 117
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p drow~
+if level($n) == 1
+mpmset 0.$n race drow
+mptrlook 0.$n 118
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p half-ogre~
+if level($n) == 1
+mpmset 0.$n race half-ogre
+mptrlook 0.$n 119
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p lizardman~
+if level($n) == 1
+mpmset 0.$n race lizardman
+mptrlook 0.$n 122
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p gnome~
+if level($n) == 1
+mpmset 0.$n race gnome
+mptrlook 0.$n 123
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p duergar~
+if level($n) == 1
+mpmset 0.$n race duergar
+mptrlook 0.$n 124
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p insectoid~
+if level($n) == 1
+mpmset 0.$n race insectoid
+mptrlook 0.$n 126
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p sahuagin~
+if level($n) == 1
+mpmset 0.$n race sahuagin
+mptrlook 0.$n 125
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#103
+The High Elf Room~
+&cIn a brilliant flash, you are magically transformed into High Elf form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young High Elf! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a high elf you may choose from the following list of classes for your
+character:
+ 
+Mage, Cleric, Rogue, Warrior, Necromancer, Druid, Ranger, and Bard.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p necromancer~
+if level($n) == 1
+mpmset 0.$n class necromancer
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p druid~
+if level($n) == 1
+mpmset 0.$n class druid
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p ranger~
+if level($n) == 1
+mpmset 0.$n class ranger
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p bard~
+if level($n) == 1
+mpmset 0.$n class bard
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#104
+The Human Room~
+&cIn a brilliant flash, you are magically transformed into Human form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Human! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a human you may choose from the following list of classes for your
+character:
+ 
+Mage, Cleric, Rogue, Warrior, Necromancer, Druid, Ranger, Monk,
+Antipaladin, Paladin, and Bard.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p necromancer~
+if level($n) == 1
+mpmset 0.$n class necromancer
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p druid~
+if level($n) == 1
+mpmset 0.$n class druid
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p ranger~
+if level($n) == 1
+mpmset 0.$n class ranger
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p monk~
+if level($n) == 1
+mpmset 0.$n class monk
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p antipaladin~
+if level($n) == 1
+mpmset 0.$n class antipaladin
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p paladin~
+if level($n) == 1
+mpmset 0.$n class paladin
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p bard~
+if level($n) == 1
+mpmset 0.$n class bard
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#108
+The Wild-Elf Room~
+&cIn a brilliant flash, you are magically transformed into Wild Elf form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Wild Elf! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a wild elf you may choose from the following list of classes for 
+your character:
+ 
+Cleric, Rogue, Warrior, Druid, Ranger, and Bard.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p druid~
+if level($n) == 1
+mpmset 0.$n class druid
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p ranger~
+if level($n) == 1
+mpmset 0.$n class ranger
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p bard~
+if level($n) == 1
+mpmset 0.$n class bard
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#109
+The Half-Elf Room~
+&cIn a brilliant flash, you are magically transformed into Half Elf form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Half Elf! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a half-elf you may choose from the following list of classes for 
+your character:
+ 
+Mage, Cleric, Rogue, Warrior, Necromancer, and Bard.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p necromancer~
+if level($n) == 1
+mpmset 0.$n class necromancer
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p bard~
+if level($n) == 1
+mpmset 0.$n class bard
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#110
+The Halfling Room~
+&cIn a brilliant flash, you are magically transformed into Halfling form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Halfling! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a halfling you may choose from the following list of classes for your
+character:
+ 
+Cleric, Rogue, Warrior, and Bard.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p bard~
+if level($n) == 1
+mpmset 0.$n class bard
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#111
+The Pixie Room~
+&cIn a brilliant flash, you are magically transformed into Pixie form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Pixie! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a pixie you may choose from the following list of classes for your
+character:
+ 
+Mage, Cleric, Rogue, Druid, and Ranger.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p druid~
+if level($n) == 1
+mpmset 0.$n class druid
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p ranger~
+if level($n) == 1
+mpmset 0.$n class ranger
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#112
+The Half-Orc Room~
+&cIn a brilliant flash, you are magically transformed into Half Orc form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Half Orc! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a half-orc you may choose from the following list of classes for 
+your character:
+ 
+Cleric, Rogue, and Warrior.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#113
+The Half-Troll Room~
+&cIn a brilliant flash, you are magically transformed into Half Troll form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Half Troll! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a half-troll you may choose from the following list of classes for 
+your character:
+ 
+Cleric, and Warrior.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#114
+The Dwarf Room~
+&cIn a brilliant flash, you are magically transformed into Dwarf form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Dwarf! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a dwarf you may choose from the following list of classes for your
+character:
+ 
+Cleric, Rogue, and Warrior.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#115
+The Gith Room~
+&cIn a brilliant flash, you are magically transformed into Gith form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Gith! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a gith you may choose from the following list of classes for your
+character:
+ 
+Mage, Cleric, Rogue, Warrior, and Necromancer.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p antipaladin~
+if level($n) == 1
+mpmset 0.$n class antipaladin
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p necromancer~
+if level($n) == 1
+mpmset 0.$n class necromancer
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#116
+The Minotaur Room~
+&cIn a brilliant flash, you are magically transformed into Minotaur form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Minotaur! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a minotaur you may choose from the following list of classes for 
+your character:
+ 
+Cleric, and Warrior.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#117
+The Centaur Room~
+&cIn a brilliant flash, you are magically transformed into Centaur form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Centaur! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a centaur you may choose from the following list of classes for your
+character:
+ 
+Cleric, Warrior, Druid, and Ranger.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p druid~
+if level($n) == 1
+mpmset 0.$n class druid
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p ranger~
+if level($n) == 1
+mpmset 0.$n class ranger
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#118
+The Drow Room~
+&cIn a brilliant flash, you are magically transformed into Drow form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Drow! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a drow you may choose from the following list of classes for your
+character:
+ 
+Mage, Cleric, Rogue, Warrior, and Necromancer.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p necromancer~
+if level($n) == 1
+mpmset 0.$n class necromancer
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#119
+The Half-Ogre Room~
+&cIn a brilliant flash, you are magically transformed into Half Ogre form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Half Ogre! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a half-ogre you may choose from the following list of classes for 
+your character:
+ 
+Cleric, and Warrior.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#120
+The Statistics Chamber~
+&cAnother brilliant flash of light follows your choice of class,
+and you are transported here. Charts and graphs line the walls, much
+of what they have to say is meaningless. However, one such chart
+draws your attention: It details the physical statistics of literally
+thousands of people, many like yourself. Suddenly, from VERY close by
+overhead, a loud, deep booming voice shouts:
+
+"Greetings Adventurer! You are very nearly done with your transformation.
+You may wish to review the statistics already generated for you during
+your process so far by typing &wscore&c, and if dissatisfied with them,
+simply type &wsay reroll&c and a new set will be rolled for you, with
+the option to accept or continue rerolling. If you are happy with your
+stats, type &wsay accept&c and you will be transported into Alsherok."
+
+With that, the voice is silent.&D
+~
+~
+indoors~
+nomob indoors norecall~
+0
+> speech_prog p reroll~
+if level($n) == 1
+mpstatreroll 0.$n
+endif
+~
+> speech_prog p accept~
+if level($n) == 1
+mpraceset 0.$n
+mptrlook 0.$n 121
+mpat 121 mpforce 0.$n bounce
+endif
+~
+|
+S
+#121
+An Odd Room~
+A final flash of light envelopes you and you are deposited inside what 
+appears to be a small closet of some kind. It's dark and musty in here, 
+and not very comfortable. Only the exit up is an option to explore now.
+What wonders await you here, gold? Fame? Power beyond your imagination? 
+Only time will tell. Step out into your new world brave soul.......
+
+(This is your chance to review the character you have rolled. If you are
+not satisfied with what you have, simply type &Wsay restart&D and you
+will be transported back to the race room to start again.)
+~
+~
+indoors~
+indoors norecall nodrop~
+0
+D
+up~
+~
+~
+~
+-1 130 0 0
+> speech_prog p restart~
+if level($n) == 1
+mpredo 0.$n
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+mpat 0.$n mpforce 0.$n remove all
+mpat 0.$n mpforce 0.$n drop all
+mpat 0.$n mppurge
+endif
+~
+|
+S
+#122
+The Lizardman Room~
+&cIn a brilliant flash, you are magically transformed into Lizardman form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Lizardman! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a lizardman you may choose from the following list of classes for 
+your character:
+ 
+Cleric, Rogue, Warrior, and Ranger.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p ranger~
+if level($n) == 1
+mpmset 0.$n class ranger
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#123
+The Gnome Room~
+&cIn a brilliant flash, you are magically transformed into Gnome form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Gnome! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a gnome you may choose from the following list of classes for your
+character:
+ 
+Mage, Cleric, Rogue, and Warrior.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#124
+The Duergar Room~
+&cIn a brilliant flash, you are magically transformed into Duergar form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Duergar! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a duergar you may choose from the following list of classes for 
+your character:
+ 
+Cleric, Rogue, and Warrior.
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#125
+The Sahuagin Room~
+&cIn a brilliant flash, you are magically transformed into Sahuagin form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Sahuagin! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As a sahuagin you may choose from the following list of classes for 
+your character:
+
+Cleric, Rogue, Warrior, Necromancer, Antipaladin
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p necromancer~
+if level($n) == 1
+mpmset 0.$n class necromancer
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p antipaladin~
+if level($n) == 1
+mpmset 0.$n class antipaladin
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p rogue~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#126
+The Insectoid Room~
+&cIn a brilliant flash, you are magically transformed into Insectoid form!
+A mirror stands along the back wall, allowing you to get a good look
+at yourself. Nobody would ever know you had been something other than
+a human at one time. An odd blue mist now begins to fill the room.
+
+From somewhere overhead and not too far away, a deep booming voice
+shouts: "Welcome, young Insectoid! Now it is time for you to choose your
+class within the world. Before you, on the wall beside the mirror
+is a &wlist&c of classes you can choose for yourself. Take a moment to
+review each one, then say outloud the class of your choice. For example,
+if you wish to become a warrior, simply type &wsay warrior&c and it shall
+be so."
+
+Indeed, upon the wall adjacent to the mirror is a small pouch tacked
+to a board. Inside is a &wlist&c of what you can choose to become. This list
+is also available from the website at www.alsherok.net.
+
+Should you decide you wish to choose a different race, simply type
+&wsay go back&c and you will be able to start again.&D
+~
+~
+indoors~
+nomob indoors nomagic~
+0
+E
+list~
+As an insectoid you may choose from the following list of classes for 
+your character:
+ 
+Cleric, Warrior, Ranger, Druid, Monk
+~
+> speech_prog p go back~
+if level($n) == 1
+mptrlook 0.$n 102
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p cleric~
+if level($n) == 1
+mpmset 0.$n class cleric
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p ranger~
+if level($n) == 1
+mpmset 0.$n class rogue
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p warrior~
+if level($n) == 1
+mpmset 0.$n class warrior
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p druid~
+if level($n) == 1
+mpmset 0.$n class druid
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+> speech_prog p monk~
+if level($n) == 1
+mpmset 0.$n class monk
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+|
+S
+#130
+Post Creation Advancement~
+This is where new chars get autoadvanced to level 2 after completing
+creation. This room should be moved to a more appropriate location to
+your world, and the mob in it altered to suit and transplanted there.
+Without autoadvance, characters will be stuck at level 1 and unable to
+gain experience.
+~
+~
+indoors~
+indoors norecall nodrop~
+0
+R M 0 100 1 130 -1 -1 -1
+S
+#199
+Floating in a void~
+~
+~
+city~
+nomob~
+0
+R O 0 100 1 199 -1 -1 -1
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

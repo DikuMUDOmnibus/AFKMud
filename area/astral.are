@@ -1,0 +1,5273 @@
+#AREA   The Astral Plane~
+
+#VERSION 20
+
+#AUTHOR Elquin~
+
+#VNUMS 4350 4449
+
+#RANGES
+1 115 0 115
+$
+
+#RESETMSG Masses of energy spiral past you.~
+
+#RESETFREQUENCY 30
+
+#FLAGS
+nocamp noastral noportal norecall nosummon noscry noteleport nobeacon~
+
+#CONTINENT astral~
+
+#COORDS 0 0
+
+#CLIMATE 2 2 2
+
+#TREASURE
+20 74 85 93
+20 50 60 75
+
+#MOBILES
+#4350
+illithid traveller mindflayer~
+&W&wAn &Pillithid &wtraveller~
+A travelling mindflayer zooms through the reaches of the astral plane.
+~
+&W&wTall, thin, and &ppurple&w, this &Pillithid &wtraveller is making his way
+&W&wto an unknown location. Peering at you briefly, what appears to be
+&W&wa veral grin appears on his face as he considers the prospect of an
+&W&wearly brunch.
+~
+npc scavenger aggressive stayarea meta_aggr~
+~
+-1000 -1 0 0 0 150 100 0.000000
+40 -20 -100 100 4d5+10
+common~
+common~
+standing~
+standing~
+neuter~
+humanoid~
+mage~
+head arms heart brains hands feet fingers eye tentacles~
+~
+~
+~
+~
+blindness fireball colorspray weaken~
+dispelmagic shield stoneskin teleport~
+#4351
+githyanki anti paladin~
+&W&wA &Ggith&Wyanki &zantipaladin&w~
+A githyanki antipaladin is here, looking for something.
+~
+&W&wA member of a race that originated from a group of humans enslaved and
+bred by illithids, this being could easily pass for his ancestors. The
+&W&wonly difference is the &Gyellowish &wtint to his skin. Travelling the
+&W&wastral plane, he scans the horizen looking for &Pmindflayers &wto slay.
+&W&wSighting you, he moves in, obviously welcoming the new sport.
+~
+npc aggressive stayarea meta_aggr~
+detect_invis~
+0 -1 0 0 0 150 100 0.000000
+30 -20 -100 150 5d6+10
+common gith~
+gith~
+standing~
+standing~
+neuter~
+gith~
+antipaladin~
+head arms legs heart brains guts hands feet fingers ear eye~
+~
+~
+~
+~
+kick bash~
+parry dodge shield bless disarm~
+#4352
+tiamat dragon~
+Tiamat~
+Tiamat, the five-headed dragon, stands here gazing at you.
+~
+&W&wBefore you stands the biggest dragon you have ever seen. Looming over
+&W&wyou, &WTiamat &wglances in your direction almost questioning your prescence
+&W&wwithin her area. You shiver in fear, and wonder if you should leave 
+&W&wbefore she takes offense.
+~
+npc sentinel stayarea~
+detect_invis detect_hidden sanctuary truesight fireshield shockshield iceshield~
+-1000 -1 0 0 0 150 100 0.000000
+100 -50 -300 10000 10d10+100
+common pixie ogre orcish trollese insectoid dragon magical goblin ancient clan centaur gnomish~
+pixie ogre orcish trollese insectoid dragon magical goblin ancient clan centaur gnomish~
+standing~
+standing~
+female~
+dragon~
+warrior~
+head heart brains wings tail scales claws tailattack sharpscales~
+fire cold electricity energy blunt pierce slash~
+sleep charm hold nonmagic plus1 plus2 paralysis~
+~
+~
+bite claws tail stun firebreath frostbreath acidbreath lightnbreath gasbreath~
+parry dodge heal~
+#4449
+Last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+npc proto~
+~
+0 0 0 0 0 150 100 0.000000
+1 21 0 0 0d0+0
+common~
+common~
+standing~
+standing~
+neuter~
+human~
+warrior~
+~
+~
+~
+~
+~
+~
+~
+#0
+
+
+#OBJECTS
+#4350
+glowing sphere ball~
+&W&wA &Wglowing&w, &Csphere &wof &Be&Cn&Wer&Cg&By&w~
+A small glowing ball lies here.~
+~
+light~
+glow magic bless antirogue antiwarrior antiranger antipaladin antiapal~
+take hold~
+~
+0 0 -1 0 0 0 0 0 0 0 0
+1 10000 -2 9999 0 None None None
+A intelligence 2
+A mana 20
+A save_spell -1
+#4351
+purple robes~
+&W&wSome &ppurple&w robes with &Ygolden &wedging~
+A pile of purple robes lie here.~
+~
+container~
+magic bless antigood antirogue antiwarrior antiranger antipaladin antiapal~
+take body~
+~
+100 0 -1 0 0 0 0 0 0 0 0
+10 0 -2 9999 2 None None None
+A armor -10
+A intelligence 1
+A mana 20
+#4352
+githyanki silver longsword~
+&W&w A &Csilver &Ggith&Wyanki &wlongsword~
+A silver longsword lies here.~
+~
+weapon~
+metal magic bless antigood anticleric antimage evil antidruid antimonk loyal antinecro~
+take wield~
+~
+12 5 4 1 1 0 12 0 0 0 0
+6 25000 -2 9999 0 None None None
+A hitroll 5
+A damroll 3
+#4353
+cloak swirling darkness~
+&W&wA &pcloak &wof &Ws&Yw&Ri&rrl&Ri&Yn&Wg &zda&wr&Wkn&we&zss&w~
+A pile of darkness lies here.~
+~
+armor~
+invis magic bless~
+take about~
+~
+3 3 0 0 0 0 0 0 0 0 0
+1 45000 -2 3 0 None None None
+A armor -10
+A affected 'detect_evil'
+A affected 'detect_magic'
+A affected 'detect_hidden'
+#4354
+ring wraith~
+&W&wA &Cring&w of the &bW&Br&Ca&Wi&Ct&Bh&w~
+A tiny ring carved with tortued souls lies here.~
+~
+armor~
+invis magic bless antigood~
+take finger hold~
+~
+5 5 0 0 0 0 0 0 0 0 0
+1 10000 -2 9999 0 None None None
+A affected 'hold'
+A affected 'detect_magic'
+A affected 'detect_hidden'
+#4355
+avernus sword~
+&x&zAvernus, the life stealer&w~
+A huge, humming sword lies here.~
+~
+weapon~
+hum metal magic bless antigood antineutral anticleric antimage antirogue loyal antinecro~
+take wield~
+~
+12 7 9 1 1 0 12 0 0 0 0
+1 100000 -2 1 0 None None None
+A damroll 8
+A hitroll 8
+A immune drain~
+A affected 'wizardeye'
+A affected 'detect_evil'
+A weaponspell 'quantum spike'
+#4449
+Last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+trash~
+proto~
+~
+~
+0 0 0 0 0 0 0 0 0 0 0
+1 0 0 9999 0 None None None
+#0
+
+
+#ROOMS
+#4350
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+
+A &zmurky &ggreen &Gp&goo&Gl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4354 -1 -1
+D
+east~
+~
+~
+~
+-1 4355 -1 -1
+D
+south~
+~
+~
+~
+-1 4351 -1 -1
+D
+west~
+~
+~
+~
+-1 4370 -1 -1
+D
+up~
+~
+~
+~
+-1 4425 -1 -1
+D
+down~
+~
+~
+~
+-1 4375 -1 -1
+S
+#4351
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4350 -1 -1
+D
+east~
+~
+~
+~
+-1 4356 -1 -1
+D
+south~
+~
+~
+~
+-1 4352 -1 -1
+D
+west~
+~
+~
+~
+-1 4371 -1 -1
+D
+up~
+~
+~
+~
+-1 4426 -1 -1
+D
+down~
+~
+~
+~
+-1 4376 -1 -1
+S
+#4352
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4351 -1 -1
+D
+east~
+~
+~
+~
+-1 4357 -1 -1
+D
+south~
+~
+~
+~
+-1 4353 -1 -1
+D
+west~
+~
+~
+~
+-1 4372 -1 -1
+D
+up~
+~
+~
+~
+-1 4427 -1 -1
+D
+down~
+~
+~
+~
+-1 4377 -1 -1
+S
+#4353
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4352 -1 -1
+D
+east~
+~
+~
+~
+-1 4358 -1 -1
+D
+south~
+~
+~
+~
+-1 4354 -1 -1
+D
+west~
+~
+~
+~
+-1 4373 -1 -1
+D
+up~
+~
+~
+~
+-1 4428 -1 -1
+D
+down~
+~
+~
+~
+-1 4378 -1 -1
+S
+#4354
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4353 -1 -1
+D
+east~
+~
+~
+~
+-1 4359 -1 -1
+D
+south~
+~
+~
+~
+-1 4350 -1 -1
+D
+west~
+~
+~
+~
+-1 4374 -1 -1
+D
+up~
+~
+~
+~
+-1 4429 -1 -1
+D
+down~
+~
+~
+~
+-1 4379 -1 -1
+S
+#4355
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4359 -1 -1
+D
+east~
+~
+~
+~
+-1 4360 -1 -1
+D
+south~
+~
+~
+~
+-1 4356 -1 -1
+D
+west~
+~
+~
+~
+-1 4350 -1 -1
+D
+up~
+~
+~
+~
+-1 4430 -1 -1
+D
+down~
+~
+~
+~
+-1 4380 -1 -1
+S
+#4356
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Yg&Oolde&Yn yellow &Yp&Ooo&Yl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4355 -1 -1
+D
+east~
+~
+~
+~
+-1 4361 -1 -1
+D
+south~
+~
+~
+~
+-1 4357 -1 -1
+D
+west~
+~
+~
+~
+-1 4351 -1 -1
+D
+up~
+~
+~
+~
+-1 4431 -1 -1
+D
+down~
+~
+~
+~
+-1 4381 -1 -1
+S
+#4357
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4356 -1 -1
+D
+east~
+~
+~
+~
+-1 4362 -1 -1
+D
+south~
+~
+~
+~
+-1 4358 -1 -1
+D
+west~
+~
+~
+~
+-1 4352 -1 -1
+D
+up~
+~
+~
+~
+-1 4432 -1 -1
+D
+down~
+~
+~
+~
+-1 4382 -1 -1
+S
+#4358
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4357 -1 -1
+D
+east~
+~
+~
+~
+-1 4363 -1 -1
+D
+south~
+~
+~
+~
+-1 4359 -1 -1
+D
+west~
+~
+~
+~
+-1 4353 -1 -1
+D
+up~
+~
+~
+~
+-1 4433 -1 -1
+D
+down~
+~
+~
+~
+-1 4383 -1 -1
+S
+#4359
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Ysandy &Obrown &Yp&Ooo&Yl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4358 -1 -1
+D
+east~
+~
+~
+~
+-1 4364 -1 -1
+D
+south~
+~
+~
+~
+-1 4355 -1 -1
+D
+west~
+~
+~
+~
+-1 4354 -1 -1
+D
+up~
+~
+~
+~
+-1 4434 -1 -1
+D
+down~
+~
+~
+~
+-1 4384 -1 -1
+S
+#4360
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4364 -1 -1
+D
+east~
+~
+~
+~
+-1 4365 -1 -1
+D
+south~
+~
+~
+~
+-1 4361 -1 -1
+D
+west~
+~
+~
+~
+-1 4355 -1 -1
+D
+up~
+~
+~
+~
+-1 4435 -1 -1
+D
+down~
+~
+~
+~
+-1 4385 -1 -1
+S
+#4361
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4360 -1 -1
+D
+east~
+~
+~
+~
+-1 4366 -1 -1
+D
+south~
+~
+~
+~
+-1 4362 -1 -1
+D
+west~
+~
+~
+~
+-1 4356 -1 -1
+D
+up~
+~
+~
+~
+-1 4436 -1 -1
+D
+down~
+~
+~
+~
+-1 4386 -1 -1
+S
+#4362
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4361 -1 -1
+D
+east~
+~
+~
+~
+-1 4367 -1 -1
+D
+south~
+~
+~
+~
+-1 4363 -1 -1
+D
+west~
+~
+~
+~
+-1 4357 -1 -1
+D
+up~
+~
+~
+~
+-1 4437 -1 -1
+D
+down~
+~
+~
+~
+-1 4387 -1 -1
+S
+#4363
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+
+A &rm&Oudd&ry &Obrown &rp&Ooo&rl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4362 -1 -1
+D
+east~
+~
+~
+~
+-1 4368 -1 -1
+D
+south~
+~
+~
+~
+-1 4364 -1 -1
+D
+west~
+~
+~
+~
+-1 4358 -1 -1
+D
+up~
+~
+~
+~
+-1 4438 -1 -1
+D
+down~
+~
+~
+~
+-1 4388 -1 -1
+S
+#4364
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4363 -1 -1
+D
+east~
+~
+~
+~
+-1 4369 -1 -1
+D
+south~
+~
+~
+~
+-1 4360 -1 -1
+D
+west~
+~
+~
+~
+-1 4359 -1 -1
+D
+up~
+~
+~
+~
+-1 4439 -1 -1
+D
+down~
+~
+~
+~
+-1 4389 -1 -1
+S
+#4365
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4369 -1 -1
+D
+east~
+~
+~
+~
+-1 4370 -1 -1
+D
+south~
+~
+~
+~
+-1 4366 -1 -1
+D
+west~
+~
+~
+~
+-1 4360 -1 -1
+D
+up~
+~
+~
+~
+-1 4440 -1 -1
+D
+down~
+~
+~
+~
+-1 4390 -1 -1
+S
+#4366
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4365 -1 -1
+D
+east~
+~
+~
+~
+-1 4371 -1 -1
+D
+south~
+~
+~
+~
+-1 4367 -1 -1
+D
+west~
+~
+~
+~
+-1 4361 -1 -1
+D
+up~
+~
+~
+~
+-1 4441 -1 -1
+D
+down~
+~
+~
+~
+-1 4391 -1 -1
+S
+#4367
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4366 -1 -1
+D
+east~
+~
+~
+~
+-1 4372 -1 -1
+D
+south~
+~
+~
+~
+-1 4368 -1 -1
+D
+west~
+~
+~
+~
+-1 4362 -1 -1
+D
+up~
+~
+~
+~
+-1 4442 -1 -1
+D
+down~
+~
+~
+~
+-1 4392 -1 -1
+S
+#4368
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4367 -1 -1
+D
+east~
+~
+~
+~
+-1 4373 -1 -1
+D
+south~
+~
+~
+~
+-1 4369 -1 -1
+D
+west~
+~
+~
+~
+-1 4363 -1 -1
+D
+up~
+~
+~
+~
+-1 4443 -1 -1
+D
+down~
+~
+~
+~
+-1 4393 -1 -1
+S
+#4369
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4368 -1 -1
+D
+east~
+~
+~
+~
+-1 4374 -1 -1
+D
+south~
+~
+~
+~
+-1 4365 -1 -1
+D
+west~
+~
+~
+~
+-1 4364 -1 -1
+D
+up~
+~
+~
+~
+-1 4444 -1 -1
+D
+down~
+~
+~
+~
+-1 4394 -1 -1
+S
+#4370
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Phot pink pool &Bshimmers &Where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4374 -1 -1
+D
+east~
+~
+~
+~
+-1 4350 -1 -1
+D
+south~
+~
+~
+~
+-1 4371 -1 -1
+D
+west~
+~
+~
+~
+-1 4365 -1 -1
+D
+up~
+~
+~
+~
+-1 4445 -1 -1
+D
+down~
+~
+~
+~
+-1 4395 -1 -1
+S
+#4371
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4370 -1 -1
+D
+east~
+~
+~
+~
+-1 4351 -1 -1
+D
+south~
+~
+~
+~
+-1 4372 -1 -1
+D
+west~
+~
+~
+~
+-1 4366 -1 -1
+D
+up~
+~
+~
+~
+-1 4446 -1 -1
+D
+down~
+~
+~
+~
+-1 4396 -1 -1
+S
+#4372
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Gs&glim&Gy &ggreen &Gp&goo&Gl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4371 -1 -1
+D
+east~
+~
+~
+~
+-1 4352 -1 -1
+D
+south~
+~
+~
+~
+-1 4373 -1 -1
+D
+west~
+~
+~
+~
+-1 4367 -1 -1
+D
+up~
+~
+~
+~
+-1 4447 -1 -1
+D
+down~
+~
+~
+~
+-1 4397 -1 -1
+S
+#4373
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4372 -1 -1
+D
+east~
+~
+~
+~
+-1 4353 -1 -1
+D
+south~
+~
+~
+~
+-1 4374 -1 -1
+D
+west~
+~
+~
+~
+-1 4368 -1 -1
+D
+down~
+~
+~
+~
+-1 4398 -1 -1
+S
+#4374
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4373 -1 -1
+D
+east~
+~
+~
+~
+-1 4354 -1 -1
+D
+south~
+~
+~
+~
+-1 4370 -1 -1
+D
+west~
+~
+~
+~
+-1 4369 -1 -1
+D
+up~
+~
+~
+~
+-1 4449 -1 -1
+D
+down~
+~
+~
+~
+-1 4399 -1 -1
+S
+#4375
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+An &bsh&wado&bwy &wgrey &wp&boo&wl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4379 -1 -1
+D
+east~
+~
+~
+~
+-1 4380 -1 -1
+D
+south~
+~
+~
+~
+-1 4376 -1 -1
+D
+west~
+~
+~
+~
+-1 4395 -1 -1
+D
+up~
+~
+~
+~
+-1 4350 -1 -1
+D
+down~
+~
+~
+~
+-1 4400 -1 -1
+S
+#4376
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4375 -1 -1
+D
+east~
+~
+~
+~
+-1 4381 -1 -1
+D
+south~
+~
+~
+~
+-1 4377 -1 -1
+D
+west~
+~
+~
+~
+-1 4396 -1 -1
+D
+up~
+~
+~
+~
+-1 4351 -1 -1
+D
+down~
+~
+~
+~
+-1 4401 -1 -1
+S
+#4377
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Ob&Yurnishe&Od &Yo&Orang&Ye &Op&Yoo&Ol &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4376 -1 -1
+D
+east~
+~
+~
+~
+-1 4382 -1 -1
+D
+south~
+~
+~
+~
+-1 4378 -1 -1
+D
+west~
+~
+~
+~
+-1 4397 -1 -1
+D
+up~
+~
+~
+~
+-1 4352 -1 -1
+D
+down~
+~
+~
+~
+-1 4402 -1 -1
+S
+#4378
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4377 -1 -1
+D
+east~
+~
+~
+~
+-1 4383 -1 -1
+D
+south~
+~
+~
+~
+-1 4379 -1 -1
+D
+west~
+~
+~
+~
+-1 4398 -1 -1
+D
+up~
+~
+~
+~
+-1 4353 -1 -1
+D
+down~
+~
+~
+~
+-1 4403 -1 -1
+S
+#4379
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4378 -1 -1
+D
+east~
+~
+~
+~
+-1 4384 -1 -1
+D
+south~
+~
+~
+~
+-1 4375 -1 -1
+D
+west~
+~
+~
+~
+-1 4399 -1 -1
+D
+up~
+~
+~
+~
+-1 4354 -1 -1
+D
+down~
+~
+~
+~
+-1 4404 -1 -1
+S
+#4380
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4384 -1 -1
+D
+east~
+~
+~
+~
+-1 4385 -1 -1
+D
+south~
+~
+~
+~
+-1 4381 -1 -1
+D
+west~
+~
+~
+~
+-1 4375 -1 -1
+D
+up~
+~
+~
+~
+-1 4355 -1 -1
+D
+down~
+~
+~
+~
+-1 4405 -1 -1
+S
+#4381
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4380 -1 -1
+D
+east~
+~
+~
+~
+-1 4386 -1 -1
+D
+south~
+~
+~
+~
+-1 4382 -1 -1
+D
+west~
+~
+~
+~
+-1 4376 -1 -1
+D
+up~
+~
+~
+~
+-1 4356 -1 -1
+D
+down~
+~
+~
+~
+-1 4406 -1 -1
+S
+#4382
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4381 -1 -1
+D
+east~
+~
+~
+~
+-1 4387 -1 -1
+D
+south~
+~
+~
+~
+-1 4383 -1 -1
+D
+west~
+~
+~
+~
+-1 4377 -1 -1
+D
+up~
+~
+~
+~
+-1 4357 -1 -1
+D
+down~
+~
+~
+~
+-1 4407 -1 -1
+S
+#4383
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4382 -1 -1
+D
+east~
+~
+~
+~
+-1 4388 -1 -1
+D
+south~
+~
+~
+~
+-1 4384 -1 -1
+D
+west~
+~
+~
+~
+-1 4378 -1 -1
+D
+up~
+~
+~
+~
+-1 4358 -1 -1
+D
+down~
+~
+~
+~
+-1 4408 -1 -1
+S
+#4384
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4383 -1 -1
+D
+east~
+~
+~
+~
+-1 4389 -1 -1
+D
+south~
+~
+~
+~
+-1 4380 -1 -1
+D
+west~
+~
+~
+~
+-1 4379 -1 -1
+D
+up~
+~
+~
+~
+-1 4359 -1 -1
+D
+down~
+~
+~
+~
+-1 4409 -1 -1
+S
+#4385
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4389 -1 -1
+D
+east~
+~
+~
+~
+-1 4390 -1 -1
+D
+south~
+~
+~
+~
+-1 4386 -1 -1
+D
+west~
+~
+~
+~
+-1 4380 -1 -1
+D
+up~
+~
+~
+~
+-1 4360 -1 -1
+D
+down~
+~
+~
+~
+-1 4410 -1 -1
+S
+#4386
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+
+&wA &Wch&zec&Wke&zre&wd&w &Wp&zoo&Wl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4385 -1 -1
+D
+east~
+~
+~
+~
+-1 4391 -1 -1
+D
+south~
+~
+~
+~
+-1 4387 -1 -1
+D
+west~
+~
+~
+~
+-1 4381 -1 -1
+D
+up~
+~
+~
+~
+-1 4361 -1 -1
+D
+down~
+~
+~
+~
+-1 4411 -1 -1
+S
+#4387
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4386 -1 -1
+D
+east~
+~
+~
+~
+-1 4392 -1 -1
+D
+south~
+~
+~
+~
+-1 4388 -1 -1
+D
+west~
+~
+~
+~
+-1 4382 -1 -1
+D
+up~
+~
+~
+~
+-1 4362 -1 -1
+D
+down~
+~
+~
+~
+-1 4412 -1 -1
+S
+#4388
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &cdeep &ppurple &Pp&poo&Pl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4387 -1 -1
+D
+east~
+~
+~
+~
+-1 4393 -1 -1
+D
+south~
+~
+~
+~
+-1 4389 -1 -1
+D
+west~
+~
+~
+~
+-1 4383 -1 -1
+D
+up~
+~
+~
+~
+-1 4363 -1 -1
+D
+down~
+~
+~
+~
+-1 4413 -1 -1
+S
+#4389
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4388 -1 -1
+D
+east~
+~
+~
+~
+-1 4394 -1 -1
+D
+south~
+~
+~
+~
+-1 4385 -1 -1
+D
+west~
+~
+~
+~
+-1 4384 -1 -1
+D
+up~
+~
+~
+~
+-1 4364 -1 -1
+D
+down~
+~
+~
+~
+-1 4414 -1 -1
+S
+#4390
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4394 -1 -1
+D
+east~
+~
+~
+~
+-1 4395 -1 -1
+D
+south~
+~
+~
+~
+-1 4391 -1 -1
+D
+west~
+~
+~
+~
+-1 4385 -1 -1
+D
+up~
+~
+~
+~
+-1 4365 -1 -1
+D
+down~
+~
+~
+~
+-1 4415 -1 -1
+S
+#4391
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4390 -1 -1
+D
+east~
+~
+~
+~
+-1 4396 -1 -1
+D
+south~
+~
+~
+~
+-1 4392 -1 -1
+D
+west~
+~
+~
+~
+-1 4386 -1 -1
+D
+up~
+~
+~
+~
+-1 4366 -1 -1
+D
+down~
+~
+~
+~
+-1 4416 -1 -1
+S
+#4392
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4391 -1 -1
+D
+east~
+~
+~
+~
+-1 4397 -1 -1
+D
+south~
+~
+~
+~
+-1 4393 -1 -1
+D
+west~
+~
+~
+~
+-1 4387 -1 -1
+D
+up~
+~
+~
+~
+-1 4367 -1 -1
+D
+down~
+~
+~
+~
+-1 4417 -1 -1
+S
+#4393
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4392 -1 -1
+D
+east~
+~
+~
+~
+-1 4398 -1 -1
+D
+south~
+~
+~
+~
+-1 4394 -1 -1
+D
+west~
+~
+~
+~
+-1 4388 -1 -1
+D
+up~
+~
+~
+~
+-1 4368 -1 -1
+D
+down~
+~
+~
+~
+-1 4418 -1 -1
+S
+#4394
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+
+&wAn &binky&w &zblack&w &bp&zoo&bl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4393 -1 -1
+D
+east~
+~
+~
+~
+-1 4399 -1 -1
+D
+south~
+~
+~
+~
+-1 4390 -1 -1
+D
+west~
+~
+~
+~
+-1 4389 -1 -1
+D
+up~
+~
+~
+~
+-1 4369 -1 -1
+D
+down~
+~
+~
+~
+-1 4419 -1 -1
+S
+#4395
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4399 -1 -1
+D
+east~
+~
+~
+~
+-1 4375 -1 -1
+D
+south~
+~
+~
+~
+-1 4396 -1 -1
+D
+west~
+~
+~
+~
+-1 4390 -1 -1
+D
+up~
+~
+~
+~
+-1 4370 -1 -1
+D
+down~
+~
+~
+~
+-1 4420 -1 -1
+S
+#4396
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4395 -1 -1
+D
+east~
+~
+~
+~
+-1 4376 -1 -1
+D
+south~
+~
+~
+~
+-1 4397 -1 -1
+D
+west~
+~
+~
+~
+-1 4391 -1 -1
+D
+up~
+~
+~
+~
+-1 4371 -1 -1
+D
+down~
+~
+~
+~
+-1 4421 -1 -1
+S
+#4397
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+&wAn angry &Yfiery &Rred&w portal stands before you, daring you to enter.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4396 -1 -1
+D
+east~
+~
+~
+~
+-1 4377 -1 -1
+D
+south~
+~
+~
+~
+-1 4398 -1 -1
+D
+west~
+~
+~
+~
+-1 4392 -1 -1
+D
+up~
+~
+~
+~
+-1 4372 -1 -1
+D
+down~
+~
+~
+~
+-1 4422 -1 -1
+S
+#4398
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4397 -1 -1
+D
+east~
+~
+~
+~
+-1 4378 -1 -1
+D
+south~
+~
+~
+~
+-1 4399 -1 -1
+D
+west~
+~
+~
+~
+-1 4393 -1 -1
+D
+up~
+~
+~
+~
+-1 4373 -1 -1
+D
+down~
+~
+~
+~
+-1 4423 -1 -1
+S
+#4399
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4398 -1 -1
+D
+east~
+~
+~
+~
+-1 4379 -1 -1
+D
+south~
+~
+~
+~
+-1 4395 -1 -1
+D
+west~
+~
+~
+~
+-1 4394 -1 -1
+D
+up~
+~
+~
+~
+-1 4374 -1 -1
+D
+down~
+~
+~
+~
+-1 4424 -1 -1
+S
+#4400
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Rshimmering&w portal opens into the depths of the &YChaos Gate&w here.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4404 -1 -1
+D
+east~
+~
+~
+~
+-1 4405 -1 -1
+D
+south~
+~
+~
+~
+-1 4401 -1 -1
+D
+west~
+~
+~
+~
+-1 4420 -1 -1
+D
+up~
+~
+~
+~
+-1 4375 -1 -1
+D
+down~
+~
+~
+~
+-1 4425 -1 -1
+S
+#4401
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4400 -1 -1
+D
+east~
+~
+~
+~
+-1 4406 -1 -1
+D
+south~
+~
+~
+~
+-1 4402 -1 -1
+D
+west~
+~
+~
+~
+-1 4421 -1 -1
+D
+up~
+~
+~
+~
+-1 4376 -1 -1
+D
+down~
+~
+~
+~
+-1 4426 -1 -1
+S
+#4402
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4401 -1 -1
+D
+east~
+~
+~
+~
+-1 4407 -1 -1
+D
+south~
+~
+~
+~
+-1 4403 -1 -1
+D
+west~
+~
+~
+~
+-1 4422 -1 -1
+D
+up~
+~
+~
+~
+-1 4377 -1 -1
+D
+down~
+~
+~
+~
+-1 4427 -1 -1
+S
+#4403
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+&W&wA &rr&Ra&Yi&gn&bb&Bo&pw&w-colored &Wpool &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4402 -1 -1
+D
+east~
+~
+~
+~
+-1 4408 -1 -1
+D
+south~
+~
+~
+~
+-1 4404 -1 -1
+D
+west~
+~
+~
+~
+-1 4423 -1 -1
+D
+up~
+~
+~
+~
+-1 4378 -1 -1
+D
+down~
+~
+~
+~
+-1 4428 -1 -1
+S
+#4404
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &zblack void&w swirls dangerously here.&D
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4403 -1 -1
+D
+east~
+~
+~
+~
+-1 4409 -1 -1
+D
+south~
+~
+~
+~
+-1 4400 -1 -1
+D
+west~
+~
+~
+~
+-1 4424 -1 -1
+D
+up~
+~
+~
+~
+-1 4379 -1 -1
+D
+down~
+~
+~
+~
+-1 4429 -1 -1
+S
+#4405
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4409 -1 -1
+D
+east~
+~
+~
+~
+-1 4410 -1 -1
+D
+south~
+~
+~
+~
+-1 4406 -1 -1
+D
+west~
+~
+~
+~
+-1 4400 -1 -1
+D
+up~
+~
+~
+~
+-1 4380 -1 -1
+D
+down~
+~
+~
+~
+-1 4430 -1 -1
+S
+#4406
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4405 -1 -1
+D
+east~
+~
+~
+~
+-1 4411 -1 -1
+D
+south~
+~
+~
+~
+-1 4407 -1 -1
+D
+west~
+~
+~
+~
+-1 4401 -1 -1
+D
+up~
+~
+~
+~
+-1 4381 -1 -1
+D
+down~
+~
+~
+~
+-1 4431 -1 -1
+S
+#4407
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4406 -1 -1
+D
+east~
+~
+~
+~
+-1 4412 -1 -1
+D
+south~
+~
+~
+~
+-1 4408 -1 -1
+D
+west~
+~
+~
+~
+-1 4402 -1 -1
+D
+up~
+~
+~
+~
+-1 4382 -1 -1
+D
+down~
+~
+~
+~
+-1 4432 -1 -1
+S
+#4408
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4407 -1 -1
+D
+east~
+~
+~
+~
+-1 4413 -1 -1
+D
+south~
+~
+~
+~
+-1 4409 -1 -1
+D
+west~
+~
+~
+~
+-1 4403 -1 -1
+D
+up~
+~
+~
+~
+-1 4383 -1 -1
+D
+down~
+~
+~
+~
+-1 4433 -1 -1
+S
+#4409
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4408 -1 -1
+D
+east~
+~
+~
+~
+-1 4414 -1 -1
+D
+south~
+~
+~
+~
+-1 4405 -1 -1
+D
+west~
+~
+~
+~
+-1 4404 -1 -1
+D
+up~
+~
+~
+~
+-1 4384 -1 -1
+D
+down~
+~
+~
+~
+-1 4434 -1 -1
+S
+#4410
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4414 -1 -1
+D
+east~
+~
+~
+~
+-1 4415 -1 -1
+D
+south~
+~
+~
+~
+-1 4411 -1 -1
+D
+west~
+~
+~
+~
+-1 4405 -1 -1
+D
+up~
+~
+~
+~
+-1 4385 -1 -1
+D
+down~
+~
+~
+~
+-1 4435 -1 -1
+S
+#4411
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+An &Ci&Wc&Cy &Wwhite &Wp&Coo&Wl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4410 -1 -1
+D
+east~
+~
+~
+~
+-1 4416 -1 -1
+D
+south~
+~
+~
+~
+-1 4412 -1 -1
+D
+west~
+~
+~
+~
+-1 4406 -1 -1
+D
+up~
+~
+~
+~
+-1 4386 -1 -1
+D
+down~
+~
+~
+~
+-1 4436 -1 -1
+S
+#4412
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+
+&wA &Gsea&w &ggreen&w &Gp&goo&Gl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4411 -1 -1
+D
+east~
+~
+~
+~
+-1 4417 -1 -1
+D
+south~
+~
+~
+~
+-1 4413 -1 -1
+D
+west~
+~
+~
+~
+-1 4407 -1 -1
+D
+up~
+~
+~
+~
+-1 4387 -1 -1
+D
+down~
+~
+~
+~
+-1 4437 -1 -1
+S
+#4413
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4412 -1 -1
+D
+east~
+~
+~
+~
+-1 4418 -1 -1
+D
+south~
+~
+~
+~
+-1 4414 -1 -1
+D
+west~
+~
+~
+~
+-1 4408 -1 -1
+D
+up~
+~
+~
+~
+-1 4388 -1 -1
+D
+down~
+~
+~
+~
+-1 4438 -1 -1
+S
+#4414
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+
+A &zdark grey p&woo&zl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4413 -1 -1
+D
+east~
+~
+~
+~
+-1 4419 -1 -1
+D
+south~
+~
+~
+~
+-1 4410 -1 -1
+D
+west~
+~
+~
+~
+-1 4409 -1 -1
+D
+up~
+~
+~
+~
+-1 4389 -1 -1
+D
+down~
+~
+~
+~
+-1 4439 -1 -1
+S
+#4415
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4419 -1 -1
+D
+east~
+~
+~
+~
+-1 4420 -1 -1
+D
+south~
+~
+~
+~
+-1 4416 -1 -1
+D
+west~
+~
+~
+~
+-1 4410 -1 -1
+D
+up~
+~
+~
+~
+-1 4390 -1 -1
+D
+down~
+~
+~
+~
+-1 4440 -1 -1
+S
+#4416
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4415 -1 -1
+D
+east~
+~
+~
+~
+-1 4421 -1 -1
+D
+south~
+~
+~
+~
+-1 4417 -1 -1
+D
+west~
+~
+~
+~
+-1 4411 -1 -1
+D
+up~
+~
+~
+~
+-1 4391 -1 -1
+D
+down~
+~
+~
+~
+-1 4441 -1 -1
+S
+#4417
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4416 -1 -1
+D
+east~
+~
+~
+~
+-1 4422 -1 -1
+D
+south~
+~
+~
+~
+-1 4418 -1 -1
+D
+west~
+~
+~
+~
+-1 4412 -1 -1
+D
+up~
+~
+~
+~
+-1 4392 -1 -1
+D
+down~
+~
+~
+~
+-1 4442 -1 -1
+S
+#4418
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4417 -1 -1
+D
+east~
+~
+~
+~
+-1 4423 -1 -1
+D
+south~
+~
+~
+~
+-1 4419 -1 -1
+D
+west~
+~
+~
+~
+-1 4413 -1 -1
+D
+up~
+~
+~
+~
+-1 4393 -1 -1
+D
+down~
+~
+~
+~
+-1 4443 -1 -1
+S
+#4419
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4418 -1 -1
+D
+east~
+~
+~
+~
+-1 4424 -1 -1
+D
+south~
+~
+~
+~
+-1 4415 -1 -1
+D
+west~
+~
+~
+~
+-1 4414 -1 -1
+D
+up~
+~
+~
+~
+-1 4394 -1 -1
+D
+down~
+~
+~
+~
+-1 4444 -1 -1
+S
+#4420
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4424 -1 -1
+D
+east~
+~
+~
+~
+-1 4400 -1 -1
+D
+south~
+~
+~
+~
+-1 4421 -1 -1
+D
+west~
+~
+~
+~
+-1 4415 -1 -1
+D
+up~
+~
+~
+~
+-1 4395 -1 -1
+D
+down~
+~
+~
+~
+-1 4445 -1 -1
+S
+#4421
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4420 -1 -1
+D
+east~
+~
+~
+~
+-1 4401 -1 -1
+D
+south~
+~
+~
+~
+-1 4422 -1 -1
+D
+west~
+~
+~
+~
+-1 4416 -1 -1
+D
+up~
+~
+~
+~
+-1 4396 -1 -1
+D
+down~
+~
+~
+~
+-1 4446 -1 -1
+S
+#4422
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4421 -1 -1
+D
+east~
+~
+~
+~
+-1 4402 -1 -1
+D
+south~
+~
+~
+~
+-1 4423 -1 -1
+D
+west~
+~
+~
+~
+-1 4417 -1 -1
+D
+up~
+~
+~
+~
+-1 4397 -1 -1
+D
+down~
+~
+~
+~
+-1 4447 -1 -1
+S
+#4423
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4422 -1 -1
+D
+east~
+~
+~
+~
+-1 4403 -1 -1
+D
+south~
+~
+~
+~
+-1 4424 -1 -1
+D
+west~
+~
+~
+~
+-1 4418 -1 -1
+D
+up~
+~
+~
+~
+-1 4398 -1 -1
+D
+down~
+~
+~
+~
+-1 4448 -1 -1
+S
+#4424
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4423 -1 -1
+D
+east~
+~
+~
+~
+-1 4404 -1 -1
+D
+south~
+~
+~
+~
+-1 4420 -1 -1
+D
+west~
+~
+~
+~
+-1 4419 -1 -1
+D
+up~
+~
+~
+~
+-1 4399 -1 -1
+D
+down~
+~
+~
+~
+-1 4449 -1 -1
+S
+#4425
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+
+A &Rb&rlood&Ry &Rcrimson &Rp&roo&Rl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4429 -1 -1
+D
+east~
+~
+~
+~
+-1 4430 -1 -1
+D
+south~
+~
+~
+~
+-1 4426 -1 -1
+D
+west~
+~
+~
+~
+-1 4445 -1 -1
+D
+up~
+~
+~
+~
+-1 4400 -1 -1
+D
+down~
+~
+~
+~
+-1 4350 -1 -1
+R M 0 4351 5 4425 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 5 4425 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 5 4425 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 5 4425 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 5 4425 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+S
+#4426
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4425 -1 -1
+D
+east~
+~
+~
+~
+-1 4431 -1 -1
+D
+south~
+~
+~
+~
+-1 4427 -1 -1
+D
+west~
+~
+~
+~
+-1 4446 -1 -1
+D
+up~
+~
+~
+~
+-1 4401 -1 -1
+D
+down~
+~
+~
+~
+-1 4351 -1 -1
+S
+#4427
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4426 -1 -1
+D
+east~
+~
+~
+~
+-1 4432 -1 -1
+D
+south~
+~
+~
+~
+-1 4428 -1 -1
+D
+west~
+~
+~
+~
+-1 4447 -1 -1
+D
+up~
+~
+~
+~
+-1 4402 -1 -1
+D
+down~
+~
+~
+~
+-1 4352 -1 -1
+S
+#4428
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Gf&gores&Gt &Ggreen &gp&Goo&gl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4427 -1 -1
+D
+east~
+~
+~
+~
+-1 4433 -1 -1
+D
+south~
+~
+~
+~
+-1 4429 -1 -1
+D
+west~
+~
+~
+~
+-1 4448 -1 -1
+D
+up~
+~
+~
+~
+-1 4403 -1 -1
+D
+down~
+~
+~
+~
+-1 4353 -1 -1
+S
+#4429
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4428 -1 -1
+D
+east~
+~
+~
+~
+-1 4434 -1 -1
+D
+south~
+~
+~
+~
+-1 4425 -1 -1
+D
+west~
+~
+~
+~
+-1 4449 -1 -1
+D
+up~
+~
+~
+~
+-1 4404 -1 -1
+D
+down~
+~
+~
+~
+-1 4354 -1 -1
+R M 0 4351 10 4429 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 10 4429 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 10 4429 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 10 4429 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+R M 0 4351 10 4429 -1 -1 -1
+  R E 1 4352 1 16
+  R E 1 4353 1 12
+  R E 1 4354 1 1
+S
+#4430
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4434 -1 -1
+D
+east~
+~
+~
+~
+-1 4435 -1 -1
+D
+south~
+~
+~
+~
+-1 4431 -1 -1
+D
+west~
+~
+~
+~
+-1 4425 -1 -1
+D
+up~
+~
+~
+~
+-1 4405 -1 -1
+D
+down~
+~
+~
+~
+-1 4355 -1 -1
+S
+#4431
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Broyal &Cblue &Bp&Coo&Bl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4430 -1 -1
+D
+east~
+~
+~
+~
+-1 4436 -1 -1
+D
+south~
+~
+~
+~
+-1 4432 -1 -1
+D
+west~
+~
+~
+~
+-1 4426 -1 -1
+D
+up~
+~
+~
+~
+-1 4406 -1 -1
+D
+down~
+~
+~
+~
+-1 4356 -1 -1
+S
+#4432
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4431 -1 -1
+D
+east~
+~
+~
+~
+-1 4437 -1 -1
+D
+south~
+~
+~
+~
+-1 4433 -1 -1
+D
+west~
+~
+~
+~
+-1 4427 -1 -1
+D
+up~
+~
+~
+~
+-1 4407 -1 -1
+D
+down~
+~
+~
+~
+-1 4357 -1 -1
+S
+#4433
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4432 -1 -1
+D
+east~
+~
+~
+~
+-1 4438 -1 -1
+D
+south~
+~
+~
+~
+-1 4434 -1 -1
+D
+west~
+~
+~
+~
+-1 4428 -1 -1
+D
+up~
+~
+~
+~
+-1 4408 -1 -1
+D
+down~
+~
+~
+~
+-1 4358 -1 -1
+S
+#4434
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4433 -1 -1
+D
+east~
+~
+~
+~
+-1 4439 -1 -1
+D
+south~
+~
+~
+~
+-1 4430 -1 -1
+D
+west~
+~
+~
+~
+-1 4429 -1 -1
+D
+up~
+~
+~
+~
+-1 4409 -1 -1
+D
+down~
+~
+~
+~
+-1 4359 -1 -1
+S
+#4435
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4439 -1 -1
+D
+east~
+~
+~
+~
+-1 4440 -1 -1
+D
+south~
+~
+~
+~
+-1 4436 -1 -1
+D
+west~
+~
+~
+~
+-1 4430 -1 -1
+D
+up~
+~
+~
+~
+-1 4410 -1 -1
+D
+down~
+~
+~
+~
+-1 4360 -1 -1
+S
+#4436
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4435 -1 -1
+D
+east~
+~
+~
+~
+-1 4441 -1 -1
+D
+south~
+~
+~
+~
+-1 4437 -1 -1
+D
+west~
+~
+~
+~
+-1 4431 -1 -1
+D
+up~
+~
+~
+~
+-1 4411 -1 -1
+D
+down~
+~
+~
+~
+-1 4361 -1 -1
+S
+#4437
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4436 -1 -1
+D
+east~
+~
+~
+~
+-1 4442 -1 -1
+D
+south~
+~
+~
+~
+-1 4438 -1 -1
+D
+west~
+~
+~
+~
+-1 4432 -1 -1
+D
+up~
+~
+~
+~
+-1 4412 -1 -1
+D
+down~
+~
+~
+~
+-1 4362 -1 -1
+S
+#4438
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4437 -1 -1
+D
+east~
+~
+~
+~
+-1 4443 -1 -1
+D
+south~
+~
+~
+~
+-1 4439 -1 -1
+D
+west~
+~
+~
+~
+-1 4433 -1 -1
+D
+up~
+~
+~
+~
+-1 4413 -1 -1
+D
+down~
+~
+~
+~
+-1 4363 -1 -1
+S
+#4439
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Ws&zi&Wlv&zer&Wy &Cblue &Cp&Woo&Cl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4438 -1 -1
+D
+east~
+~
+~
+~
+-1 4444 -1 -1
+D
+south~
+~
+~
+~
+-1 4435 -1 -1
+D
+west~
+~
+~
+~
+-1 4434 -1 -1
+D
+up~
+~
+~
+~
+-1 4414 -1 -1
+D
+down~
+~
+~
+~
+-1 4364 -1 -1
+S
+#4440
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4444 -1 -1
+D
+east~
+~
+~
+~
+-1 4445 -1 -1
+D
+south~
+~
+~
+~
+-1 4441 -1 -1
+D
+west~
+~
+~
+~
+-1 4435 -1 -1
+D
+up~
+~
+~
+~
+-1 4415 -1 -1
+D
+down~
+~
+~
+~
+-1 4365 -1 -1
+S
+#4441
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4440 -1 -1
+D
+east~
+~
+~
+~
+-1 4446 -1 -1
+D
+south~
+~
+~
+~
+-1 4442 -1 -1
+D
+west~
+~
+~
+~
+-1 4436 -1 -1
+D
+up~
+~
+~
+~
+-1 4416 -1 -1
+D
+down~
+~
+~
+~
+-1 4366 -1 -1
+S
+#4442
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+ 
+A &Wbright &Rred &rp&Roo&rl &cs&Ch&ci&Cm&cm&Ce&cr&Cs &where.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4441 -1 -1
+D
+east~
+~
+~
+~
+-1 4447 -1 -1
+D
+south~
+~
+~
+~
+-1 4443 -1 -1
+D
+west~
+~
+~
+~
+-1 4437 -1 -1
+D
+up~
+~
+~
+~
+-1 4417 -1 -1
+D
+down~
+~
+~
+~
+-1 4367 -1 -1
+S
+#4443
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4442 -1 -1
+D
+east~
+~
+~
+~
+-1 4448 -1 -1
+D
+south~
+~
+~
+~
+-1 4444 -1 -1
+D
+west~
+~
+~
+~
+-1 4438 -1 -1
+D
+up~
+~
+~
+~
+-1 4418 -1 -1
+D
+down~
+~
+~
+~
+-1 4368 -1 -1
+S
+#4444
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4443 -1 -1
+D
+east~
+~
+~
+~
+-1 4449 -1 -1
+D
+south~
+~
+~
+~
+-1 4440 -1 -1
+D
+west~
+~
+~
+~
+-1 4439 -1 -1
+D
+up~
+~
+~
+~
+-1 4419 -1 -1
+D
+down~
+~
+~
+~
+-1 4369 -1 -1
+S
+#4445
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4449 -1 -1
+D
+east~
+~
+~
+~
+-1 4425 -1 -1
+D
+south~
+~
+~
+~
+-1 4446 -1 -1
+D
+west~
+~
+~
+~
+-1 4440 -1 -1
+D
+up~
+~
+~
+~
+-1 4420 -1 -1
+D
+down~
+~
+~
+~
+-1 4370 -1 -1
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+R M 0 4350 10 4445 -1 -1 -1
+  R E 1 4350 1 0
+  R E 1 4351 1 5
+S
+#4446
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4445 -1 -1
+D
+east~
+~
+~
+~
+-1 4426 -1 -1
+D
+south~
+~
+~
+~
+-1 4447 -1 -1
+D
+west~
+~
+~
+~
+-1 4441 -1 -1
+D
+up~
+~
+~
+~
+-1 4421 -1 -1
+D
+down~
+~
+~
+~
+-1 4371 -1 -1
+S
+#4447
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4446 -1 -1
+D
+east~
+~
+~
+~
+-1 4427 -1 -1
+D
+south~
+~
+~
+~
+-1 4448 -1 -1
+D
+west~
+~
+~
+~
+-1 4442 -1 -1
+D
+up~
+~
+~
+~
+-1 4422 -1 -1
+D
+down~
+~
+~
+~
+-1 4372 -1 -1
+S
+#4448
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4447 -1 -1
+D
+east~
+~
+~
+~
+-1 4428 -1 -1
+D
+south~
+~
+~
+~
+-1 4449 -1 -1
+D
+west~
+~
+~
+~
+-1 4443 -1 -1
+D
+up~
+~
+~
+~
+-1 4423 -1 -1
+D
+down~
+~
+~
+~
+-1 4373 -1 -1
+S
+#4449
+The Astral Plane~
+&W&rP&Ro&Yo&Rl&rs&w, &Cmists&w, and other travellers are the only scenery
+&W&wwithin the &wemptiness of the &Wastral &wplane. Links between
+&Prealities &wcollide into &wmishapen &pmasses &wof &Benergy &wconstantly
+&W&bs&Bp&Ci&Wral&Ci&Bn&bg &wtowards the center of &wall &Rtime&w. Only infinity
+&W&wcan be seen in the &zdistance&w, as you continue your travels.
+~
+~
+indoors~
+indoors norecall~
+0
+D
+north~
+~
+~
+~
+-1 4448 -1 -1
+D
+east~
+~
+~
+~
+-1 4429 -1 -1
+D
+south~
+~
+~
+~
+-1 4445 -1 -1
+D
+west~
+~
+~
+~
+-1 4444 -1 -1
+D
+up~
+~
+~
+~
+-1 4424 -1 -1
+D
+down~
+~
+~
+~
+-1 4374 -1 -1
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  4350 spec_cast_mage
+M  4352 spec_breath_any
+S
+
+
+#$

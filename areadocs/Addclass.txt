@@ -1,0 +1,48 @@
+Adding a new class
+------------------
+
+Last modified by Samson, 6/19/03
+
+1. In mud.h, find MAX_CLASS and increase by one. If you're changing a
+   class into a new one, this isn't necessary.
+
+2. In const.c, find the npc_class table. Change the first empty slot to 
+   the name of your new class. You should be changing something like "pc13".
+
+3. Add your new class to the class_types list in mud.h. In stock code, this
+   list ends with CLASS_BARD as the last member.
+
+4. At this point, your done with the code. Make clean, and recompile.
+   Don't reboot yet though.
+
+5. Using an existing class file, copy it's contents to a new file.
+
+6. Set the class# in the file to 1 LESS than MAX_CLASS.
+   ( Starts countng with 0 ).
+
+7. At this point, you're ready to upload the class file.
+   Don't reboot just yet.
+
+8. In entry.are, you need to add your new class to the appropriate speech_prog
+   lists for the races you are going to allow to use it. The speech_prog should
+   look similar to:
+
+> speech_prog p mage~
+if level($n) == 1
+mpmset 0.$n class mage
+mptrlook 0.$n 120
+mpat 0.$n mpforce 0.$n bounce
+endif
+~
+
+   It should be tacked on to the end of the existing list - be mindful
+   not to screw up where the | is at after this. Upload the additions
+   to entry.are, and at this point you are ready to reboot.
+
+9. After the reboot, use the setclass command to fine-tune the settings
+   for the new class.
+
+10. You should then be ready to do skill setup for this new class.
+    Have fun, skill setting could well be a document all its own :)
+
+That should be it. Your new class should be ready for use.
